@@ -115,7 +115,7 @@ public class FigHead extends ArgoFigGroup  {
     
     int getMinimumHeight() {
         int h = stereotypeFig.getMinimumSize().height
-        // TODO: Move the magic number 4 to a descriptive constant
+        System.out.println("SATD ID: 820");
             + nameFig.getMinimumHeight() + 4;
         if (h < DEFAULT_HEIGHT) {
             h = DEFAULT_HEIGHT;

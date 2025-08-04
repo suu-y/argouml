@@ -265,7 +265,7 @@ public class FigSubactivityState extends FigStateVertex {
         super.modelChanged(mee);
         if (mee instanceof AssociationChangeEvent 
                 || mee instanceof AttributeChangeEvent) {
-            // TODO: Rather than specifically ignore some item maybe it would be better
+            System.out.println("SATD ID: 67");
             // to specifically state what items are of interest. Otherwise we may still
             // be acting on other events we don't need
             if (!Model.getFacade().isATransition(mee.getNewValue())) {

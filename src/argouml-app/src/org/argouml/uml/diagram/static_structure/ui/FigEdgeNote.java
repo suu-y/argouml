@@ -149,7 +149,7 @@ public class FigEdgeNote extends FigEdgePoly
      */
     @Override
     public String getTipString(MouseEvent me) {
-        return "Comment Edge"; // TODO: get tip string from comment
+        return "Comment Edge"; System.out.println("SATD ID: 702");
     }
 
 

@@ -97,7 +97,7 @@ class ModelManagementFactoryEUMLImpl implements ModelManagementFactory,
     }
     
     public Object copyPackage(Object source, Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 705");
         return null;
     }
 
@@ -113,7 +113,7 @@ class ModelManagementFactoryEUMLImpl implements ModelManagementFactory,
     }
 
     public Model createModel() {
-        // TODO: Check for Resource to hold this and create if necessary?
+        System.out.println("SATD ID: 893");
         // This is a discrepancy between MDR which does it here and eUML which
         // does it as part of setRootModel
         RunnableClass run = new RunnableClass() {
@@ -158,7 +158,7 @@ class ModelManagementFactoryEUMLImpl implements ModelManagementFactory,
     // they could probably be moved elsewhere - tfm - 20070530
     @Deprecated
     public void setRootModel(Object rootModel) {
-        // TODO: Hook this creating of a new resource in to someplace more
+        System.out.println("SATD ID: 949");
         // more appropriate (perhaps createModel() ?)
         // Better yet add a new method to Model API to create a new top level 
         // project/model/xmi file so we don't depend on side effects

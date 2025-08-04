@@ -96,7 +96,7 @@ public class UMLActivityDiagram extends BaseDiagram implements ActivityDiagram {
     @Override
     public void encloserChanged(FigNode enclosed, FigNode oldEncloser,
             FigNode newEncloser) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 1027");
         
     }
 }

@@ -424,7 +424,7 @@ public abstract class UMLMutableGraphSupport extends MutableGraphSupport {
         if (Model.getFacade().isAComment(node)) {
             cmnt.addAll(Model.getFacade().getAnnotatedElements(node));
         }
-        // TODO: Comments are on Element in UML 2.x
+        System.out.println("SATD ID: 1046");
         if (Model.getFacade().isAModelElement(node)) {
             cmnt.addAll(Model.getFacade().getComments(node));
         }
@@ -486,8 +486,8 @@ public abstract class UMLMutableGraphSupport extends MutableGraphSupport {
                 // on to wrong component
             } catch (IllegalArgumentException iae) {
                 // idem, e.g. for a generalization with leaf/root object
-                // TODO: but showing the message in the statusbar would help
-        	// TODO: IllegalArgumentException should not be used for
+                System.out.println("SATD ID: 668");
+        	System.out.println("SATD ID: 438");
         	// events we expect to happen. We need a different way of
         	// catching well-formedness rules.
                 LOG.log(Level.WARNING, "IllegalArgumentException caught", iae);

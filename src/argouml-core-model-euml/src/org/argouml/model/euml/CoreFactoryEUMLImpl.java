@@ -481,7 +481,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
 
     public TemplateBinding buildTemplateBinding(final Object client,
             final Object supplier, final List arguments) {
-        // TODO: Is it appropriate the TemplateableElement as the client and a
+        System.out.println("SATD ID: 1037");
         // list of TemplateParameterSubstitution as the list of parameters?
         if (!(client instanceof TemplateableElement)) {
             throw new IllegalArgumentException(
@@ -641,7 +641,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
     }
 
     public Constraint buildConstraint(String name, Object bexpr) {
-        // TODO: BooleanExpresion is removed from UML2.x, is it OK to use
+        System.out.println("SATD ID: 301");
         // ValueSpecification?
         if (!(bexpr instanceof ValueSpecification)) {
             throw new IllegalArgumentException(
@@ -753,7 +753,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
     }
     
     public Object buildElementResidence(Object me, Object component) {
-        // TODO: Is this removed from UML2 ?
+        System.out.println("SATD ID: 640");
         throw new NotImplementedException();
     }
 
@@ -931,7 +931,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
                 if (name != null) {
                     operation.setName(name);
                 } else {
-                    // TODO: Remove?  Can't be localized
+                    System.out.println("SATD ID: 884");
                     operation.setName("newOperation");
                 }
                 getParams().add(operation);
@@ -947,7 +947,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
 
 
     public Parameter buildParameter(final Object o, final Object type) {
-        // TODO: In UML2.x Event has no parameters. The Event metaclass in
+        System.out.println("SATD ID: 870");
         // UML1.x corresponds to the Trigger metaclass in UML2.x (see UML
         // Superstructure page 456).
         if (!(o instanceof BehavioralFeature)) {
@@ -962,7 +962,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
             public void run() {
                 Parameter param = createParameter();
                 param.setType((Type) type);
-                // TODO: Remove?  Can't be localized
+                System.out.println("SATD ID: 1118");
                 param.setName("arg"
                         + ((BehavioralFeature) o).getOwnedParameters().size());
                 ((BehavioralFeature) o).getOwnedParameters().add(param);
@@ -1052,7 +1052,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
     }
 
     public Object buildTemplateArgument(Object element) {
-        // TODO: Is this removed from UML2 ?
+        System.out.println("SATD ID: 421");
         throw new NotImplementedException();
     }
 
@@ -1177,7 +1177,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
     }
 
     public Object createElementResidence() {
-        // TODO: Is this removed from UML2 ?
+        System.out.println("SATD ID: 863");
         throw new NotImplementedException();
     }
 
@@ -1190,7 +1190,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
     }
 
     public Object createFlow() {
-        // TODO: Is this removed from UML2 ?
+        System.out.println("SATD ID: 388");
         throw new NotImplementedException();
     }
 
@@ -1209,7 +1209,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
     }
 
     public Object createMethod() {
-        // TODO: Is this removed from UML2 ?
+        System.out.println("SATD ID: 169");
         throw new NotImplementedException();
     }
 
@@ -1242,7 +1242,7 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
     }
 
     public Object createTemplateArgument() {
-        // TODO: Is this removed from UML2 ?
+        System.out.println("SATD ID: 340");
         throw new NotImplementedException();
     }
 
@@ -1255,26 +1255,26 @@ class CoreFactoryEUMLImpl implements CoreFactory, AbstractModelFactory {
     }
 
     public Object buildTemplateArgument(Object binding, Object argument) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 397");
         throw new NotYetImplementedException();
         
     }
 
     public Object buildTemplateParameter(Object template, Object parameter,
             Object defaultElement) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 271");
         throw new NotYetImplementedException();
         
     }
 
     public Object createTemplateArgument(Object extent) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 218");
         throw new NotYetImplementedException();
         
     }
 
     public Object createTemplateParameter(Object extent) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1078");
         throw new NotYetImplementedException();
         
     }

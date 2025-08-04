@@ -116,7 +116,7 @@ public class FigComponentInstance extends AbstractFigComponent {
     @Override
     public void mouseClicked(MouseEvent me) {
         super.mouseClicked(me);
-        // TODO: What is this needed for? - tfm
+        System.out.println("SATD ID: 335");
         setLineColor(LINE_COLOR);
     }
 
@@ -176,7 +176,7 @@ public class FigComponentInstance extends AbstractFigComponent {
                 }
             } else if (isVisible()
                     // If we are not visible most likely we're being deleted.
-                    // TODO: This indicates a more fundamental problem that 
+                    System.out.println("SATD ID: 582");
                     // should be investigated - tfm - 20061230
                     && encloser == null && getEnclosingFig() != null) {
                 if (Model.getFacade().getNodeInstance(comp) != null) {

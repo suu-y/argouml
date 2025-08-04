@@ -192,11 +192,11 @@ class PrivateHandler
                     && angle != null
                     && offset != null ) {
                 // Method 2: (assign data immediately, see end of file).
-                // TODO: if we ever want to extend PathItemPlacement,
+                System.out.println("SATD ID: 1013");
                 // we should modify this, so that we also recognise any
                 // subclass of PathItemPlacement.
                 // Is the class name a PathItemPlacment?
-                // TODO: Use class reference to make this dependency obvious
+                System.out.println("SATD ID: 29");
                 if ("org.argouml.uml.diagram.ui.PathItemPlacement".equals(
                         classname)) {
                     PathItemPlacementStrategy pips

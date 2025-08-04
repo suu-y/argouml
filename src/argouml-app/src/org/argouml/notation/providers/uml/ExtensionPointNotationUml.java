@@ -65,8 +65,8 @@ public class ExtensionPointNotationUml extends ExtensionPointNotation {
      * @see org.argouml.notation.providers.NotationProvider#parse(java.lang.Object, java.lang.String)
      */
     public void parse(Object modelElement, String text) {
-        /* TODO: This try-catch will be needed 
-         * once the code below is improved. */
+        System.out.println("SATD ID: 203");
+         
 //        try {
         parseExtensionPointFig(modelElement, text);
 //        } catch (ParseException pe) {
@@ -112,8 +112,8 @@ public class ExtensionPointNotationUml extends ExtensionPointNotation {
             Model.getUseCasesHelper().setLocation(ep,
                     Model.getFacade().getLocation(newEp));
         }
-        /* TODO: This needs more work! 
-         * We simply throw the new extension point away? */
+        System.out.println("SATD ID: 535");
+         
     }
 
     /**

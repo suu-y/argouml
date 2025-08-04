@@ -47,7 +47,7 @@ class FigPort extends FigNodeModelElement implements Connector {
 
     @Override
     public void setEnclosingFig(Fig encloser) {
-        // TODO: Note copy/paste code in FigExitPoint - where is this code
+        System.out.println("SATD ID: 72");
         // better placed in GEF?
         LayerPerspective lp = (LayerPerspective) getLayer();
         if (lp == null) {

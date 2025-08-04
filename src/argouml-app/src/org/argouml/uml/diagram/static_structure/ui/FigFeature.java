@@ -95,7 +95,7 @@ public abstract class FigFeature extends CompartmentFigText {
     public void propertyChange(PropertyChangeEvent pce) {
         super.propertyChange(pce);
         if (EVENT_NAME.equals(pce.getPropertyName())) {
-            // TODO: This needs to be modified for UML 2.x
+            System.out.println("SATD ID: 769");
             updateOwnerScope(Model.getScopeKind().getClassifier().equals(
                     pce.getNewValue()));    
         }

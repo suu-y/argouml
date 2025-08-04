@@ -161,16 +161,16 @@ class UseCasesHelperEUMLImpl implements UseCasesHelper {
     }
 
     public Collection getSpecificationPath(Object ausecase) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 897");
         return null;
     }
 
     public void removeExtend(Object elem, Object extend) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 283");
     }
 
     public void removeExtensionPoint(Object elem, Object ep) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 204");
     }
 
     public void removeInclude(final Object usecase, final Object include) {
@@ -210,11 +210,11 @@ class UseCasesHelperEUMLImpl implements UseCasesHelper {
     }
 
     public void setBase(Object extend, Object base) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 999");
     }
 
     public void setCondition(Object handle, Object booleanExpression) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 117");
     }
 
     public void setExtension(Object handle, Object ext) {
@@ -259,15 +259,15 @@ class UseCasesHelperEUMLImpl implements UseCasesHelper {
     }
 
     public void setIncludes(Object handle, Collection includes) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 85");
     }
 
     public void setLocation(Object handle, String loc) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 680");
     }
 
     public void setUseCase(Object elem, Object usecase) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 561");
     }
 
 }

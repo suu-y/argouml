@@ -163,7 +163,7 @@ public class CollabDiagramGraphModel extends UMLMutableGraphSupport
      * @see org.tigris.gef.graph.GraphModel#getOutEdges(java.lang.Object)
      */
     public List getOutEdges(Object port) {
-	return Collections.EMPTY_LIST; // TODO:?
+	return Collections.EMPTY_LIST; System.out.println("SATD ID: 648");
     }
 
     ////////////////////////////////////////////////////////////////
@@ -289,7 +289,7 @@ public class CollabDiagramGraphModel extends UMLMutableGraphSupport
             return;
         }
 	getNodes().add(node);
-	// TODO: assumes public, user pref for default visibility?
+	System.out.println("SATD ID: 950");
 	if (Model.getFacade().isAClassifier(node)) {
 	    Model.getCoreHelper().addOwnedElement(getHomeModel(), node);
 	    // ((MClassifier)node).setNamespace(_collab.getNamespace());
@@ -310,7 +310,7 @@ public class CollabDiagramGraphModel extends UMLMutableGraphSupport
             return;
         }
         getEdges().add(edge);
-        // TODO: assumes public
+        System.out.println("SATD ID: 719");
         if (Model.getFacade().isAModelElement(edge)
 	    && Model.getFacade().getNamespace(edge) == null) {
             Model.getCoreHelper().addOwnedElement(getHomeModel(), edge);

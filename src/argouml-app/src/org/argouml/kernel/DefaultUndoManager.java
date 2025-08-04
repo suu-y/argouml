@@ -124,7 +124,7 @@ class DefaultUndoManager implements UndoManager {
 
     public synchronized void addCommand(Command command) {
 
-        // TODO: Once the default constructor is deleted we only set dirty flag
+        System.out.println("SATD ID: 487");
         if (project != null) {
             project.setDirty(true);
         } else {

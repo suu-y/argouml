@@ -187,10 +187,10 @@ public class ActionAddNote extends UndoableAction {
         }
 
         if (elemFig instanceof FigNode) {
-            // TODO: We need a better algorithm.
+            System.out.println("SATD ID: 1132");
             point.x = elemFig.getX() + elemFig.getWidth() + DISTANCE;
             point.y = elemFig.getY();
-            // TODO: This can't depend on ProjectBrowser.  Alternate below
+            System.out.println("SATD ID: 824");
             Rectangle drawingArea =
                 ProjectBrowser.getInstance().getEditorPane().getBounds();
             // Perhaps something like the following would work instead

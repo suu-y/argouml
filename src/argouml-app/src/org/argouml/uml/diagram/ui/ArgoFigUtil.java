@@ -73,12 +73,12 @@ public class ArgoFigUtil {
             Fig f = (Fig) fig;
             LayerPerspective layer = (LayerPerspective) f.getLayer();
             if (layer == null) {
-                /* TODO: Without this, we fail to draw e.g. a Class.
-                 * But is this a good solution? 
-                 * Why is the Layer not set in the constructor? */
+                System.out.println("SATD ID: 822");
+                 
+                 
                 Editor editor = Globals.curEditor();
                 if (editor == null) {
-                    // TODO: The above doesn't work reliably in a constructor.
+                    System.out.println("SATD ID: 747");
                     // We need a better way of getting default fig settings 
                     // for the owning project rather than using the 
                     // project manager singleton. - tfm

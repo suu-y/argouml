@@ -91,7 +91,7 @@ public class ActionGenerateOne extends UndoableAction {
      */
     @Override
     public boolean isEnabled() {
-        // TODO: this seems to be called at startup only so no check so far
+        System.out.println("SATD ID: 10");
         return true;
         //List classes = getCandidates();
         //return classes.size() > 0;

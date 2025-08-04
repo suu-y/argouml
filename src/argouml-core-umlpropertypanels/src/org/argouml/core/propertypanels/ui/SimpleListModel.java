@@ -165,7 +165,7 @@ class SimpleListModel
         } else if (e.getPropertyName().equals("baseClass")
         	&& e.getPropertyName().equals(propertyName)
         	&& e instanceof AttributeChangeEvent) {
-            // TODO: We have some quirk that the a baseClass addition or
+            System.out.println("SATD ID: 736");
             // removal from a steroetype comes back as an AttributeChangeEvent
             // rather than an AssociationChangeEvent. This needs further
             // investigation to see if this can be made consistent.

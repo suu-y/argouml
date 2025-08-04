@@ -155,10 +155,10 @@ public class FigMessage extends FigEdgeModelElement {
 
     @Override
     protected void textEditStarted(FigText ft) {
-        /* This is a temporary hack until the notation provider
-         * for a SD Message will be able to parse successfully when the sequence
-         * number is missing.
-         * Remove this method completely then.*/
+        System.out.println("SATD ID: 1163");
+         
+         
+         
         notationSettings.setShowSequenceNumbers(true);
         super.textEditStarted(ft);
         notationSettings.setShowSequenceNumbers(false);
@@ -258,7 +258,7 @@ public class FigMessage extends FigEdgeModelElement {
                         op,
                         Notation.findNotation(s));
             } catch (Exception e) {
-                //TODO: add logging, but this will never happen and is handled
+                System.out.println("SATD ID: 612");
                 np = null;
             }
             String label = (np != null)
@@ -340,13 +340,13 @@ public class FigMessage extends FigEdgeModelElement {
         final FigPoly fp = (FigPoly) getFig();
         final FigNode node = getSourceFigNode();
         if (node != null && isSelfMessage() && fp.isComplete()) {
-            // TODO: calcBounds is called by SelectionManager when the Fig is
+            System.out.println("SATD ID: 140");
             // dragged. This code is needed to reposition any self message
             // as they are become detached from their classifier role
             // (see issue 5562). The cause of the detachment is not yet
             // understood.
             // Unfortunately calcBounds is called from several other places
-            // so the code here is not optimal but is the best workaround until
+            System.out.println("SATD ID: 328");
             // ArgoUML can provide its own replacement SelectionManager for
             // sequence diagram requirements
             // See - http://gef.tigris.org/issues/show_bug.cgi?id=344
@@ -455,7 +455,7 @@ public class FigMessage extends FigEdgeModelElement {
         Object action = getAction();
 	    Object receiver = Model.getFacade().getReceiver(getOwner());
         if (action != null && receiver != null) {
-            //TODO: What can we do with other kind of actions?
+            System.out.println("SATD ID: 533");
             if (Model.getFacade().isACallAction(action)) {
                 Iterator bases =
                     Model.getFacade().getBases(receiver).iterator();

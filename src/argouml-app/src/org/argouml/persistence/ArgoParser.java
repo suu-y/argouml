@@ -381,11 +381,11 @@ class ArgoParser extends SAXParserBase {
     protected void handleNotationLanguage(XMLElement e) {
         String language = e.getText().trim();
         boolean success = ps.setNotationLanguage(language);
-        /* TODO: Here we should e.g. show the user a message that
-         * the loaded project was using a Notation that is not
-         * currently available and a fall back on the default Notation
-         * was done. Maybe this can be implemented in the
-         * PersistenceManager? */
+        System.out.println("SATD ID: 453");
+         
+         
+         
+         
     }
 
     /**

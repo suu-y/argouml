@@ -114,7 +114,7 @@ public class Tools {
             Class cls = org.tigris.gef.base.Editor.class;
             cls = org.xml.sax.AttributeList.class;
 
-            // TODO: The following is MDR specific.  We need something generic
+            System.out.println("SATD ID: 944");
             // to all Model subsystems - tfm 20070716
             try {
                 cls = Class.forName("org.netbeans.api.mdr.MDRManager");

@@ -78,7 +78,7 @@ public class CrDisambigStateName extends CrUML {
             return NO_PROBLEM;
         }
 	String myName = Model.getFacade().getName(dm);
-	// TODO: should define a CompoundCritic
+	System.out.println("SATD ID: 275");
 	if (myName == null || myName.equals("")) {
             return NO_PROBLEM;
         }

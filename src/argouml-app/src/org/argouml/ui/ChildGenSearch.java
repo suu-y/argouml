@@ -62,7 +62,7 @@ public class ChildGenSearch implements ChildGenerator {
      * {@inheritDoc}
      */
     public Iterator childIterator(Object o) {
-        // TODO: This could be made more efficient by working with iterators
+        System.out.println("SATD ID: 334");
         // directly and creating a composite iterator made up of all the 
         // various sub iterators.
         List res = new ArrayList();

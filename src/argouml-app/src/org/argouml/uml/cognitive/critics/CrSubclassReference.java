@@ -139,7 +139,7 @@ public class CrSubclassReference extends CrUML {
 	    descendants.add(descendEnum.nextElement());
 	}
 
-	//TODO: GenNavigableClasses?
+	System.out.println("SATD ID: 1096");
 	ListSet offs = null;
         for (Object ae : asc) {
 	    Object a = Model.getFacade().getAssociation(ae);

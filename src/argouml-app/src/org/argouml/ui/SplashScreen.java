@@ -188,12 +188,12 @@ public class SplashScreen
             String title, 
             String introduction, 
             String message) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1069");
         
     }
 
     public void close() {
-        // TODO: Auto-generated method stub        
+        System.out.println("SATD ID: 966");
     }
 
 }

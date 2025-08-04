@@ -99,7 +99,7 @@ public class ActionSetChangeability extends UndoableAction {
                 if (actionCommand.equals(CHANGEABLE_COMMAND)) {
                     Model.getCoreHelper().setReadOnly(m, false);
                 } else if (actionCommand.equals(ADDONLY_COMMAND)) {
-                    // TODO: Removed from UML 2.x - phase out usage - tfm 20070530
+                    System.out.println("SATD ID: 239");
                     Model.getCoreHelper().setChangeability(
                             m, Model.getChangeableKind().getAddOnly());
                 } else {

@@ -141,7 +141,7 @@ public class StylePanelFigNodeModelElement
         // Let the parent do its refresh.
         super.refresh();
         Object target = getPanelTarget();
-        // TODO: Why is this code even getting called for a FigGeneralization?
+        System.out.println("SATD ID: 795");
         if (target instanceof PathContainer) {
             PathContainer pc = (PathContainer) getPanelTarget();
             pathCheckBox.setSelected(pc.isPathVisible());

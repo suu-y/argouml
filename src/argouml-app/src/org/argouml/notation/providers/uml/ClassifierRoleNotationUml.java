@@ -218,7 +218,7 @@ public class ClassifierRoleNotationUml extends ClassifierRoleNotation {
             bases.add(base);
         }
 
-        // TODO: What to do about object name???
+        System.out.println("SATD ID: 486");
         //    if (name != null)
         //      ;
 

@@ -125,7 +125,7 @@ class SequenceDiagramGraphModel extends UMLMutableGraphSupport implements
         List ports = new LinkedList();
         // If is a classifier role, it must return the sent messages.
         // In other cases, returns an empty list.
-        // TODO: Must be the incoming messages or the sent ones?
+        System.out.println("SATD ID: 158");
         if (Model.getFacade().isAClassifierRole(element)) {
             ports.addAll(Model.getFacade().getSentMessages(element));
         }
@@ -141,7 +141,7 @@ class SequenceDiagramGraphModel extends UMLMutableGraphSupport implements
         List ports = new LinkedList();
         // If is a classifier role, it must return the received messages.
         // In other cases, returns an empty list.
-        // TODO: Must be the outgoing messages or the received ones?
+        System.out.println("SATD ID: 653");
         if (Model.getFacade().isAClassifierRole(element)) {
             ports.addAll(Model.getFacade().getReceivedMessages(element));
         }
@@ -298,7 +298,7 @@ class SequenceDiagramGraphModel extends UMLMutableGraphSupport implements
 
     public void vetoableChange(PropertyChangeEvent pce)
         throws PropertyVetoException {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1142");
 
     }
 
@@ -352,7 +352,7 @@ class SequenceDiagramGraphModel extends UMLMutableGraphSupport implements
      *          Object, Object, Class)
      */
     public Object connectMessage(Object fromPort, Object toPort, Object messageSort) {
-        // TODO: Lets move this behind the model interface
+        System.out.println("SATD ID: 226");
         if (Model.getFacade().getUmlVersion().charAt(0) == '1') {
             return createMessage1(fromPort, toPort, messageSort);
         } else {

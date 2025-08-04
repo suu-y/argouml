@@ -96,7 +96,7 @@ class UMLValueSpecificationValueFieldOpaqueExpression extends
 			getModel(), currentText);
 		dialog.setVisible(true);
 
-		// TODO ? if this class listen the model, it will be able to
+		System.out.println("SATD ID: 738");
 		// change in live as it is done in the figs (diagram)
 		updateFields();
 	    }
@@ -109,7 +109,7 @@ class UMLValueSpecificationValueFieldOpaqueExpression extends
 	GridBagLayout layout = new GridBagLayout();
 	panel.setLayout(layout);
 
-	// TODO : Redo it (curBody should be as long as curLanguage+button)
+	System.out.println("SATD ID: 395");
 	GridBagConstraints c = new GridBagConstraints();
 	c.fill = GridBagConstraints.HORIZONTAL;
 	c.insets = new Insets(1, 1, 1, 1);

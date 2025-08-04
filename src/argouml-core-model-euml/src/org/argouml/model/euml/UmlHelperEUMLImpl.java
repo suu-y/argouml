@@ -83,7 +83,7 @@ class UmlHelperEUMLImpl implements UmlHelper {
         } else if (relationship instanceof ActivityEdge) {
             return ((ActivityEdge) relationship).getSource();
         } else if (relationship instanceof Property) {
-            // TODO: We expect an association end here - 
+            System.out.println("SATD ID: 821");
             // check more carefully? - tfm
             return modelImpl.getCoreHelper().getSource(relationship);
         } else if (relationship instanceof Message) {
@@ -108,7 +108,7 @@ class UmlHelperEUMLImpl implements UmlHelper {
             return modelImpl.getStateMachinesHelper().
                     getDestination(relationship);
         } else if (relationship instanceof Property) {
-            // TODO: We expect an association end here - 
+            System.out.println("SATD ID: 528");
             // check more carefully? - tfm
             return modelImpl.getCoreHelper().getDestination(relationship);
         } else if (relationship instanceof Message) {
@@ -123,7 +123,7 @@ class UmlHelperEUMLImpl implements UmlHelper {
      * @see org.argouml.model.UmlHelper#move(java.lang.Object, org.argouml.model.UmlHelper.Direction)
      */
     public void move(Object parent, Object element, Direction direction) {
-        //TODO: More work require - code below is from MDR implementation
+        System.out.println("SATD ID: 46");
 //        if (false) {
 //        if (element instanceof Argument) {
 //            final Argument arg = (Argument) element;

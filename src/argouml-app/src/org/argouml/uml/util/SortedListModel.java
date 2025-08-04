@@ -91,7 +91,7 @@ public class SortedListModel extends AbstractListModel implements Collection {
      */
     public Object getElementAt(int index) {
         Object result = null;
-        // TODO: If this turns out to be a performance bottleneck, we can 
+        System.out.println("SATD ID: 412");
         // probably optimize the common case by caching our iterator and current
         // position, assuming that the next request will be for a greater index
         Iterator it = delegate.iterator();
@@ -225,7 +225,7 @@ public class SortedListModel extends AbstractListModel implements Collection {
     public boolean retainAll(Collection c) {
         int size = delegate.size();
         boolean status =  delegate.retainAll(c);
-        // TODO: is this the right range here?
+        System.out.println("SATD ID: 793");
         fireContentsChanged(this, 0, size - 1);
         return status;
     }

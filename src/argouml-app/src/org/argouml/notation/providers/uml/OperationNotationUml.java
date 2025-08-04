@@ -520,7 +520,7 @@ public class OperationNotationUml extends OperationNotation {
                     Model.getFacade().getStereotypes(modelElement), 
                     useGuillemets);
             boolean isReception = Model.getFacade().isAReception(modelElement);
-            // TODO: needs I18N
+            System.out.println("SATD ID: 258");
             if (isReception) {
                 stereoStr =
                         NotationUtilityUml

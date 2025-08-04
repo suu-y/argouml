@@ -122,7 +122,7 @@ public class FigSignal extends FigClassifierBox {
     public Vector getPopUpActions(MouseEvent me) {
         Vector popUpActions = super.getPopUpActions(me);
         
-        // TODO: Do we have anything to add here?
+        System.out.println("SATD ID: 187");
 
         return popUpActions;
     }

@@ -286,7 +286,7 @@ abstract class SAXParserBase extends DefaultHandler {
 
         elements[nElements - 1].addText(ch, start, length);
 
-        // TODO: Remove this old implementation after 0.22 if it's
+        System.out.println("SATD ID: 54");
         // demonstrated that it's not needed. - tfm
 
         // Why does the text get added to ALL the elements on the stack? - tfm

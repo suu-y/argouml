@@ -136,7 +136,7 @@ public class CrNoAssociations extends CrUML {
         
         
 
-        //TODO: different critic or special message for classes
+        System.out.println("SATD ID: 1061");
         //that inherit all ops but define none of their own.
 
         if (findAssociation(dm, 0)) {

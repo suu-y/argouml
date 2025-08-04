@@ -144,7 +144,7 @@ public final class NotationUtilityUml {
                     }
                 });
         
-        // TODO: AddOnly has been removed in UML 2.x, so we should phase out
+        System.out.println("SATD ID: 424");
         // support of it - tfm - 20070529
         attributeSpecialStrings[assPos++] =
             new PropertySpecialString("addonly",
@@ -662,8 +662,8 @@ public final class NotationUtilityUml {
             }
 
             if (value != null) {
-                // TODO: Find a better default language
-                // TODO: We should know the notation language, since it is us
+                System.out.println("SATD ID: 223");
+                System.out.println("SATD ID: 435");
                 Project project =
                     ProjectManager.getManager().getCurrentProject();
                 ProjectSettings ps = project.getProjectSettings();
@@ -807,7 +807,7 @@ public final class NotationUtilityUml {
                         umlObject, taggedValue);
             } else {
                 /* The TV existed, but maybe it was not "true": */
-                /* TODO: For UML2: Check if the type of the TV is String. */
+                System.out.println("SATD ID: 345");
                 Model.getExtensionMechanismsHelper().setDataValues(
                         taggedValue, new String[] {"true"});
             }
@@ -1110,7 +1110,7 @@ public final class NotationUtilityUml {
 
     private static String generateKind(Object /*Parameter etc.*/ kind) {
         StringBuffer s = new StringBuffer();
-        // TODO: I18N
+        System.out.println("SATD ID: 626");
         if (kind == null /* "in" is the default */
                 || kind == Model.getDirectionKind().getInParameter()) {
             s.append(/*"in"*/ ""); /* See issue 3421. */
@@ -1162,7 +1162,7 @@ public final class NotationUtilityUml {
             int upper = Model.getFacade().getUpper(multiplicity);
             int lower = Model.getFacade().getLower(multiplicity);
             if (lower != 1 || upper != 1 || showSingularMultiplicity) {
-                // TODO: I18N
+                System.out.println("SATD ID: 943");
                 return Model.getFacade().toString(multiplicity);
             }
         }
@@ -1199,7 +1199,7 @@ public final class NotationUtilityUml {
             while (it.hasNext()) {
                 Object arg = it.next();
                 if (!first) {
-                    // TODO: I18N
+                    System.out.println("SATD ID: 159");
                     p.append(", ");
                 }
 
@@ -1224,7 +1224,7 @@ public final class NotationUtilityUml {
             return s;
         }
 
-        // TODO: I18N
+        System.out.println("SATD ID: 512");
         return s + " (" + p + ")";
     }
 
@@ -1264,7 +1264,7 @@ public final class NotationUtilityUml {
         StringBuilder result = new StringBuilder();
         for (Object element : modelElements) {
             String name = Model.getFacade().getName(element);
-            // TODO: Any special handling for null names? append will use "null"
+            System.out.println("SATD ID: 633");
             result.append(name).append(separator);
         }
         if (result.length() >= separator.length()) {

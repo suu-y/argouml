@@ -38,117 +38,117 @@ class CollaborationsHelperEUMLImpl implements CollaborationsHelper {
     }
 
     public void addBase(Object arole, Object abase) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1060");
         
     }
 
     public void addConstrainingElement(Object handle, Object constraint) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 382");
         
     }
 
     public void addInstance(Object classifierRole, Object instance) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 520");
         
     }
 
     public void addMessage(Object handle, Object elem) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1047");
         
     }
 
     public void addPredecessor(Object handle, Object predecessor) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 665");
         
     }
 
     public void addSuccessor(Object handle, Object mess) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 358");
         
     }
 
     public Collection allAvailableContents(Object arole) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 732");
         return null;
     }
 
     public Collection allAvailableFeatures(Object arole) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 357");
         return null;
     }
 
     public Collection getAllClassifierRoles(Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1137");
         return null;
     }
 
     public Collection getAllPossibleActivators(Object ames) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 222");
         return null;
     }
 
     public Collection getAllPossibleAssociationRoles(Object role) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 123");
         return null;
     }
 
     public Collection getAllPossibleBases(Object role) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 233");
         return null;
     }
 
     public Collection getAllPossiblePredecessors(Object amessage) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 36");
         return null;
     }
 
     public Object getAssociationRole(Object afrom, Object ato) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 285");
         return null;
     }
 
     public Collection getClassifierRoles(Object role) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 21");
         return null;
     }
 
     public boolean hasAsActivator(Object message, Object activator) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 529");
         return false;
     }
 
     public boolean isAddingCollaborationAllowed(Object context) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 632");
         return false;
     }
 
     public void removeBase(Object handle, Object c) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 976");
         
     }
 
     public void removeConstrainingElement(Object handle, Object constraint) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 618");
         
     }
 
     public void removeInteraction(Object collab, Object interaction) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1010");
         
     }
 
     public void removeMessage(Object handle, Object message) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 887");
         
     }
 
     public void removePredecessor(Object handle, Object message) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1073");
         
     }
 
     public void removeSuccessor(Object handle, Object mess) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 963");
         
     }
 
@@ -157,22 +157,22 @@ class CollaborationsHelperEUMLImpl implements CollaborationsHelper {
     }
 
     public void setActivator(Object ames, Object anactivator) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1088");
         
     }
 
     public void setBase(Object arole, Object abase) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 265");
         
     }
 
     public void setBases(Object role, Collection bases) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 539");
         
     }
 
     public void setContext(Object handle, Object col) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 466");
         
     }
     
@@ -183,27 +183,27 @@ class CollaborationsHelperEUMLImpl implements CollaborationsHelper {
     }
 
     public void setPredecessors(Object handle, Collection predecessors) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 860");
         
     }
 
     public void setRepresentedClassifier(Object handle, Object classifier) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 401");
         
     }
 
     public void setRepresentedOperation(Object handle, Object operation) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 147");
         
     }
 
     public void setSender(Object handle, Object sender) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1128");
         
     }
 
     public void setSuccessors(Object handle, Collection messages) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 160");
         
     }
 

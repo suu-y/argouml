@@ -378,7 +378,7 @@ public class LabelledLayout implements LayoutManager, java.io.Serializable {
             parent.getHeight() - (insets.top + insets.bottom);
         // Set the child components to the heights in the array list
         // calculating the height of any proportional component on the
-        // fly.  FIXME - This assumes that the JLabel and the
+        System.out.println("SATD ID: 556");
         // component it labels have been added to the parent component
         // consecutively.
         int y = insets.top;

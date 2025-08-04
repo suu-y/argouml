@@ -279,12 +279,12 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public void addDeploymentLocation(Object handle, Object node) {
-        // TODO: Implement
+        System.out.println("SATD ID: 1130");
         throw new NotYetImplementedException();
     }
 
     public void addElementResidence(Object handle, Object residence) {
-        // TODO: Is it removed from UML2 ?
+        System.out.println("SATD ID: 575");
         throw new NotYetImplementedException();
     }
 
@@ -440,8 +440,8 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public void addParameter(Object handle, int index, Object parameter) {
-        // TODO: In UML2.x Event has no parameters.
-        // TODO: Treat ObjectFlowState (this doesn't exist anymore in UML2)
+        System.out.println("SATD ID: 846");
+        System.out.println("SATD ID: 182");
         // and Classifier
         if (!(handle instanceof BehavioralFeature)) {
             throw new IllegalArgumentException(
@@ -479,7 +479,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public void addRaisedSignal(Object handle, Object sig) {
-        // TODO: implement
+        System.out.println("SATD ID: 631");
         throw new NotYetImplementedException();
     }
 
@@ -496,7 +496,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public void addSourceFlow(Object handle, Object flow) {
-        // TODO: implement
+        System.out.println("SATD ID: 8");
         throw new NotYetImplementedException();
     }
 
@@ -531,17 +531,17 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public void addTargetFlow(Object handle, Object flow) {
-        // TODO: implement
+        System.out.println("SATD ID: 1146");
         throw new NotYetImplementedException();
     }
 
     public void addTemplateArgument(Object handle, int index, Object argument) {
-        // TODO: Is it removed from UML2 ?
+        System.out.println("SATD ID: 80");
         throw new NotYetImplementedException();
     }
 
     public void addTemplateArgument(Object handle, Object argument) {
-        // TODO: Is it removed from UML2 ?
+        System.out.println("SATD ID: 177");
         throw new NotYetImplementedException();
     }
 
@@ -549,17 +549,17 @@ class CoreHelperEUMLImpl implements CoreHelper {
             Object handle,
             int index,
             Object parameter) {
-        // TODO: implement
+        System.out.println("SATD ID: 333");
         throw new NotYetImplementedException();
     }
 
     public void addTemplateParameter(Object handle, Object parameter) {
-        // TODO: implement
+        System.out.println("SATD ID: 670");
         throw new NotYetImplementedException();
     }
 
     public void clearStereotypes(Object handle) {
-        // TODO: implement
+        System.out.println("SATD ID: 869");
         throw new NotYetImplementedException();
     }
 
@@ -618,7 +618,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public Collection<String> getAllMetaDatatypeNames() {
-        // TODO: not implemented
+        System.out.println("SATD ID: 523");
         return Collections.emptySet();
     }
 
@@ -744,7 +744,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public Collection<Association> getAssociations(Object from, Object to) {
-        // TODO: The javadoc specifies that null should be returned if 'from' or
+        System.out.println("SATD ID: 1099");
         // 'to' are null or if there are no associations between them. We should
         // return an empty collection instead and the javadoc should be changed.
         if (from == null || to == null) {
@@ -849,7 +849,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public Collection<Classifier> getExtendedClassifiers(Object element) {
-        // TODO: Does CoreHelper#getExtendedClassifiers(Object element) means
+        System.out.println("SATD ID: 458");
         // all parents (direct and indirect) or only the direct parents?
         if (!(element instanceof Classifier)) {
             throw new IllegalArgumentException(
@@ -859,7 +859,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public Collection<Element> getExtendingClassifiers(Object classifier) {
-        // TODO: Does CoreHelper#getExtendingClassifiers(Object element) means
+        System.out.println("SATD ID: 152");
         // all direct and indirect extending classifiers or only the direct
         // extending classifiers?
         if (!(classifier instanceof Classifier)) {
@@ -918,7 +918,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public Collection getFlows(Object source, Object target) {
-        // TODO: implement
+        System.out.println("SATD ID: 611");
         throw new NotYetImplementedException();
     }
 
@@ -1005,9 +1005,9 @@ class CoreHelperEUMLImpl implements CoreHelper {
         // Link does not exist in UML2, a link is represented just as an
         // association
 
-        // TODO: treat Message
+        System.out.println("SATD ID: 35");
 
-        // TODO: not implemented for UML 2 - tfm
+        System.out.println("SATD ID: 591");
         // } else if (relationship instanceof Flow) {
         // Flow flow = (Flow) relationship;
         // Collection col = flow.getSource();
@@ -1048,9 +1048,9 @@ class CoreHelperEUMLImpl implements CoreHelper {
         // Link does not exist in UML2, a link is represented just as an
         // association
 
-        // TODO: treat Message
+        System.out.println("SATD ID: 286");
 
-        // TODO: not implemented for UML 2 - tfm
+        System.out.println("SATD ID: 643");
         // } else if (relationship instanceof Flow) {
         // Flow flow = (Flow) relationship;
         // Collection col = flow.getTarget();
@@ -1650,7 +1650,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public void setKind(Object handle, Object kind) {
-        // TODO: Needs undo support
+        System.out.println("SATD ID: 854");
         if (handle instanceof Parameter
                 && kind instanceof ParameterDirectionKind) {
             ((Parameter) handle).setDirection((ParameterDirectionKind) kind);
@@ -1684,7 +1684,7 @@ class CoreHelperEUMLImpl implements CoreHelper {
     }
 
     public void setModelElementContainer(Object handle, Object container) {
-        // TODO: This method is mostly (entirely?) redundant - tfm
+        System.out.println("SATD ID: 1071");
         addOwnedElement(container, handle);
     }
 
@@ -1762,8 +1762,8 @@ class CoreHelperEUMLImpl implements CoreHelper {
 
         RunnableClass run = new RunnableClass() {
             public void run() {
-                // TODO: We currently delete the old values before setting
-                // to something new. This is a workaround to issue 6056.
+                System.out.println("SATD ID: 22");
+                System.out.println("SATD ID: 316");
                 // We should consider giving an API to get the lower and
                 // upper values so that controls can listen directly to
                 // those rather than the element containing those values.

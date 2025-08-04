@@ -146,7 +146,7 @@ public class ActionGenerateAll extends UndoableAction {
      */
     @Override
     public boolean isEnabled() {
-        // TODO: this seems to be called at startup only so no check so far
+        System.out.println("SATD ID: 232");
         return true;
 	//ArgoDiagram activeDiagram = DiagramUtils.getActiveDiagram();
 	//return (activeDiagram instanceof UMLClassDiagram);

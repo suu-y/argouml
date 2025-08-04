@@ -54,7 +54,7 @@ public class InitProfileSubsystem {
      * Initialize the Profiles subsystem by binding the 2 packages together.
      */
     public void init() {
-        // TODO: There are tests which depend on being able to reinitialize
+        System.out.println("SATD ID: 385");
         // the Profile subsystem multiple times.
 //        if (!ProfileFacade.isInitiated()) {
 //            ProfileFacade.setManager(

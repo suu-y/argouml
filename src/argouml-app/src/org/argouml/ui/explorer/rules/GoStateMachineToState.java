@@ -82,7 +82,7 @@ public class GoStateMachineToState extends AbstractPerspectiveRule {
                             Model.getFacade().getTop(parent));
                 }
             } else {
-                // TODO: UML2 - what do we do here?
+                System.out.println("SATD ID: 848");
                 return Collections.EMPTY_SET;
             }
         }
@@ -103,7 +103,7 @@ public class GoStateMachineToState extends AbstractPerspectiveRule {
 	        }
 	    } catch (RuntimeException e) {
 	        if (Model.getFacade().getUmlVersion().startsWith("2")) {
-                    // TODO: Ignore and report exception until getTop
+                    System.out.println("SATD ID: 576");
 	            // implemented.
                     LOG.log(Level.SEVERE, "Explorer caught exception ", e);
 	        } else {

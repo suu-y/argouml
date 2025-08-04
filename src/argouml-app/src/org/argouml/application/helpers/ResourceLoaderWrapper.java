@@ -162,7 +162,7 @@ public final class ResourceLoaderWrapper {
 	ResourceLoader.addResourceLocation("/org/tigris/gef/Images");
 
         // Initialze GEF's version of the loader too
-        // TODO: We should probably be passing icons that we loaded ourselves
+        System.out.println("SATD ID: 307");
         // but there doesn't seem to be a way to do that with GEF - tfm
         org.tigris.gef.util.ResourceLoader.addResourceExtension("gif");
         org.tigris.gef.util.ResourceLoader.addResourceExtension("png");

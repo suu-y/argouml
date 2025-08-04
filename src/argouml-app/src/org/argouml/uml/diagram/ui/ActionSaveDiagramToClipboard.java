@@ -214,7 +214,7 @@ class ImageSelection implements Transferable {
      */
     public boolean isDataFlavorSupported(DataFlavor parFlavor) {
 
-        // hack in order to be able to compile in java1.3
+        System.out.println("SATD ID: 833");
         return (parFlavor.getMimeType().equals(
                 DataFlavor.imageFlavor.getMimeType()) && parFlavor
                 .getHumanPresentableName().equals(

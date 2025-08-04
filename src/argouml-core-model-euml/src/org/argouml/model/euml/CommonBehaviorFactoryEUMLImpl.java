@@ -38,63 +38,63 @@ class CommonBehaviorFactoryEUMLImpl implements CommonBehaviorFactory,
     }
 
     public Object buildAction(Object message) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 700");
         return null;
     }
 
     public Object buildCallAction(Object oper, String name) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 663");
         return null;
     }
 
     public Object buildLink(Object fromInstance, Object toInstance) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1143");
         return null;
     }
 
     public Object buildReception(Object aClassifier) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 525");
         return null;
     }
 
     public Object buildSignal(Object element) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 837");
         return null;
     }
 
     public Object buildStimulus(Object link) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 813");
         return null;
     }
 
     public Object buildUninterpretedAction(Object actionState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 367");
         return null;
     }
 
     public Object createActionSequence() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 639");
         return null;
     }
 
     public Object createArgument() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 71");
         return null;
     }
 
     public Object createAttributeLink() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 355");
         return null;
     }
 
     public Object createCallAction() {
 
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1041");
         return null;
     }
 
     public Object createComponentInstance() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 173");
         return null;
     }
 
@@ -103,7 +103,7 @@ class CommonBehaviorFactoryEUMLImpl implements CommonBehaviorFactory,
     }
 
     public Object createDataValue() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 524");
         return null;
     }
 
@@ -112,32 +112,32 @@ class CommonBehaviorFactoryEUMLImpl implements CommonBehaviorFactory,
     }
 
     public Object createException() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 707");
         return null;
     }
 
     public Object createLink() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 369");
         return null;
     }
 
     public Object createLinkEnd() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 296");
         return null;
     }
 
     public Object createLinkObject() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 808");
         return null;
     }
 
     public Object createNodeInstance() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 406");
         return null;
     }
 
     public Object createObject() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 248");
         return null;
     }
 
@@ -146,7 +146,7 @@ class CommonBehaviorFactoryEUMLImpl implements CommonBehaviorFactory,
     }
 
     public Object createReturnAction() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 490");
         return null;
     }
 
@@ -159,22 +159,22 @@ class CommonBehaviorFactoryEUMLImpl implements CommonBehaviorFactory,
     }
 
     public Object createStimulus() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 447");
         return null;
     }
 
     public Object createSubsystemInstance() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 941");
         return null;
     }
 
     public Object createTerminateAction() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 73");
         return null;
     }
 
     public OpaqueAction createUninterpretedAction() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 511");
         return null;
     }
 

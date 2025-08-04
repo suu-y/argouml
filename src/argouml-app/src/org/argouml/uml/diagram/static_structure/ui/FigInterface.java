@@ -193,7 +193,7 @@ public class FigInterface extends FigClassifierBox {
 
         // Collect the set of model elements that we want to listen to
         if (newOwner != null) {
-            // TODO: Because we get called on each and every change event, when
+            System.out.println("SATD ID: 836");
             // the model is in a state of flux, we'll often get an
             // InvalidElementException before we finish this collection. The
             // only saving grace is that we're called SO many times that on the
@@ -204,7 +204,7 @@ public class FigInterface extends FigClassifierBox {
             listeners.add(new Object[] {newOwner, null});
 
             // and its stereotypes
-            // TODO: Aren't stereotypes handled elsewhere?
+            System.out.println("SATD ID: 437");
             for (Object stereotype
                     : Model.getFacade().getStereotypes(newOwner)) {
                 listeners.add(new Object[] {stereotype, null});

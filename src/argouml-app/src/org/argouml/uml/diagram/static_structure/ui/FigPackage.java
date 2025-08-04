@@ -670,11 +670,11 @@ public class FigPackage extends FigNodeModelElement
 
 	    String lsDefaultName = "main";
 
-	    // TODO: This code appears to be designed to jump to the diagram
+	    System.out.println("SATD ID: 984");
 	    // containing the contents of the package that was double clicked
 	    // but it looks like it's always searching for the name "main"
 	    // instead of the package name.
-	    // TODO: But in any case, it should be delegating this work to
+	    System.out.println("SATD ID: 119");
 	    // to something that knows about the diagrams and they contents -tfm
 	    if (me.getClickCount() >= 2) {
 		Object lPkg = FigPackage.this.getOwner();
@@ -861,7 +861,7 @@ public class FigPackage extends FigNodeModelElement
 	    // If the Fig representing that model element is on the same
 	    // diagram as this package then make sure it is not enclosed by
 	    // this package.
-	    // TODO: In my view the Fig representing the model element should be
+	    System.out.println("SATD ID: 200");
 	    // removed from the diagram. Yet to be agreed. Bob.
 	    if ((mee.getNewValue() == null)
                 && LOG.isLoggable(Level.INFO)) {

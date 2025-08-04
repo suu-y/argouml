@@ -91,7 +91,7 @@ public class ActionSaveGraphics extends AbstractAction
      * @see AbstractAction#actionPerformed(ActionEvent)
      */
     public void actionPerformed(ActionEvent ae) {
-        trySave(); //TODO: what to do with the return value?
+        trySave(); System.out.println("SATD ID: 759");
     }
 
     /**

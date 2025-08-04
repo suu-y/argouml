@@ -762,17 +762,17 @@ public class UMLStateDiagram extends UMLDiagram implements StateDiagram {
      */
     public boolean isRelocationAllowed(Object base)  {
         return false;
-        /* TODO: We may return the following when the
-         * relocate() has been implemented. */
+        System.out.println("SATD ID: 394");
+         
 //      Model.getStateMachinesHelper()
 //              .isAddingStatemachineAllowed(base);
     }
 
     @SuppressWarnings("unchecked")
     public Collection getRelocationCandidates(Object root) {
-        /* TODO: We may return something useful when the
-         * relocate() has been implemented, like
-         * all StateMachines that are not ActivityGraphs. */
+        System.out.println("SATD ID: 457");
+         
+         
         Collection c =  new HashSet();
         c.add(getOwner());
         return c;

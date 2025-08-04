@@ -93,7 +93,7 @@ public abstract class ActionAddDiagram extends UndoableAction {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO: The project should be bound to the action when it is created?
+        System.out.println("SATD ID: 767");
         Project p = ProjectManager.getManager().getCurrentProject();
         Object ns = findNamespace();
 
@@ -101,12 +101,12 @@ public abstract class ActionAddDiagram extends UndoableAction {
             super.actionPerformed(e);
             DiagramSettings settings =
                 p.getProjectSettings().getDefaultDiagramSettings();
-            // TODO: We should really be passing the default settings to
+            System.out.println("SATD ID: 939");
             // the diagram factory so they get set at creation time
             ArgoDiagram diagram = createDiagram(ns, settings);
 
             p.addMember(diagram);
-            //TODO: make the explorer listen to project member property
+            System.out.println("SATD ID: 1098");
             //changes...  to eliminate coupling on gui.
             ExplorerEventAdaptor.getInstance().modelElementAdded(ns);
             TargetManager.getInstance().setTarget(diagram);

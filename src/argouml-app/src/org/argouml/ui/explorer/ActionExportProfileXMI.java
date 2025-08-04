@@ -67,7 +67,7 @@ import org.argouml.util.ArgoFrame;
 /**
  * Exports the model of a selected profile as XMI.
  *
- * @author Marcos Aurélio
+ * @author Marcos Auré§˜io
  */
 public class ActionExportProfileXMI extends AbstractAction {
 
@@ -103,7 +103,7 @@ public class ActionExportProfileXMI extends AbstractAction {
                 }
             }
         } catch (ProfileException e) {
-            // TODO: We should be giving the user more direct feedback
+            System.out.println("SATD ID: 790");
             LOG.log(Level.SEVERE, "Exception", e);
         } catch (IOException e) {
             LOG.log(Level.SEVERE, "Exception", e);

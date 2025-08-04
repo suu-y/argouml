@@ -98,7 +98,7 @@ public class FigEnumLiteralsCompartment extends FigCompartment {
 
     @Override
     public String getName() {
-        /* TODO: The UML does not seem to define this name. Or is it? */
+        System.out.println("SATD ID: 850");
         return "enumeration literals";
     }
     

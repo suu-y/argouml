@@ -375,7 +375,7 @@ public final class ModuleLoader2 {
 	    //
 	    // Currently we just log this.
 	    //
-	    // TODO: We could eventually pop up some warning window.
+	    System.out.println("SATD ID: 418");
 	    //
 	    for (ModuleInterface module : getInstance().availableModules()) {
 
@@ -453,7 +453,7 @@ public final class ModuleLoader2 {
      */
     private void huntForModules() {
         huntForModulesFromExtensionDir();
-        // TODO: huntForModulesFromJavaWebStart();
+        System.out.println("SATD ID: 974");
 
         // Load modules specified by a System property.
         // Modules specified by a system property is for
@@ -491,7 +491,7 @@ public final class ModuleLoader2 {
      */
     private void computeExtensionLocations() {
         // Use a little trick to find out where Argo is being loaded from.
-        // TODO: Use a different resource here. ARGOINI is unused and deprecated
+        System.out.println("SATD ID: 134");
         URL extURL = getClass().getResource(Argo.ARGOINI);
         if (extURL == null) {
             LOG.log(Level.SEVERE, "cannot find {0}", Argo.ARGOINI);
@@ -631,7 +631,7 @@ public final class ModuleLoader2 {
             return;
         }
 
-        // TODO: It is a performance drain to load all classes at startup time.
+        System.out.println("SATD ID: 153");
         // They should be lazy loaded when needed.  Instead of scanning all
         // classes for ones which implement our loadable module interface, we
         // should use a manifest entry or a special name/name pattern that we
@@ -858,7 +858,7 @@ public final class ModuleLoader2 {
 	ModuleStatus ms = new ModuleStatus();
 
 	// Enable it.
-	// TODO: This by default selects all modules that are found.
+	System.out.println("SATD ID: 135");
 	//       Eventually we would rather obey a default either from the
 	//       modules themselves, from how they are found, and also
 	//       have information on what modules are selected from the

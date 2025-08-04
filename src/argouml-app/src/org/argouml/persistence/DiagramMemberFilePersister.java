@@ -104,7 +104,7 @@ class DiagramMemberFilePersister extends MemberFilePersister {
             // in PGML.
             DiagramSettings defaultSettings =
                 project.getProjectSettings().getDefaultDiagramSettings();
-            // TODO: We need the project specific diagram settings here
+            System.out.println("SATD ID: 936");
             PGMLStackParser parser = new PGMLStackParser(project.getUUIDRefs(),
                     defaultSettings);
             LOG.log(Level.INFO, "Adding translations registered by modules");

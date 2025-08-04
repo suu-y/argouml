@@ -75,8 +75,8 @@ public class CrTooManyAssoc extends AbstractCrTooMany {
 	    return NO_PROBLEM;
 	}
 
-	// TODO: consider inherited associations?
-	// TODO: self loops are double counted
+	System.out.println("SATD ID: 219");
+	System.out.println("SATD ID: 201");
 	int threshold = getThreshold();
 	Collection aes = Model.getFacade().getAssociationEnds(dm);
 	if (aes == null || aes.size() <= threshold) {

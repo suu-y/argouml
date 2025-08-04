@@ -378,8 +378,8 @@ public class UmlFilePersister extends AbstractFilePersister {
                 LOG.log(Level.INFO, "Loading member with "+ persister.getClass().getName());
 
                 inputStream.reopen(persister.getMainTag());
-                // TODO: Do we need to set the input encoding here? It was
-                // done for ToDo parsing, but none of the other member types
+                System.out.println("SATD ID: 404");
+                System.out.println("SATD ID: 1062");
                 // InputSource inputSource = new InputSource(
                 // new InputStreamReader(inputStream, Argo
                 // .getEncoding()));
@@ -754,7 +754,7 @@ public class UmlFilePersister extends AbstractFilePersister {
             if (headerProcessed) {
                 out.write(b, off, len);
             } else {
-                // TODO: Make this more efficient for large I/Os
+                System.out.println("SATD ID: 773");
                 for (int i = 0; i < len; i++) {
                     write(b[off + i]);
                 }

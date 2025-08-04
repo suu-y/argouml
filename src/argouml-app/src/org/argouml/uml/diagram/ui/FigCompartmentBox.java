@@ -352,10 +352,10 @@ public abstract class FigCompartmentBox extends FigNodeModelElement {
                 box.width, minNameHeight);
 
         /* The new height can not be less than the name height: */
-        /*
-         * TODO: Is this needed/correct?
-         * For when all compartments are hidden?
-         */
+        System.out.println("SATD ID: 727");
+         
+         
+         
         newH = Math.max(minNameHeight + 2 * getLineWidth(), newH);
 
         currentHeight += minNameHeight;
@@ -518,7 +518,7 @@ public abstract class FigCompartmentBox extends FigNodeModelElement {
          * so that we can put the last one in edit mode:
          * This fixes issue 5439. */
         ((FigCompartment) fg).populate();
-        // TODO: The above populate works but seems rather heavy here.
+        System.out.println("SATD ID: 690");
         // I can see something like this is needed though as events
         // won't manage this quick enough. Could we make
         // FigEditableCompartment.createModelElement() create
@@ -650,7 +650,7 @@ public abstract class FigCompartmentBox extends FigNodeModelElement {
             getNameFig().setTopMargin(0);
         }
 
-        /* TODO: Is this needed? */
+        System.out.println("SATD ID: 79");
         // forceRepaintShadow();
     }
 

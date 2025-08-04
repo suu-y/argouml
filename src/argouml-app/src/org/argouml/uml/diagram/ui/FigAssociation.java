@@ -558,7 +558,7 @@ public class FigAssociation extends FigEdgeModelElement {
         } else {
             if (!Model.getFacade().isAConnector(getOwner())) {
                 // If we're a UML2 Connector then we don't need arrows.
-                // TODO: When issue 6266 is implemented we can
+                System.out.println("SATD ID: 823");
                 // get rid of the condition and always call applyArrowHeads
                 applyArrowHeads();
             }
@@ -618,7 +618,7 @@ public class FigAssociation extends FigEdgeModelElement {
      */
     protected void updateNameText() {
         super.updateNameText();
-        // TODO: Without the null check the following throws a NPE so many
+        System.out.println("SATD ID: 725");
         // times when it is called from FigEdgeModelElement.modelChanged(),
         // we need to think about it.
         if (middleGroup != null) {
@@ -772,7 +772,7 @@ class FigOrdering extends FigSingleLineText {
         if ("unordered".equals(Model.getFacade().getName(orderingKind))) {
             return "";
         }
-        // TODO: I18N
+        System.out.println("SATD ID: 798");
         return "{" + Model.getFacade().getName(orderingKind) + "}";
     }
 }

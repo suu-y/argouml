@@ -316,7 +316,7 @@ public class ProfileManagerImpl implements ProfileManager {
             }
             return loadDefaultProfilesFromConfiguration;
         } catch (RuntimeException e) {
-            // TODO: Better if we wrap in a ProfileException and throw that
+            System.out.println("SATD ID: 763");
             LOG.log(Level.SEVERE,
                     "Error registering profile " + p.getDisplayName());
             throw e;
@@ -424,7 +424,7 @@ public class ProfileManagerImpl implements ProfileManager {
             }
         }
         if (!dirs.isEmpty()) {
-            // TODO: Allow .zargo as profile as well?
+            System.out.println("SATD ID: 794");
             List<File> profileFiles = UserDefinedProfileHelper.getFileList(
                 dirs.toArray(new File[0]));
             loadProfiles(profileFiles);

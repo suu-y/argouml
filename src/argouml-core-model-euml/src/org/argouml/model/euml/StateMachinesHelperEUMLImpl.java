@@ -53,7 +53,7 @@ class StateMachinesHelperEUMLImpl implements StateMachinesHelper {
     }
 
     public void addDeferrableEvent(Object state, Object deferrableEvent) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 348");
         throw new NotYetImplementedException();
 
     }
@@ -69,13 +69,13 @@ class StateMachinesHelperEUMLImpl implements StateMachinesHelper {
     }
 
     public Object findNamespaceForEvent(Object trans, Object model) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 676");
         throw new NotYetImplementedException();
 
     }
 
     public Object findOperationByName(Object trans, String opname) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1157");
         throw new NotYetImplementedException();
 
     }
@@ -94,13 +94,13 @@ class StateMachinesHelperEUMLImpl implements StateMachinesHelper {
     }
 
     public Collection getAllPossibleSubvertices(Object oState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 541");
         throw new NotYetImplementedException();
 
     }
 
     public Collection getAllSubStates(Object compState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 413");
         throw new NotYetImplementedException();
 
     }
@@ -137,13 +137,13 @@ class StateMachinesHelperEUMLImpl implements StateMachinesHelper {
     }
 
     public Collection getOutgoingStates(Object ostatevertex) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 426");
         throw new NotYetImplementedException();
 
     }
 
     public String getPath(Object o) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 145");
         throw new NotYetImplementedException();
 
     }
@@ -188,13 +188,13 @@ class StateMachinesHelperEUMLImpl implements StateMachinesHelper {
     }
 
     public Object getStatebyName(String path, Object container) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 829");
         throw new NotYetImplementedException();
 
     }
 
     public Object getTop(Object sm) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 5");
         throw new NotYetImplementedException();
     }
 
@@ -203,36 +203,36 @@ class StateMachinesHelperEUMLImpl implements StateMachinesHelper {
     }
 
     public boolean isTopState(Object o) {
-        // TODO: This needs to be double checked. - tfm
+        System.out.println("SATD ID: 253");
         return o instanceof State && ((State) o).getOwner() == null;
     }
 
     public void removeDeferrableEvent(Object state, Object deferrableEvent) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 216");
         throw new NotYetImplementedException();
 
     }
 
     public void removeSubvertex(Object handle, Object subvertex) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 326");
         throw new NotYetImplementedException();
 
     }
 
     public void setBound(Object handle, int bound) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 407");
         throw new NotYetImplementedException();
 
     }
 
     public void setChangeExpression(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 787");
         throw new NotYetImplementedException();
 
     }
 
     public void setConcurrent(Object handle, boolean concurrent) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 874");
         throw new NotYetImplementedException();
 
     }
@@ -279,79 +279,79 @@ class StateMachinesHelperEUMLImpl implements StateMachinesHelper {
     }
 
     public void setContext(Object statemachine, Object modelElement) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 686");
         throw new NotYetImplementedException();
 
     }
 
     public void setDoActivity(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 641");
         throw new NotYetImplementedException();
 
     }
 
     public void setEffect(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 325");
         throw new NotYetImplementedException();
 
     }
 
     public void setEntry(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 979");
         throw new NotYetImplementedException();
 
     }
 
     public void setEventAsTrigger(Object transition, Object event) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 483");
         throw new NotYetImplementedException();
 
     }
 
     public void setExit(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 302");
         throw new NotYetImplementedException();
 
     }
 
     public void setExpression(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 912");
         throw new NotYetImplementedException();
 
     }
 
     public void setGuard(Object handle, Object guard) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 179");
         throw new NotYetImplementedException();
 
     }
 
     public void setInternalTransitions(Object handle, Collection intTrans) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 415");
         throw new NotYetImplementedException();
 
     }
 
     public void setReferenceState(Object o, String referenced) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 280");
         throw new NotYetImplementedException();
 
     }
 
     public void setSource(Object handle, Object state) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 442");
         throw new NotYetImplementedException();
 
     }
 
     public void setState(Object handle, Object element) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 116");
         throw new NotYetImplementedException();
 
     }
 
     public void setStateMachine(Object handle, Object stm) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 225");
         throw new NotYetImplementedException();
 
     }
@@ -373,19 +373,19 @@ class StateMachinesHelperEUMLImpl implements StateMachinesHelper {
     }
 
     public void setSubvertices(Object handle, Collection subvertices) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 45");
         throw new NotYetImplementedException();
 
     }
 
     public void setTrigger(Object handle, Object event) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 901");
         throw new NotYetImplementedException();
 
     }
 
     public void setWhen(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 255");
         throw new NotYetImplementedException();
 
     }

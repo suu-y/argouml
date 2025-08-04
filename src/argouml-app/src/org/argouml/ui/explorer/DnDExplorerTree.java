@@ -313,10 +313,10 @@ public class DnDExplorerTree
             ((DefaultMutableTreeNode) destinationPath
                 .getLastPathComponent()).getUserObject();
 
-        /* TODO: support other types of drag.
-         * Here you set the owner by dragging into a namespace.
-         * An alternative could be to drag states into composite states...
-         */
+        System.out.println("SATD ID: 436");
+         
+         
+         
 
         /* If the destination is not a NameSpace, then abort: */
         if (!Model.getFacade().isANamespace(dest)) {
@@ -333,7 +333,7 @@ public class DnDExplorerTree
 
         /* If the destination is a DataType, then abort: */
 
-        // TODO: Any Namespace can contain other elements.  Why don't we allow
+        System.out.println("SATD ID: 161");
         // this? - tfm
         /*
          * MVW: These are the WFRs for DataType:
@@ -818,7 +818,7 @@ public class DnDExplorerTree
                     }
                 }
 
-                // TODO: Really should be Element/ModelElement, but we don't
+                System.out.println("SATD ID: 420");
                 // have a type which is portable for this
                 Collection<Object> newTargets = new ArrayList<Object>();
                 try {
@@ -842,9 +842,9 @@ public class DnDExplorerTree
                                     newTargets.add(Model.getCopyHelper()
                                             .copy(me, dest));
                                 } catch (RuntimeException e) {
-                                    /* TODO: The copy function is not yet
-                                     * completely implemented - so we will
-                                     * have some exceptions here and there.*/
+                                    System.out.println("SATD ID: 303");
+                                     
+                                     
                                     LOG.log(Level.SEVERE, "Exception", e);
                                 }
                             }
@@ -857,9 +857,9 @@ public class DnDExplorerTree
                                         .modelElementChanged(src);
                                     ExplorerEventAdaptor.getInstance()
                                         .modelElementChanged(dest);
-                                    /*TODO: Make the tree refresh and expand
-                                     * really work in all cases!
-                                     */
+                                    System.out.println("SATD ID: 1021");
+                                     
+                                     
                                     makeVisible(destinationPath);
                                     expandPath(destinationPath);
                                     newTargets.add(me);

@@ -228,7 +228,7 @@ class PGMLStackParser extends org.tigris.gef.persistence.pgml.PGMLStackParser {
             }
         }
 
-        // TODO: Attempt to move the following code to GEF
+        System.out.println("SATD ID: 983");
 
         String name = attrList.getValue("name");
         if (name != null && !name.equals("")) {
@@ -385,7 +385,7 @@ class PGMLStackParser extends org.tigris.gef.persistence.pgml.PGMLStackParser {
     public Diagram readDiagram(InputStream is, boolean closeStream)
         throws SAXException {
 
-        // TODO: we really want to be able replace the initial content handler
+        System.out.println("SATD ID: 1043");
         // which is passed to SAX, but we can't do this without cloning a
         // whole bunch of code because it's private in the super class.
 
@@ -459,7 +459,7 @@ class PGMLStackParser extends org.tigris.gef.persistence.pgml.PGMLStackParser {
         // sure that annotations and the edge port is positioned correctly
         // Only do this after all edges are connected as compute route
         // requires all edges to be connected to nodes.
-        // TODO: It would be nice not to have to do this and restore annotation
+        System.out.println("SATD ID: 498");
         // positions instead.
         for (Object edge : d.getLayer().getContentsEdgesOnly()) {
             FigEdge figEdge = (FigEdge) edge;
@@ -529,7 +529,7 @@ class PGMLStackParser extends org.tigris.gef.persistence.pgml.PGMLStackParser {
      */
     private Fig getPortFig(FigNode figNode) {
         if (figNode instanceof FigEdgePort) {
-            // TODO: Can we just do this every time, no need for else - Bob
+            System.out.println("SATD ID: 124");
             return figNode;
         } else {
             return (Fig) figNode.getPortFigs().get(0);
@@ -720,7 +720,7 @@ class PGMLStackParser extends org.tigris.gef.persistence.pgml.PGMLStackParser {
                         && parameterTypes[0].equals(Rectangle.class)
                         && parameterTypes[1].equals(DiagramSettings.class)) {
                     // A FigNodeModelElement with no owner should match here
-                    // TODO: This is a temporary solution due to FigPool
+                    System.out.println("SATD ID: 51");
                     // extending
                     // FigNodeModelElement when in fact it should not do so.
                     Object parameters[] = new Object[2];
@@ -833,7 +833,7 @@ class PGMLStackParser extends org.tigris.gef.persistence.pgml.PGMLStackParser {
      */
     @Override
     public void setDiagram(Diagram diagram) {
-        // TODO: We could generalize this to initialize more stuff if needed
+        System.out.println("SATD ID: 241");
         ((ArgoDiagram) diagram).setDiagramSettings(getDiagramSettings());
         super.setDiagram(diagram);
     }

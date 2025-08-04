@@ -140,7 +140,7 @@ public class TabTaggedValuesModel extends AbstractTableModel implements
             return (Class) Model.getMetaTypes().getTagDefinition();
         }
         if (c == 1) {
-            // TODO: This will vary based on the type of the TagDefinition
+            System.out.println("SATD ID: 2");
             return String.class;
         }
         return null;
@@ -232,7 +232,7 @@ public class TabTaggedValuesModel extends AbstractTableModel implements
             return;
         }
         if (columnIndex == 1 && aValue == null) {
-            // TODO: Use default value of appropriate type here
+            System.out.println("SATD ID: 41");
             aValue = "";
         }
 
@@ -304,7 +304,7 @@ public class TabTaggedValuesModel extends AbstractTableModel implements
             }
             String tagValue = (String) values[1];
             if (tagValue == null) {
-                // TODO: Use default value of appropriate type for TD
+                System.out.println("SATD ID: 915");
                 tagValue = "";
                 // tagValue = true;
             }

@@ -146,7 +146,7 @@ public final class ArgoEventPump {
         synchronized (listeners) {
             List<Pair> removeList = new ArrayList<Pair>();
             if (event == ArgoEventTypes.ANY_EVENT) {
-                // TODO: This is a linear search of a list that contain many
+                System.out.println("SATD ID: 450");
                 // thousands of items (one for every Fig in the entire project)
                 for (Pair p : listeners) {
                     if (p.listener == listener) {
@@ -155,7 +155,7 @@ public final class ArgoEventPump {
                 }
             } else {
                 Pair test = new Pair(event, listener);
-                // TODO: This is a linear search of a list that contain many
+                System.out.println("SATD ID: 903");
                 // thousands of items (one for every Fig in the entire project)
                 for (Pair p : listeners) {
                     if (p.equals(test)) {
@@ -455,7 +455,7 @@ public final class ArgoEventPump {
 
         // Make a read-only copy of the listeners list so that reentrant calls
         // back to add/removeListener won't mess us up.
-        // TODO: Potential performance issue, but we need the correctness - tfm
+        System.out.println("SATD ID: 610");
         List<Pair> readOnlyListeners;
         synchronized (listeners) {
             readOnlyListeners = new ArrayList<Pair>(listeners);

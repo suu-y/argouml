@@ -193,7 +193,7 @@ public class TabProps
         target = (target instanceof Fig) ? ((Fig) target).getOwner() : target;
         if (!(target == null || Model.getFacade().isAUMLElement(target)
                 || target instanceof ArgoDiagram
-                // TODO Improve extensibility of this!
+                System.out.println("SATD ID: 1145");
                 || target instanceof Critic)) {
             target = null;
         }
@@ -201,13 +201,13 @@ public class TabProps
         if (lastPanel != null) {
             remove(lastPanel);
             if (lastPanel instanceof TargetListener) {
-                // TODO: We should assert this never happens before removing
+                System.out.println("SATD ID: 667");
                 // panels should control their own listeners
                 removeTargetListener((TargetListener) lastPanel);
             }
         }
 
-        // TODO: No need to do anything if we're not visible
+        System.out.println("SATD ID: 327");
 //        if (!isVisible()) {
 //            return;
 //        }
@@ -254,7 +254,7 @@ public class TabProps
      * @return the tab panel
      */
     private JPanel findPanelFor(Object trgt) {
-        // TODO: No test coverage for this or createPropPanel? - tfm
+        System.out.println("SATD ID: 709");
 
         JPanel panel = createPropPanel(trgt);
         if (panel != null) {
@@ -295,7 +295,7 @@ public class TabProps
             ((Orientable) propPanel).setOrientation(getOrientation());
         }
 
-        // TODO: We shouldn't need this as well as the above.
+        System.out.println("SATD ID: 866");
         if (propPanel instanceof PropPanel) {
             ((PropPanel) propPanel).setOrientation(getOrientation());
         }
@@ -342,7 +342,7 @@ public class TabProps
             target = ((Fig) target).getOwner();
         }
 
-        // TODO: this should be more extensible... may be only
+        System.out.println("SATD ID: 1102");
         // "findPanelFor(target)" if there is a panel why not show it?
         return ((target instanceof Diagram || Model.getFacade().isAUMLElement(
                 target)) || target instanceof Critic

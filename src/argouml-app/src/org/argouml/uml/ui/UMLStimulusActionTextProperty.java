@@ -85,7 +85,7 @@ public class UMLStimulusActionTextProperty  {
 		        Model.getFacade().getDispatchAction(stimulus);
 		    Model.getCoreHelper().setName(action, newValue);
 		    // to rupdate the diagram set the stimulus name again
-                    // TODO: Explain that this really works also in the
+                    System.out.println("SATD ID: 720");
                     // MDR case. Linus is a sceptic.
 		    String dummyStr = Model.getFacade().getName(stimulus);
 		    Model.getCoreHelper().setName(stimulus, dummyStr);

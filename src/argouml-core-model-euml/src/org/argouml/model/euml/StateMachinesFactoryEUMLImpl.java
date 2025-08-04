@@ -46,79 +46,79 @@ class StateMachinesFactoryEUMLImpl implements StateMachinesFactory,
     }
 
     public Object buildCallEvent(Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 622");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildCallEvent(Object trans, String name, Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1147");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildChangeEvent(Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 507");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildChangeEvent(String s, Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 596");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildCompositeState(Object compositeState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 202");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildCompositeStateOnStateMachine(Object statemachine) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 885");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildFinalState(Object compositeState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1095");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildGuard(Object transition) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 969");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildInternalTransition(Object state) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 834");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildPseudoState(Object compositeState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 34");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildSignalEvent(Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 864");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildSignalEvent(String name, Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 704");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildSimpleState(Object compositeState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 875");
         throw new NotYetImplementedException();
 
     }
@@ -132,31 +132,31 @@ class StateMachinesFactoryEUMLImpl implements StateMachinesFactory,
     }
 
     public Object buildStubState(Object compositeState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 849");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildSubmachineState(Object compositeState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 972");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildSynchState(Object compositeState) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 845");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildTimeEvent(Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 646");
         throw new NotYetImplementedException();
 
     }
 
     public Object buildTimeEvent(String s, Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 167");
         throw new NotYetImplementedException();
 
     }
@@ -227,7 +227,7 @@ class StateMachinesFactoryEUMLImpl implements StateMachinesFactory,
     }
 
     public Object createGuard() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 662");
         throw new NotYetImplementedException();
 
     }
@@ -249,19 +249,19 @@ class StateMachinesFactoryEUMLImpl implements StateMachinesFactory,
     }
 
     public Object createStubState() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1028");
         throw new NotYetImplementedException();
 
     }
 
     public Object createSubmachineState() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1000");
         throw new NotYetImplementedException();
 
     }
 
     public Object createSynchState() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 55");
         throw new NotYetImplementedException();
 
     }

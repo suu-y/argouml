@@ -110,7 +110,7 @@ class UMLValueSpecificationValueFieldOpaqueExpressionDialog extends
 	curBody = new JTextArea();
 	curBody.setToolTipText(Translator.localize("label.body.tooltip"));
 	curBody.setRows(2); // make it stretch vertically
-	// TODO: The curBody must notify modification
+	System.out.println("SATD ID: 666");
 
 	JPanel languagePanel = buildLanguagePanel();
 
@@ -185,7 +185,7 @@ class UMLValueSpecificationValueFieldOpaqueExpressionDialog extends
 		    model.setValue(tabValues);
 		    updateFields();
 		}
-		// TODO: else : alert
+		System.out.println("SATD ID: 546");
 
 	    }
 	});
@@ -212,7 +212,7 @@ class UMLValueSpecificationValueFieldOpaqueExpressionDialog extends
 		} else {
 		    // A language must be unique
 		    // So, select the current empty language.
-		    // TODO ? Alert
+		    System.out.println("SATD ID: 776");
 		    currentIndex = num;
 		    updateFields();
 
@@ -423,7 +423,7 @@ class UMLValueSpecificationValueFieldOpaqueExpressionDialog extends
 
     private boolean isUniqueLanguage(String[] tabValues, String newLanguage) {
 	// Language must be unique
-	// TODO: do it in the model (if don't use the dialog, and
+	System.out.println("SATD ID: 630");
 	// change the first)
 	boolean bContinue = true;
 	for (int i = 1; i < tabValues.length && bContinue; i += 2) {

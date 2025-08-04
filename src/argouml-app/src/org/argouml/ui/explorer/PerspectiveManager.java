@@ -389,7 +389,7 @@ public final class PerspectiveManager {
         packagePerspective.addRule(new GoLinkToStimuli());
         packagePerspective.addRule(new GoStimulusToAction());
         packagePerspective.addRule(new GoClassifierToCollaboration());
-        // TODO: We need a factory pattern for GoXXX classes that can determine if they are required
+        System.out.println("SATD ID: 163");
         packagePerspective.addRule(new GoOperationToCollaboration());
         packagePerspective.addRule(new GoOperationToSequenceDiagram());
         packagePerspective.addRule(new GoModelElementToComment());
@@ -597,7 +597,7 @@ public final class PerspectiveManager {
             new GoStateToInternalTrans()
         };
 
-        // TODO: We need a factory pattern for GoXXX classes that can determine if they are required
+        System.out.println("SATD ID: 482");
         PerspectiveRule[] ruleNamesArray14 = {
             new GoCompositeStateToSubvertex(),
             new GoStateMachineToState(),

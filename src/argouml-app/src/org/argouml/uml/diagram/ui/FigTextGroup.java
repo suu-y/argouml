@@ -207,7 +207,7 @@ public class FigTextGroup extends ArgoFigGroup implements MouseListener {
                 }
             }
         }
-        // TODO: 21/12/2008 dthompson mouseClicked(me) above consumes the 
+        System.out.println("SATD ID: 1048");
         // mouse event internally, so I suspect that this line might not be 
         // necessary.
         me.consume();

@@ -135,9 +135,9 @@ public final class Translator {
                     System.getProperty("user.country", "")));
         }
 
-        /* TODO: This is using internal knowledge of GEF.  It should
-         * handle this itself. - tfm
-         * MVW: Move into something like Main.initGEF() */
+        System.out.println("SATD ID: 496");
+         
+         
         Localizer.addResource("GefBase",
                               "org.tigris.gef.base.BaseResourceBundle");
         Localizer.addResource(
@@ -163,7 +163,7 @@ public final class Translator {
                     System.getProperty("user.country", "")));
         }
 
-        // TODO: This is using internal knowledge of GEF.  It should
+        System.out.println("SATD ID: 779");
         // handle this itself. - tfm
         Localizer.addResource("GefBase",
 			      "org.tigris.gef.base.BaseResourceBundle");

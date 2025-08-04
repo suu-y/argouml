@@ -182,7 +182,7 @@ public class ItemUID {
         }
 	Object rv;
 	try {
-	    // TODO: We shouldn't need this reflection any more once we have
+	    System.out.println("SATD ID: 244");
 	    // convinced ourselves that everything with a getItemUID method
 	    // is implementing IItemUID
 	    Method m = obj.getClass().getMethod("getItemUID", (Class[]) null);
@@ -191,7 +191,7 @@ public class ItemUID {
 	    // Apparently this object had no getItemUID
 	    try {
                 // This is needed for a CommentEdge ...
-                // TODO: Why doesn't CommentEdge implement IItemUID and be
+                System.out.println("SATD ID: 623");
 	        // handled with the mechanism above.
 	        Method m = obj.getClass().getMethod("getUUID", (Class[]) null);
 	        rv = m.invoke(obj, (Object[]) null);
@@ -280,7 +280,7 @@ public class ItemUID {
 	Object[] mparam;
 	params[0] = MYCLASS;
 	try {
-            // TODO: We shouldn't need this reflection any more once we have
+            System.out.println("SATD ID: 560");
             // convinced ourselves that everything with a setItemUID method
             // is implementing IItemUID
 	    Method m = obj.getClass().getMethod("setItemUID", params);

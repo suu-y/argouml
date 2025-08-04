@@ -240,7 +240,7 @@ public final class ProjectManager implements ModelCommandCreationObserver {
     private void notifyProjectAdded(Project newProject, Project oldProject) {
         firePropertyChanged(CURRENT_PROJECT_PROPERTY_NAME,
                 oldProject, newProject);
-        // TODO: Tentative implementation. Do we want something that updates
+        System.out.println("SATD ID: 60");
         // the list of open projects or just simple open and close events? -tfm
         firePropertyChanged(OPEN_PROJECTS_PROPERTY,
                 new Project[] {oldProject}, new Project[] {newProject});
@@ -539,7 +539,7 @@ public final class ProjectManager implements ModelCommandCreationObserver {
     public void removeProject(Project oldProject) {
         openProjects.remove(oldProject);
 
-        // TODO: This code can be removed when getCurrentProject is removed
+        System.out.println("SATD ID: 683");
         if (currentProject == oldProject) {
             if (openProjects.size() > 0) {
                 currentProject = openProjects.getLast();

@@ -205,7 +205,7 @@ public final class ExplorerEventAdaptor
             SwingUtilities.invokeLater(doWorkRunnable);
 
         } else if (pce.getPropertyName().equals(
-                // TODO: No one should be sending the deprecated event
+                System.out.println("SATD ID: 405");
                 // from outside ArgoUML, but keep responding to it for now
                 // just in case
                 ProjectManager.CURRENT_PROJECT_PROPERTY_NAME)
@@ -230,11 +230,11 @@ public final class ExplorerEventAdaptor
 
     private void modelChanged(UmlChangeEvent event) {
         if (event instanceof AttributeChangeEvent) {
-            // TODO: Can this be made more restrictive?
+            System.out.println("SATD ID: 398");
             // Do we care about any attributes other than name? - tfm
             treeModel.modelElementChanged(event.getSource());
         } else if (event instanceof RemoveAssociationEvent) {
-            // TODO: This should really be coded the other way round,
+            System.out.println("SATD ID: 238");
             // to only act on associations which are important for
             // representing the current perspective (and to only act
             // on a single end of the association) - tfm

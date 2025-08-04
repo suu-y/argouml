@@ -740,10 +740,10 @@ public class PerspectiveConfigurator extends ArgoDialog {
             if (sel >= 0 && newName.length() > 0) {
                 ((ExplorerPerspective) selPers).setName(newName);
                 perspectiveListModel.set(sel, selPers);
-                /* TODO: Replace the functioncall in the next line
-                 * by .requestFocusInWindow() once
-                 * we do not support Java 1.3 any more.
-                 */
+                System.out.println("SATD ID: 349");
+                 
+                 
+                 
                 perspectiveList.requestFocus();
             }
         }

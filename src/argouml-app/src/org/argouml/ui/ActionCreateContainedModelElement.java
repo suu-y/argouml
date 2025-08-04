@@ -115,7 +115,7 @@ public class ActionCreateContainedModelElement
     }
 
     public void actionPerformed(ActionEvent e) {
-        // TODO - lets pass in Project as a constructor argument
+        System.out.println("SATD ID: 518");
         Project project = ProjectManager.getManager().getCurrentProject();
         
         Object newElement =

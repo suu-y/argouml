@@ -281,12 +281,12 @@ public class UMLDeploymentDiagram extends UMLDiagram implements DeploymentDiagra
 
     @Override
     public boolean isRelocationAllowed(Object base) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 619");
         return false;
     }
 
     public Collection getRelocationCandidates(Object root) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 254");
         return null;
     }
 }

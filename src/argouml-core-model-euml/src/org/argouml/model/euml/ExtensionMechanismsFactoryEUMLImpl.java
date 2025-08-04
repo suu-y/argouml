@@ -52,7 +52,7 @@ class ExtensionMechanismsFactoryEUMLImpl implements
             Object namespace) {
         Stereotype stereo = buildStereotype((String) name, 
                 (Namespace) namespace);
-        // TODO: Add base classes - the following might not even be close!
+        System.out.println("SATD ID: 39");
 //        for (Class i : ((Element) element).getClass().getInterfaces()) {
 //            if (i instanceof umlmetaclass) {
 //                stereo.getExtendedMetaclasses().add(i);
@@ -63,7 +63,7 @@ class ExtensionMechanismsFactoryEUMLImpl implements
 
     public Object buildStereotype(Object element, String name,
             Object model, Collection models) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 368");
         return null;
     }
 
@@ -87,39 +87,39 @@ class ExtensionMechanismsFactoryEUMLImpl implements
     }
 
     public Object buildTagDefinition(String name, Object stereotype, Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 543");
         return null;
     }
     
     public Object buildTagDefinition(String name, Object stereotype, 
             Object namespace, String tagType) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 183");
         return null;
     }
 
     @Deprecated
     public Object buildTaggedValue(String tag, String value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 965");
         return null;
     }
     
     public Object buildTaggedValue(Object type, String[] value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 585");
         return null;
     }
 
     public Stereotype copyStereotype(Object source, Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1151");
         return null;
     }
 
     public Object copyTagDefinition(Object aTd, Object aNs) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1068");
         return null;
     }
 
     public void copyTaggedValues(Object source, Object target) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1161");
 
     }
 
@@ -142,7 +142,7 @@ class ExtensionMechanismsFactoryEUMLImpl implements
     }
 
     public Object createTaggedValue() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 926");
         return null;
     }
 }

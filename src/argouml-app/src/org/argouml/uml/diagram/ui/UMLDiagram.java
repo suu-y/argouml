@@ -616,7 +616,7 @@ public abstract class UMLDiagram
      * @return String
      */
     protected String getNewDiagramName() {
-        // TODO: Add "unnamed" or "new" or something? (Localized, of course)
+        System.out.println("SATD ID: 764");
         return /*"unnamed " + */ getLabelName();
     }
 
@@ -707,7 +707,7 @@ public abstract class UMLDiagram
                         classBoxFig, diamondFig, settings);
             classBoxFig.renderingChanged();
 
-            // TODO: Why isn't this calculation for location working?
+            System.out.println("SATD ID: 144");
             Point location = bounds.getLocation();
             location.y = (location.y - diamondFig.getHeight()) - 32;
             if (location.y < 16) {

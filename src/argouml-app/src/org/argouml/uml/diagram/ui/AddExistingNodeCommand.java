@@ -140,7 +140,7 @@ public class AddExistingNodeCommand implements Command, GraphFactory {
                     getModePlace(this, instructions);       
                 placeMode.setAddRelatedEdges(true);
             } else {
-                // TODO: work here !
+                System.out.println("SATD ID: 955");
                 instructions =
                     Translator.localize(
                         "misc.message.click-on-diagram-to-add",

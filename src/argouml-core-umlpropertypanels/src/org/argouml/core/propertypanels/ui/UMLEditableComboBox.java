@@ -138,12 +138,12 @@ public class UMLEditableComboBox extends UMLComboBox implements
 		    }
 		    
 		    public void keyReleased(KeyEvent arg0) {
-			// TODO: Auto-generated method stub
+			System.out.println("SATD ID: 635");
 			
 		    }
 		    
 		    public void keyPressed(KeyEvent arg0) {
-			// TODO: Auto-generated method stub
+			System.out.println("SATD ID: 526");
 			
 		    }
 		});
@@ -157,7 +157,7 @@ public class UMLEditableComboBox extends UMLComboBox implements
                                 keyTyped = false;
         		    }
             		} catch (BadLocationException e) {
-            		    // TODO: Auto-generated catch block
+            		    System.out.println("SATD ID: 70");
             		}
             	    }
 
@@ -169,7 +169,7 @@ public class UMLEditableComboBox extends UMLComboBox implements
                                 keyTyped = false;
         		    }
         		} catch (BadLocationException e) {
-        		    // TODO: Auto-generated catch block
+        		    System.out.println("SATD ID: 621");
         		}
         	    }
 
@@ -181,7 +181,7 @@ public class UMLEditableComboBox extends UMLComboBox implements
                                 keyTyped = false;
         		    }
         		} catch (BadLocationException e) {
-        		    // TODO: Auto-generated catch block
+        		    System.out.println("SATD ID: 100");
         		}
         	    } 
                 });

@@ -141,7 +141,7 @@ public class StatusBar
     }
 
     public void progress(ProgressEvent event) throws InterruptedException {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 962");
     }
 
     public void updateProgress(int value) {
@@ -170,7 +170,7 @@ public class StatusBar
             String title, 
             String introduction, 
             String message) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 266");
         
     }
 

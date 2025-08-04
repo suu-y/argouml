@@ -209,23 +209,23 @@ public abstract class SelectionNodeClarifiers2 extends SelectionButtons {
         int cw = getContent().getWidth();
         int ch = getContent().getHeight();
 
-        /*
-         * Crazy numbering scheme at work here.  Here's how the handle numbers
-         * are laid out.  Values 0-7 are defined by GEF and go left to
-         * right, top to bottom (ie not clockwise or counterclockwise).
-         * Values 10-14 zigzag North, South, West, East, Southwest.
-         * If you can correctly guess where 15 will go, you should buy
-         * a lottery ticket immediately.
-         *  <pre>
-         *            10
-         *     0-------1-------2
-         *     |               |
-         *  12 3               4 13
-         *     |               |
-         *  14 5-------6-------7
-         *            11
-         * </pre>
-         */
+        System.out.println("SATD ID: 597");
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
         if (icons[0] != null && hitAbove(cx + cw / 2, cy,
                 icons[0].getIconWidth(), icons[0].getIconHeight(),
                 cursor)) {

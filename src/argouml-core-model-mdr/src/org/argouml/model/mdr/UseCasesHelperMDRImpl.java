@@ -253,13 +253,13 @@ class UseCasesHelperMDRImpl implements UseCasesHelper {
             theExtend.setBase((UseCase) base);
             addExtensionPoint(theExtend, point);
         } else if (extend instanceof Include) {
-            // TODO: this can be simplified to just
+            System.out.println("SATD ID: 517");
             //((Include) extend).setBase((UseCase) base);
             Include theInclude = ((Include) extend);
             if (base == theInclude.getBase()) {
                 return;
             }
-            // TODO: This looks backwards. Left over from issue 2034?
+            System.out.println("SATD ID: 74");
             theInclude.setAddition((UseCase) base);
         } else {
             throw new IllegalArgumentException();
@@ -448,7 +448,7 @@ class UseCasesHelperMDRImpl implements UseCasesHelper {
 
     public void setExtensionPoints(Object handle, Collection extensionPoints) {
         if (handle instanceof UseCase || handle instanceof Extend) {
-            // TODO: This should use a minimal update strategy instead of
+            System.out.println("SATD ID: 195");
             // removing all and then adding all - tfm - 20070806
             Collection<ExtensionPoint> eps = 
                 Model.getFacade().getExtensionPoints(handle);

@@ -336,7 +336,7 @@ public class TabResults
 	if (Model.getFacade().isATaggedValue(sel)) {
 	    // For tagged values, use their containing ModelElement since they
 	    // don't have property panels of their own
-	    // TODO: May want to do this for other types too?
+	    System.out.println("SATD ID: 180");
 	    sel = Model.getFacade().getModelElementContainer(sel);
 	}
 	TargetManager.getInstance().setTarget(sel);

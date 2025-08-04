@@ -137,7 +137,7 @@ public class CrNodesOverlap extends CrUML {
      * @return the set of offenders
      */
     public ListSet computeOffenders(Diagram d) {
-	//TODO: algorithm is n^2 in number of nodes
+	System.out.println("SATD ID: 750");
 	List figs = d.getLayer().getContents();
 	int numFigs = figs.size();
 	ListSet offs = null;

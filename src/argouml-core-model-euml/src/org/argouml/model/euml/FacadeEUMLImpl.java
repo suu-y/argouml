@@ -72,7 +72,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public String getUmlVersion() {
-        // TODO: Can we get this from the metamodel?
+        System.out.println("SATD ID: 830");
         return "2.2"; //$NON-NLS-1$
     }
 
@@ -223,7 +223,7 @@ class FacadeEUMLImpl implements Facade {
                     "handle must be instance of Classifier"); //$NON-NLS-1$
         }
         Collection<Property> result = new ArrayList<Property>();
-        // TODO: seems to work only with both loops, check why.
+        System.out.println("SATD ID: 284");
         for (Property p : ((Classifier) handle).getAttributes()) {
             if (p.getAssociation() != null) {
                 result.add(p);
@@ -239,7 +239,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public Collection getAssociationRoles(Object handle) {
-        // TODO: How do we get the Connectors of an Association?
+        System.out.println("SATD ID: 998");
         LOG.log(Level.WARNING, "Not yet implemented - returning empty");
         return Collections.emptySet();
     }
@@ -299,7 +299,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public Collection getBehaviors(Object handle) {
-        // TODO:
+        System.out.println("SATD ID: 819");
         return Collections.emptySet();
     }
 
@@ -365,7 +365,7 @@ class FacadeEUMLImpl implements Facade {
         } else if (handle instanceof LiteralString) {
             return ((LiteralString) handle).getValue();
         } else {
-            // TODO: Lots more types - Duration, Instance, Interval
+            System.out.println("SATD ID: 1090");
             throw new NotYetImplementedException();
         }
     }
@@ -404,7 +404,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public Collection getClassifierRoles(Object handle) {
-        // TODO: In UML 2.0, ClassifierRole, AssociationRole, and
+        System.out.println("SATD ID: 809");
         // AssociationEndRole have been replaced by the internal
         // structure of the Collaboration
         return Collections.emptySet();
@@ -510,7 +510,7 @@ class FacadeEUMLImpl implements Facade {
         // Link does not exist in UML2
         if (handle == null) {
             // this is wrongly called with a null handle,
-            // as a workaround we return an empty collection
+            System.out.println("SATD ID: 319");
             return Collections.emptyList();
         }
         if (handle instanceof Connector) {
@@ -554,7 +554,7 @@ class FacadeEUMLImpl implements Facade {
         } else if (handle instanceof Transition) {
             return ((Transition) handle).getContainer();
         }
-        // TODO: unfinished implementation
+        System.out.println("SATD ID: 957");
         throw new NotYetImplementedException();
     }
 
@@ -570,7 +570,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public Collection getContexts(Object handle) {
-        // TODO: This is probably related to the SendEvent that is sending the
+        System.out.println("SATD ID: 440");
         // Signal, but the association is not navigable in that direction
         return Collections.EMPTY_SET;
     }
@@ -692,7 +692,7 @@ class FacadeEUMLImpl implements Facade {
             throw new IllegalArgumentException();
         }
 
-        // TODO: Is this returning extended elements or base classes?
+        System.out.println("SATD ID: 208");
         EList<Class> eList = ((Stereotype) handle).getExtendedMetaclasses();
         ArrayList<Class> list = new ArrayList<Class>();
         Iterator iter = eList.iterator();
@@ -701,7 +701,7 @@ class FacadeEUMLImpl implements Facade {
         }
         return list;
 
-        // TODO: Untested alternative to investigate
+        System.out.println("SATD ID: 1083");
 //        Collection<Element> result = new ArrayList<Element>();
 //        TreeIterator it =
 //            modelImpl.getEditingDomain().getResourceSet().getAllContents();
@@ -911,7 +911,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public Collection getInstances(Object handle) {
-        // TODO: InstanceSpecification -> Classifier association isn't
+        System.out.println("SATD ID: 448");
         // navigable in this direction
         return Collections.emptySet();
     }
@@ -922,7 +922,7 @@ class FacadeEUMLImpl implements Facade {
 
     public Collection getInteractions(Object handle) {
 
-        // TODO: Comment by A- Rueckert: I don't think it makes much
+        System.out.println("SATD ID: 1105");
         // sense to query interactions from a Collaboration in UML2,
         // since this diagram does no longer exist and
         // an Interaction means something different in UML2.
@@ -989,12 +989,12 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public Collection getLinks(Object handle) {
-        // TODO: no Links in UML 2
+        System.out.println("SATD ID: 570");
         return Collections.emptySet();
     }
 
     public String getLocation(Object handle) {
-        // TODO: Removed from UML2
+        System.out.println("SATD ID: 1140");
         return ""; //$NON-NLS-1$
     }
 
@@ -1026,7 +1026,7 @@ class FacadeEUMLImpl implements Facade {
         if (!(handle instanceof Element)) {
             throw new IllegalArgumentException();
         }
-        // TODO: What is the behavior of this in the case of nested models?
+        System.out.println("SATD ID: 694");
         Element result = ((Element) handle).getModel();
         if (result == null) {
             result = getOutermostOwner((Element) handle);
@@ -1283,7 +1283,7 @@ class FacadeEUMLImpl implements Facade {
         if (handle instanceof BehavioralFeature || handle instanceof Event) {
             return getParametersList(handle);
         }
-        // TODO: implement remaining supported types
+        System.out.println("SATD ID: 81");
         throw new NotYetImplementedException();
     }
 
@@ -1291,7 +1291,7 @@ class FacadeEUMLImpl implements Facade {
         if (handle instanceof BehavioralFeature) {
             return ((BehavioralFeature) handle).getOwnedParameters();
         }
-        // TODO: implement remaining supported types
+        System.out.println("SATD ID: 151");
         throw new NotYetImplementedException();
     }
 
@@ -1314,7 +1314,7 @@ class FacadeEUMLImpl implements Facade {
                 /* Classifier powerType = */ gs.getPowertype();
             }
         }
-        // TODO: This probably can't be implemented in a way that will make
+        System.out.println("SATD ID: 891");
         // the UML 1.4 UI happy.  Needs to be generalized to UML 2 semantics.
         return null;
     }
@@ -1363,7 +1363,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public Collection getReceptions(Object handle) {
-        // TODO: Signal -> Receptions association not navigable in this
+        System.out.println("SATD ID: 273");
         // direction
         return Collections.EMPTY_SET;
     }
@@ -1382,10 +1382,10 @@ class FacadeEUMLImpl implements Facade {
 
     public Object getRepresentedClassifier(Object handle) {
 
-        //TODO:  Comment by A. Rueckert <a_rueckert@gmx.net> :
+        System.out.println("SATD ID: 1015");
         // I think, the handle holding the collaboration implementation, should
         // rather be a CollaborationUse in UML2.
-        // But as a workaround for now, I'll try to get
+        System.out.println("SATD ID: 311");
         // a Collaboration representation (CollaborationUse) and
         // then try to get the owning Classifier from there...
         if (!(handle instanceof Collaboration)) {
@@ -1480,7 +1480,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public String getSpecification(Object handle) {
-        // TODO: The UML2 spec provides a specification for Behavior, which
+        System.out.println("SATD ID: 452");
         // is a BehavioralFeature, but ArgoUML calls this for an Operation
         // instance, so we must check what this method is intended for (bug?).
         if (handle instanceof Behavior) {
@@ -1494,7 +1494,7 @@ class FacadeEUMLImpl implements Facade {
 
     public Collection getSpecifications(Object handle) {
         if (handle instanceof Property) {
-            // TODO: unimplemented
+            System.out.println("SATD ID: 431");
 //          return ((Property) handle).gets
             return Collections.emptySet();
         } else if (handle instanceof org.eclipse.uml2.uml.Class) {
@@ -1560,7 +1560,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public Collection getSupplierDependencies(Object handle) {
-        // TODO: not navigable this direction? - tfm
+        System.out.println("SATD ID: 199");
         return Collections.EMPTY_SET;
     }
 
@@ -1711,10 +1711,10 @@ class FacadeEUMLImpl implements Facade {
             return ((Region) handle).getTransitions();
         } else if (isATrigger(handle)) {
             // List<Transition> result = new ArrayList<Transition>();
-            // TODO: not complete - how to retrieve the transitions?
+            System.out.println("SATD ID: 264");
             throw new NotYetImplementedException();
         } else if (isAEvent(handle)) {
-            // TODO: not complete
+            System.out.println("SATD ID: 472");
             throw new NotYetImplementedException();
         }
         throw new IllegalArgumentException(
@@ -1768,7 +1768,7 @@ class FacadeEUMLImpl implements Facade {
         Resource r = ((EObject) element).eResource();
         if (r == null) {
             return "";
-            // TODO: Figure out when this is getting thrown
+            System.out.println("SATD ID: 1044");
 //            throw new UnsupportedOperationException();
         }
         return r.getURIFragment((EObject) element);
@@ -1824,7 +1824,7 @@ class FacadeEUMLImpl implements Facade {
             newValue.add(value);
             value = newValue;
         }
-        // workaround for missing ability to parse "*"
+        System.out.println("SATD ID: 444");
         if (value instanceof Collection) {
             Collection newValue = new ArrayList();
             for (Object v : ((Collection) value)) {
@@ -1838,7 +1838,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     private Object postprocessPropertyValue(Property prop, Object value) {
-        // workaround for missing ability to parse "*"
+        System.out.println("SATD ID: 722");
         if (prop.getType() != null
                 && "UnlimitedNatural".equals(prop.getType().getName())
                 && ((Integer) value).intValue()
@@ -1918,7 +1918,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAArgument(Object modelElement) {
-        // TODO: Double check - tfm
+        System.out.println("SATD ID: 58");
         return modelElement instanceof InputPin
                 || modelElement instanceof OutputPin;
     }
@@ -1941,21 +1941,21 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAAssociationEndRole(Object handle) {
-        // TODO: In UML 2.0, ClassifierRole, AssociationRole, and
+        System.out.println("SATD ID: 489");
         // AssociationEndRole have been replaced by the internal
         // structure of the Collaboration
         return false;
     }
 
     public boolean isAAssociationRole(Object handle) {
-        // TODO: In UML 2.0, ClassifierRole, AssociationRole, and
+        System.out.println("SATD ID: 53");
         // AssociationEndRole have been replaced by the internal
         // structure of the Collaboration
         return false;
     }
 
     public boolean isAAttribute(Object handle) {
-        // TODO: This probably needs more qualification - tfm
+        System.out.println("SATD ID: 1133");
         return handle instanceof Property
                 && ((Property) handle).getClass_() != null;
     }
@@ -1982,7 +1982,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isACallState(Object handle) {
-        // TODO: ActionState, CallState, and SubactivityState have been replaced
+        System.out.println("SATD ID: 1158");
         // in UML 2.0 by explicitly modeled Actions
         return false;
     }
@@ -2000,7 +2000,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAClassifierInState(Object handle) {
-        // TODO: gone in UML 2
+        System.out.println("SATD ID: 799");
         return false;
     }
 
@@ -2026,7 +2026,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAComponentInstance(Object handle) {
-        // TODO: Gone in UML 2
+        System.out.println("SATD ID: 1005");
         return false;
     }
 
@@ -2055,7 +2055,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isACreateAction(Object handle) {
-        // TODO: Double check - tfm
+        System.out.println("SATD ID: 62");
         return handle instanceof CreateObjectAction;
     }
 
@@ -2072,7 +2072,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isADestroyAction(Object handle) {
-        // TODO: double check - tfm
+        System.out.println("SATD ID: 527");
         return handle instanceof DestroyObjectAction;
     }
 
@@ -2085,7 +2085,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAElementResidence(Object handle) {
-        // TODO: Restructured in UML 2
+        System.out.println("SATD ID: 959");
         return false;
     }
 
@@ -2102,7 +2102,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAException(Object handle) {
-        // TODO: This isn't right
+        System.out.println("SATD ID: 14");
         return handle instanceof Signal;
     }
 
@@ -2133,12 +2133,12 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAFlow(Object handle) {
-        // TODO: double check - tfm
+        System.out.println("SATD ID: 501");
         return handle instanceof ObjectFlow;
     }
 
     public boolean isAGeneralizableElement(Object handle) {
-        // TODO: Changed from UML 1.4
+        System.out.println("SATD ID: 1123");
         return handle instanceof Classifier;
     }
 
@@ -2147,7 +2147,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAGuard(Object handle) {
-        // TODO: gone in UML 2
+        System.out.println("SATD ID: 460");
         return false;
     }
 
@@ -2164,7 +2164,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAInteraction(Object handle) {
-        // TODO: changed for UML 2.x
+        System.out.println("SATD ID: 146");
         return false;
     }
 
@@ -2181,7 +2181,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isALink(Object handle) {
-        // TODO: check semantics here - tfm
+        System.out.println("SATD ID: 677");
         if (!(handle instanceof InstanceSpecification)) {
             return false;
         }
@@ -2191,7 +2191,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isALinkEnd(Object handle) {
-        // TODO: just a guess, probably not right - tfm
+        System.out.println("SATD ID: 889");
 //        return handle instanceof LinkEndData;
         return false;
     }
@@ -2217,7 +2217,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAMethod(Object handle) {
-        // TODO: gone from UML 2
+        System.out.println("SATD ID: 269");
         return false;
     }
 
@@ -2226,12 +2226,12 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAModelElement(Object handle) {
-        // TODO: What do we want to use as an equivalent here?
+        System.out.println("SATD ID: 685");
         return handle instanceof Element;
     }
 
     public boolean isAMultiplicity(Object handle) {
-        // TODO: The UML 1.4 concept of a Multiplicity & Multiplicity Range has
+        System.out.println("SATD ID: 493");
         // been replaced by a single element
         return handle instanceof MultiplicityElement;
     }
@@ -2258,17 +2258,17 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isANodeInstance(Object handle) {
-        // TODO: not in UML 2
+        System.out.println("SATD ID: 1108");
         return false;
     }
 
     public boolean isAObject(Object handle) {
-        // TODO: not in UML 2
+        System.out.println("SATD ID: 606");
         return false;
     }
 
     public boolean isAObjectFlowState(Object handle) {
-        // TODO: not in UML 2
+        System.out.println("SATD ID: 1019");
         return false;
     }
 
@@ -2341,7 +2341,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAReturnAction(Object handle) {
-        // TODO: not implemented
+        System.out.println("SATD ID: 341");
         return handle instanceof Action
             && false; // && ((Action) handle).get
     }
@@ -2368,7 +2368,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isASimpleState(Object handle) {
-        // TODO: not in UML 2
+        System.out.println("SATD ID: 920");
         return false;
     }
 
@@ -2393,7 +2393,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAStimulus(Object handle) {
-        // TODO: not implemented
+        System.out.println("SATD ID: 346");
         return false;
     }
 
@@ -2402,12 +2402,12 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAStubState(Object handle) {
-        // TODO: not in UML 2
+        System.out.println("SATD ID: 960");
         return false;
     }
 
     public boolean isASubactivityState(Object handle) {
-        // TODO: ActionState, CallState, and SubactivityState have been replaced
+        System.out.println("SATD ID: 227");
         // in UML 2.0 by explicitly modeled Actions
         return false;
     }
@@ -2418,7 +2418,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isASubsystem(Object handle) {
-        // TODO: complete this implementation - tfm
+        System.out.println("SATD ID: 221");
         return handle instanceof Component
             && false; // has <<subsystem>> stereotype
     }
@@ -2428,23 +2428,23 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isASynchState(Object handle) {
-        // TODO: not in UML 2
+        System.out.println("SATD ID: 988");
         return false;
     }
 
     public boolean isATagDefinition(Object handle) {
-        // TODO: TagDefinitions are gone from UML 2
+        System.out.println("SATD ID: 353");
         // they are now Properties of Stereotypes;
         return false;
     }
 
     public boolean isATaggedValue(Object handle) {
-        // TODO: Changed in UML 2.x to special type of Property?
+        System.out.println("SATD ID: 510");
         return false;
     }
 
     public boolean isATemplateArgument(Object handle) {
-        // TODO: Not exact, but close
+        System.out.println("SATD ID: 1138");
         return handle instanceof TemplateParameterSubstitution;
     }
 
@@ -2453,7 +2453,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isATerminateAction(Object handle) {
-        // TODO: not in UML 2
+        System.out.println("SATD ID: 547");
         return false;
     }
 
@@ -2474,7 +2474,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAUninterpretedAction(Object handle) {
-        // TODO: not in UML 2
+        System.out.println("SATD ID: 733");
         return false;
     }
 
@@ -2506,7 +2506,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isAggregate(Object handle) {
-        // TODO: Not sure the semantics are an exact match here between
+        System.out.println("SATD ID: 1100");
         // UML 1.4 Aggregate and UML 2.x Shared.
         return AggregationKind.SHARED_LITERAL.equals(((Property) handle)
                 .getAggregation());
@@ -2531,7 +2531,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isConcurrent(Object handle) {
-        // TODO: Only occurrence of isConcurrent in UML 2.1.1 is in index
+        System.out.println("SATD ID: 807");
         // it's not on the page that is indexed
         throw new NotYetImplementedException();
     }
@@ -2593,7 +2593,7 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isPrimaryObject(Object handle) {
-        // TODO: Moved this out of the implementation-specific piece - tfm
+        System.out.println("SATD ID: 331");
         // everything is primary for now (ie not reverse engineered)
         return true;
     }
@@ -2630,13 +2630,13 @@ class FacadeEUMLImpl implements Facade {
 
     public boolean isRoot(Object handle) {
 //        return ((RedefinableElement) handle).isRoot();
-        // TODO: One part of UML 2.1.1 spec says that this is as above,
+        System.out.println("SATD ID: 445");
         // but it appears to be gone - tfm
         return false;
     }
 
     public boolean isSingleton(Object handle) {
-        // TODO: this doesn't belong in the implementation specific piece - tfm
+        System.out.println("SATD ID: 386");
         return false;
     }
 
@@ -2663,12 +2663,12 @@ class FacadeEUMLImpl implements Facade {
     }
 
     public boolean isType(Object handle) {
-        // TODO: this doesn't belong in the implementation specific piece - tfm
+        System.out.println("SATD ID: 430");
         return false;
     }
 
     public boolean isUtility(Object handle) {
-        // TODO: this doesn't belong in the implementation specific piece - tfm
+        System.out.println("SATD ID: 491");
         return false;
     }
 

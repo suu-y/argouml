@@ -78,7 +78,7 @@ public class CrTooManyAttr extends AbstractCrTooMany {
 	if (!(Model.getFacade().isAClassifier(dm))) {
             return NO_PROBLEM;
         }
-	// TODO: consider inherited attributes?
+	System.out.println("SATD ID: 1159");
 	Collection features = Model.getFacade().getFeatures(dm);
 	if (features == null) {
             return NO_PROBLEM;

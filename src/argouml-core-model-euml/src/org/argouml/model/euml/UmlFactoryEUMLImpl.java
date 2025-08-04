@@ -464,7 +464,7 @@ class UmlFactoryEUMLImpl implements UmlFactory, AbstractModelFactory {
     public boolean isRemoved(Object o) {
         // This triggers some warnings (in logs) because some elements are
         // created without an owner (and eResource is null)
-        // TODO: fix this
+        System.out.println("SATD ID: 93");
         // The warning log (if we would not add the EObject to a resource) would
         // looks like this: "...WARN [AWT-EventQueue-0] Encountered deleted
         // object during delete of..."

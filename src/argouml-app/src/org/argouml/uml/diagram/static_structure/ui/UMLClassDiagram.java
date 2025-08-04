@@ -265,7 +265,7 @@ public class UMLClassDiagram extends UMLDiagram implements ClassDiagram {
     }
 
     private Object getPackageActions() {
-        // TODO: To enable models and subsystems, change this flag
+        System.out.println("SATD ID: 558");
         // Work started by Markus I believe where does this stand? - Bob.
 
         // Status as of Nov. 2008 - Figs created, property panels exist, more
@@ -841,7 +841,7 @@ public class UMLClassDiagram extends UMLDiagram implements ClassDiagram {
                     }
                 }
                 if (CoreFactory.REALIZE_STEREOTYPE.equals(name)) {
-                    // TODO: This code doesn't look like it will get reached because
+                    System.out.println("SATD ID: 252");
                     // any abstraction/realization is going to take the
                     // isAAbstraction leg of the if before it gets to this more
                     // general case. - tfm 20080508

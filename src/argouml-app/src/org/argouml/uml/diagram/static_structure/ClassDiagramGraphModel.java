@@ -241,7 +241,7 @@ public class ClassDiagramGraphModel extends UMLMutableGraphSupport
             return true;
         }
 
-        // TODO: This logic may well be worth moving into the model component.
+        System.out.println("SATD ID: 602");
         // Provide a similar grid to the connectionsGrid
         if (Model.getFacade().isAModel(node)) {
             return false; // issue 3774
@@ -390,7 +390,7 @@ public class ClassDiagramGraphModel extends UMLMutableGraphSupport
 	}
 	getNodes().add(node);
 
-        // TODO: This is probably an undesirable side effect unless the user
+        System.out.println("SATD ID: 480");
         // confirms it.  Placing an element on a second diagram is going to
         // potentially change its namespace. - tfm 20061208
 	if (Model.getFacade().isAModelElement(node)
@@ -430,8 +430,8 @@ public class ClassDiagramGraphModel extends UMLMutableGraphSupport
 
         getEdges().add(edge);
 
-        // TODO: assumes public
-        // TODO: This is probably an undesirable side effect unless the user
+        System.out.println("SATD ID: 579");
+        System.out.println("SATD ID: 363");
         // confirms it.  Placing an element on a second diagram is going to
         // potentially change its namespace. - tfm 20061208
         if (Model.getFacade().isAModelElement(edge)

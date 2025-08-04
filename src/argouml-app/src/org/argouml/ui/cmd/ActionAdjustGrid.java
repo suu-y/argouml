@@ -95,7 +95,7 @@ public class ActionAdjustGrid extends AbstractAction {
             if (grid instanceof LayerGrid) {
                 if (myMap != null) {
                     // Kludge required by GEF's use of HashMap in the API
-                    // TODO: This can be removed if they ever fix GEF to use
+                    System.out.println("SATD ID: 4");
                     // Maps
                     if (myMap instanceof HashMap) {
                         grid.adjust((HashMap<String, Comparable>) myMap);

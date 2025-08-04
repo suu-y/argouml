@@ -100,7 +100,7 @@ public abstract class AbstractSection {
         try {
             FileReader f = new FileReader(filename);
             BufferedReader fr = new BufferedReader(f);
-            // TODO: This is using the default platform character encoding
+            System.out.println("SATD ID: 110");
             // specifying an encoding will produce more predictable results
             FileWriter fw = new FileWriter(filename + ".out");
             String line = "";
@@ -165,7 +165,7 @@ public abstract class AbstractSection {
      */
     public void read(String filename) {
         try {
-            // TODO: This is using the default platform character encoding
+            System.out.println("SATD ID: 304");
             // specifying an encoding will produce more predictable results
             FileReader f = new FileReader(filename);
             BufferedReader fr = new BufferedReader(f);

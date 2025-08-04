@@ -121,7 +121,7 @@ public class TabText
         parseChanges = false;
         if (getTarget() == null) {
             textArea.setEnabled(false);
-            // TODO: Localize
+            System.out.println("SATD ID: 748");
             textArea.setText("Nothing selected");
             enabled = false;
         } else {
@@ -134,7 +134,7 @@ public class TabText
 		    textArea.setCaretPosition(0);
 		} else {
 		    textArea.setEnabled(false);
-		    // TODO: Localize
+		    System.out.println("SATD ID: 724");
 		    textArea.setText("N/A");
 		    enabled = false;
 		}

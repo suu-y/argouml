@@ -159,13 +159,13 @@ public class UMLTagDefinitionComboBoxModel  extends UMLComboBoxModel2 {
         Project project = ProjectManager.getManager().getCurrentProject();
         if (Model.getFacade().getUmlVersion().charAt(0) == '1') {
             for (Object model : project.getModels()) {
-                // TODO: Won't our use of PathComparator take care of uniqueness?
+                System.out.println("SATD ID: 44");
                 addAllUniqueModelElementsFrom(availableTagDefs, paths,
                         Model.getModelManagementHelper().getAllModelElementsOfKind(
                                 model,
                                 Model.getMetaTypes().getTagDefinition()));
             }
-            // TODO: Won't our use of PathComparator take care of uniqueness?
+            System.out.println("SATD ID: 137");
             addAllUniqueModelElementsFrom(availableTagDefs, paths, project
                     .getProfileConfiguration().findByMetaType(
                             Model.getMetaTypes().getTagDefinition()));

@@ -174,7 +174,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
         Class kind = (Class) type;
         Collection ret = getAllModelElementsOfKind(model, kind);
         if (kind.isAssignableFrom(model.getClass()) && !ret.contains(model)) {
-            // TODO: It doesn't really make sense that a namespace would be
+            System.out.println("SATD ID: 703");
             // returned as part of its own contents, but that's the historical
             // behavior.
             ret = new ArrayList(ret);
@@ -185,7 +185,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
 
 
     public Collection getAllModelElementsOfKind(Object nsa, Object type) {
-        // TODO: Performance critical method
+        System.out.println("SATD ID: 1057");
         long startTime = System.currentTimeMillis();
         if (nsa == null || type == null) {
             return Collections.EMPTY_LIST;
@@ -221,11 +221,11 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
 
         // Remove any elements not in requested namespace
         Collection returnElements = new ArrayList();
-        // TODO: Perhaps use a HashSet or other collection with faster lookup
+        System.out.println("SATD ID: 538");
         // performance in case our callers are doing naive .contains() lookups
         for (Iterator i = allOfType.iterator(); i.hasNext();) {
             Object me = i.next();
-            // TODO: Optimize for root model case? - tfm
+            System.out.println("SATD ID: 451");
             if (contained(nsa, me)) {
                 returnElements.add(me);
             }
@@ -321,7 +321,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
 
 
     public Collection getAllPossibleImports(Object pack) {
-        // TODO: Fully implement this!
+        System.out.println("SATD ID: 975");
 
         Object container = pack;
         Object cc = modelImpl.getFacade().getModelElementContainer(pack);
@@ -384,19 +384,19 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
         }
         Object element = null;
         for (Object root : modelImpl.getFacade().getRootElements()) {
-            /*
-             * modelImpl.getFacade().getRootElements()  gets all root elements
-             * in the UML repository, including available profiles that are not
-             * part of the current project (degrades performance).
-             *
-             * ProjectManager.getManager().getCurrentProject().getRoots() only
-             * returns user model roots, and no profiles.
-             *
-             * ProjectManager.getManager().getCurrentProject().getModels() gets
-             * all root models, but no root namespaces.
-             *
-             * TODO: Which is best? Is there any other way?
-             */
+            System.out.println("SATD ID: 42");
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
             if (((ModelElement) root).getName().equals(fullPath.get(0))) {
                 element = root;
                 if (root instanceof Namespace && fullPath.size() > 1) {
@@ -642,7 +642,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
         if (owner != null) {
             results.addAll(getContents(owner));
         }
-        // TODO: Should we handle <<access>> and <<import>> here?
+        System.out.println("SATD ID: 766");
         return results;
     }
 
@@ -659,7 +659,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
         if (owner != null) {
             getContents(results, owner);
         }
-        // TODO: Should we handle <<access>> and <<import>>?
+        System.out.println("SATD ID: 697");
     }
 
     /**
@@ -718,12 +718,12 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
         }
         Namespace ns = ((Namespace) pack);
         try {
-            /* TODO: This is not according the contract for this function, but
-             * it is used in several places, and I (MVW) presume that
-             * we need this generally.
-             * This part (1) is about drawing an <<import>> permission
-             * between packages.
-             * The part (2) below is about ModelManagement.ElementImport. */
+            System.out.println("SATD ID: 693");
+             
+             
+             
+             
+             
             Collection<Dependency> deps = ns.getClientDependency();
             for (Dependency dep : deps) {
                 if (dep instanceof Permission) {
@@ -747,7 +747,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
                     }
                 }
             }
-            /* TODO: This is the 2nd part of this method: */
+            System.out.println("SATD ID: 613");
             if (ns instanceof UmlPackage) {
                 results.addAll(modelImpl.getFacade().getImportedElements(ns));
             }
@@ -758,7 +758,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
 
 
     public Collection<ModelElement> getAllContents(Object pack) {
-        // TODO: Is there anyway we can determine this size at runtime?
+        System.out.println("SATD ID: 68");
         Set<ModelElement> results = new HashSet<ModelElement>(2000);
         Set<ModelElement> dupCheck = new HashSet<ModelElement>(2000);
         getAllContents(results, (ModelElement) pack, dupCheck);
@@ -851,7 +851,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
             if (pack instanceof Classifier || pack instanceof UmlPackage) {
                 Collection<GeneralizableElement> parents =
                     CoreHelperMDRImpl.getParents((GeneralizableElement) pack);
-                // TODO: Try reusing the same set on every recursion
+                System.out.println("SATD ID: 1058");
                 Set<ModelElement> allContents = new HashSet<ModelElement>(2000);
                 for (GeneralizableElement parent : parents) {
                     getAllContents(allContents, parent, dupCheck);
@@ -893,7 +893,7 @@ class ModelManagementHelperMDRImpl implements ModelManagementHelper {
              * </pre>
              */
             if (pack instanceof Collaboration) {
-                // TODO: Not implemented
+                System.out.println("SATD ID: 1081");
                 LOG.log(Level.FINE,
                         "Not implemented - getAllContents for: {0}", pack);
             }

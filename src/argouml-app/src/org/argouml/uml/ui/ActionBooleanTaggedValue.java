@@ -99,7 +99,7 @@ public class ActionBooleanTaggedValue extends UndoableAction {
             taggedValue =
                     Model.getExtensionMechanismsFactory().buildTaggedValue(
                             tagName, "");
-            // TODO: Rework to use UML 1.4 TagDefinitions - tfm
+            System.out.println("SATD ID: 235");
             Model.getExtensionMechanismsHelper().addTaggedValue(
                     obj, taggedValue);
         }

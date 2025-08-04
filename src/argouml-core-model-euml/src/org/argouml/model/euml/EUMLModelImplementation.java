@@ -211,7 +211,7 @@ public class EUMLModelImplementation implements ModelImplementation {
         ComposedAdapterFactory adapterFactory = new ComposedAdapterFactory(
                 factories);
 
-        // TODO: This will need to be adapted to send undo/redo commands back
+        System.out.println("SATD ID: 599");
         // to our consumer (e.g. ArgoUML) if a new undo mechanism is implemented
         // for the Model subsystem - tfm
         editingDomain = new UML2AdapterFactoryEditingDomain(
@@ -232,7 +232,7 @@ public class EUMLModelImplementation implements ModelImplementation {
 
             path = path.replace('\\', '/');
             // These lines were one cause for issue 5915: (Were they needed?)
-            // TODO: Review - tfm
+            System.out.println("SATD ID: 534");
             //if (Character.isLetter(path.charAt(0))) {
             //    path = '/' + path;
             //}

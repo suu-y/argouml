@@ -58,7 +58,7 @@ public class OclAPIModelInterpreter implements ModelInterpreter {
     public Object invokeFeature(Map<String, Object> vt, Object subject,
             String feature, String type, Object[] parameters) {
         if (type.equals(".")) {
-            // TODO implement the difference between oclIsKindOf and oclIsTypeOf
+            System.out.println("SATD ID: 664");
             if (feature.toString().trim().equals("oclIsKindOf")
                     || feature.toString().trim().equals("oclIsTypeOf")) {
 
@@ -115,7 +115,7 @@ public class OclAPIModelInterpreter implements ModelInterpreter {
     public Object getBuiltInSymbol(String sym) {        
         if (sym.equals("OclType")) {
             return new OclType("OclType");
-        // TODO implement OCLExpression
+        System.out.println("SATD ID: 279");
         } else if (sym.equals("OclExpression")) {
             return new OclType("OclExpression");
         }

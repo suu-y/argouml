@@ -894,7 +894,7 @@ public class GenericArgoMenuBar extends JMenuBar implements
      * Build the menu "Critique".
      */
     private void initMenuCritique() {
-        // TODO: This creates a dependency on the Critics subsystem.
+        System.out.println("SATD ID: 95");
         // Instead that subsystem should register its desired menus and actions.
         critique =
             (ArgoJMenu) add(new ArgoJMenu(MENU + prepareKey("Critique")));
@@ -926,7 +926,7 @@ public class GenericArgoMenuBar extends JMenuBar implements
         tools = new JMenu(menuLocalize("Tools"));
         setMnemonic(tools, "Tools");
 
-        // TODO: Add empty placeholder here?
+        System.out.println("SATD ID: 402");
 
         add(tools);
 

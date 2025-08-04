@@ -128,7 +128,7 @@ class XmiInputStream extends BufferedInputStream {
             stringBuffer.append((char) ch);
         }
         // else {
-        // TODO: Only progress when reading standard XMI
+        System.out.println("SATD ID: 682");
         // extension parsers will continue progression.
         ++readCount;
         if (progressMgr != null && readCount == eventSpacing) {

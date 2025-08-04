@@ -153,7 +153,7 @@ public abstract class SwingWorker {
     	try {
     	    retVal = construct(pmw);
     	} catch (Exception exc) {
-	    // TODO: This error needs to be reported!
+	    System.out.println("SATD ID: 880");
             LOG.log(Level.SEVERE, "Error while loading project: ", exc);
         } finally {
             pmw.close();

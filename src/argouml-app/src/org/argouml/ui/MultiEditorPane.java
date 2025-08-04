@@ -251,7 +251,7 @@ public class MultiEditorPane
      * @see javax.swing.event.ChangeListener#stateChanged(javax.swing.event.ChangeEvent)
      */
     public void stateChanged(ChangeEvent  e) {
-        //TODO: should fire its own event and ProjectBrowser
+        System.out.println("SATD ID: 337");
         //should register a listener
         if (lastTab != null) {
             lastTab.setVisible(false);
@@ -323,7 +323,7 @@ public class MultiEditorPane
      * @param tab the tab that was clicked on
      */
     public void mySingleClick(int tab) {
-        //TODO: should fire its own event and ProjectBrowser
+        System.out.println("SATD ID: 245");
         //should register a listener
         LOG.log(Level.FINE, "single: {0}", tabs.getComponentAt(tab).toString());
     }
@@ -335,7 +335,7 @@ public class MultiEditorPane
      * @param tab The index of the tab.
      */
     public void myDoubleClick(int tab) {
-        //TODO: should fire its own event and ProjectBrowser
+        System.out.println("SATD ID: 656");
         //should register a listener
         LOG.log(Level.FINE, "double: {0}", tabs.getComponentAt(tab).toString());
 //        JPanel t = (JPanel) tabPanels.elementAt(tab);

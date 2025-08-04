@@ -105,12 +105,12 @@ public class FigStereotype extends FigSingleLineText {
         }
 
         if (getGroup() != null ) {
-            /* TODO: Why do I need to do this? */
+            System.out.println("SATD ID: 32");
             getGroup().calcBounds();
             getGroup().setBounds(getGroup().getBounds());
             if (oldBounds != getBounds()) {
                 Fig sg = getGroup().getGroup();
-                /* TODO: Why do I need to do this? */
+                System.out.println("SATD ID: 838");
                 if (sg != null) {
                     sg.calcBounds();
                     sg.setBounds(sg.getBounds());

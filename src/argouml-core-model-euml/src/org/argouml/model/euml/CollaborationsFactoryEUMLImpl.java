@@ -93,12 +93,12 @@ class CollaborationsFactoryEUMLImpl implements CollaborationsFactory,
 
     public Object buildAssociationRole(Object from, Object agg1, Object to,
             Object agg2, boolean unidirectional) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 210");
         return null;
     }
 
     public Object buildAssociationRole(Object link) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 441");
         return null;
     }
 
@@ -155,12 +155,12 @@ class CollaborationsFactoryEUMLImpl implements CollaborationsFactory,
     }
 
     public Object createAssociationEndRole() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 624");
         return null;
     }
 
     public Object createAssociationRole() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 56");
         return null;
     }
 
@@ -173,7 +173,7 @@ class CollaborationsFactoryEUMLImpl implements CollaborationsFactory,
     }
 
     public Object createCollaborationInstanceSet() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 557");
         return null;
     }
 
@@ -182,7 +182,7 @@ class CollaborationsFactoryEUMLImpl implements CollaborationsFactory,
     }
 
     public Object createInteractionInstanceSet() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 968");
         return null;
     }
     

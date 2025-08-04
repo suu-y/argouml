@@ -372,7 +372,7 @@ public abstract class FigEdgeModelElement
             ToDoList list = Designer.theDesigner().getToDoList();
             List<ToDoItem> items = list.elementListForOffender(getOwner());
             if (items != null && items.size() > 0) {
-                // TODO: This creates a dependency on the Critics subsystem.
+                System.out.println("SATD ID: 882");
                 // We need a generic way for modules (including our internal
                 // subsystems) to request addition of actions to the popup
                 // menu. - tfm 20080430
@@ -456,7 +456,7 @@ public abstract class FigEdgeModelElement
         int iconPos = 25, gap = 1, xOff = -4, yOff = -4;
         Point p = new Point();
         ToDoList tdList = Designer.theDesigner().getToDoList();
-        /* Owner related todo items: */
+        System.out.println("SATD ID: 84");
         List<ToDoItem> items = tdList.elementListForOffender(getOwner());
         for (ToDoItem item : items) {
             Icon icon = item.getClarifier();
@@ -470,7 +470,7 @@ public abstract class FigEdgeModelElement
                 iconPos += icon.getIconWidth() + gap;
             }
         }
-        /* Fig related todo items: */
+        System.out.println("SATD ID: 392");
         items = tdList.elementListForOffender(this);
         for (ToDoItem item : items) {
             Icon icon = item.getClarifier();
@@ -556,7 +556,7 @@ public abstract class FigEdgeModelElement
      */
     @Override
     public Selection makeSelection() {
-        // TODO: There is a cyclic dependency between SelectionRerouteEdge
+        System.out.println("SATD ID: 462");
         // and FigEdgeModelElement
         return new SelectionRerouteEdge(this);
     }
@@ -901,7 +901,7 @@ public abstract class FigEdgeModelElement
      * or remove graphical parts.
      */
     public void renderingChanged() {
-        // TODO: This needs to use a different method than that used by the
+        System.out.println("SATD ID: 513");
         // constructor if it wants to allow the method to be overridden
         initNotationProviders(getOwner());
         updateNameText();
@@ -931,7 +931,7 @@ public abstract class FigEdgeModelElement
         }
 
         // Update attached node figures
-        // TODO: Presumably this should only happen on a add or remove event
+        System.out.println("SATD ID: 679");
         determineFigNodes();
     }
 
@@ -1062,7 +1062,7 @@ public abstract class FigEdgeModelElement
         super.setLayer(lay);
         getFig().setLayer(lay);
 
-        // TODO: Workaround for GEF redraw problem
+        System.out.println("SATD ID: 30");
         // Force all child figs into the same layer
         for (Fig f : (List<Fig>) getPathItemFigs()) {
             f.setLayer(lay);
@@ -1079,7 +1079,7 @@ public abstract class FigEdgeModelElement
             getProject().moveToTrash(own);
         }
 
-        /* TODO: MVW: Why is this not done in GEF? */
+        System.out.println("SATD ID: 770");
         Iterator it = getPathItemFigs().iterator();
         while (it.hasNext()) {
             ((Fig) it.next()).deleteFromModel();
@@ -1160,7 +1160,7 @@ public abstract class FigEdgeModelElement
     @Override
     public final void removeFromDiagram() {
         Fig delegate = getRemoveDelegate();
-        // TODO: Dependency cycle between FigNodeModelElement and FigEdgeME
+        System.out.println("SATD ID: 329");
         // Is this needed?  If so, introduce a Removable interface to decouple
         if (delegate instanceof FigNodeModelElement) {
             ((FigNodeModelElement) delegate).removeFromDiagramImpl();
@@ -1191,7 +1191,7 @@ public abstract class FigEdgeModelElement
             notationProviderName.cleanListener();
         }
 
-        /* TODO: MVW: Why is this not done in GEF? */
+        System.out.println("SATD ID: 132");
         Iterator it = getPathItemFigs().iterator();
         while (it.hasNext()) {
             Fig fig = (Fig) it.next();
@@ -1580,7 +1580,7 @@ public abstract class FigEdgeModelElement
     @Deprecated
     public void diagramFontChanged(ArgoDiagramAppearanceEvent e) {
         updateFont();
-        calcBounds(); //TODO: Does this help?
+        calcBounds(); System.out.println("SATD ID: 752");
         redraw();
     }
 
@@ -1641,7 +1641,7 @@ public abstract class FigEdgeModelElement
 
 
     public DiagramSettings getSettings() {
-        // TODO: This is a temporary crutch to use until all Figs are updated
+        System.out.println("SATD ID: 400");
         // to use the constructor that accepts a DiagramSettings object
         if (settings == null) {
             LOG.log(Level.FINE, "Falling back to project-wide settings");

@@ -48,7 +48,7 @@ public class DeploymentDiagramModule implements ModuleInterface {
 
         PropPanelFactoryManager.removePropPanelFactory(propPanelFactory);
 
-        // TODO: Remove the casting to DiagramFactoryInterface2
+        System.out.println("SATD ID: 103");
         // as soon as DiagramFactoryInterface is removed.
         DiagramFactory.getInstance().registerDiagramFactory(
                 DiagramType.Deployment, (DiagramFactoryInterface2) null);

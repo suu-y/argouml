@@ -243,7 +243,7 @@ public class DismissToDoItemDialog extends ArgoDialog {
     }
 
     private void explain(ActionEvent e) {
-        //TODO: make a new history item
+        System.out.println("SATD ID: 75");
         ToDoList list = Designer.theDesigner().getToDoList();
         try {
             list.explicitlyResolve(target, explanation.getText());

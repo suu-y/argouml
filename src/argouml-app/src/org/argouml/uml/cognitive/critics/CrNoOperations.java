@@ -102,7 +102,7 @@ public class CrNoOperations extends CrUML {
             return NO_PROBLEM;
         }
 
-	//TODO: different critic or special message for classes
+	System.out.println("SATD ID: 7");
 	//that inherit all ops but define none of their own.
 
 	if (findInstanceOperationInInherited(dm, 0)) {

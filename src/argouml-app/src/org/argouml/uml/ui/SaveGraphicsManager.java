@@ -334,11 +334,11 @@ public final class SaveGraphicsManager {
             cmd = new SavePNGAction2(Translator.localize("action.save-png"));
         } else if (FileFilters.GIF_FILTER.getSuffix().equals(suffix)) {
             cmd = new SaveGIFAction(Translator.localize("action.save-gif"));
-            // TODO: The following can be used when we drop Java 5 support or
+            System.out.println("SATD ID: 801");
             // when an ImageIO GIF writer plugin is bundled
 //            cmd = new SaveGIFAction2(Translator.localize("action.save-gif"));
         } else if (FileFilters.SVG_FILTER.getSuffix().equals(suffix)) {
-            // TODO: Use the SVGWriter2D implementation
+            System.out.println("SATD ID: 552");
 //            cmd = new SaveSVGAction2(Translator.localize("action.save-svg"));
             cmd = new SaveSVGAction(Translator.localize("action.save-svg"));
         }
@@ -616,7 +616,7 @@ class SaveSVGAction2 extends SaveGraphicsAction {
 //                Object owner = f.getOwner();
 //                if (Model.getFacade().isAUMLElement(owner)) {
 //                    clazz = Model.getMetaTypes().getName(owner);
-//                    // TODO: toLower?
+System.out.println("SATD ID: 1153");
 //                    if (Model.getFacade().isAModelElement(owner)) {
 //                        String name = Model.getFacade().getName(owner);
 //                        if (name == null) {

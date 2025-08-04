@@ -703,13 +703,13 @@ class RowSelector extends UmlControl
          */
         public void actionPerformed(ActionEvent ae) {
             super.actionPerformed(ae);
-            // TODO Part of this is copied from ActionDeleteModelElement. We
+            System.out.println("SATD ID: 1082");
             // maybe need some subclass for common code.
             KeyboardFocusManager focusManager =
                 KeyboardFocusManager.getCurrentKeyboardFocusManager();
             Component focusOwner = focusManager.getFocusOwner();
             if (focusOwner instanceof FigTextEditor) {
-                // TODO: Probably really want to cancel editing
+                System.out.println("SATD ID: 756");
                 //((FigTextEditor) focusOwner).cancelEditing();
                 ((FigTextEditor) focusOwner).endEditing();
             } else if (focusOwner instanceof JTable) {

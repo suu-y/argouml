@@ -75,7 +75,7 @@ public class ActionGoToCritique extends UndoableAction {
      */
     public void actionPerformed(ActionEvent ae) {
         super.actionPerformed(ae);
-        // TODO: ProjectBrowser doesn't need to mediate this conversation
+        System.out.println("SATD ID: 775");
         // Use an event listener in the ToDoPane to communicate instead. - tfm
         ((ToDoPane) ProjectBrowser.getInstance().getTodoPane())
                 .selectItem(item);

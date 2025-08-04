@@ -118,7 +118,7 @@ class UMLValueSpecificationPanel extends JPanel {
 	UMLValueSpecificationValueField ret = null;
 
 	try {
-	    // TODO: Bob says the reflective code following should be replaced
+	    System.out.println("SATD ID: 18");
 	    // with something more specific like this commented out code.
 	    // This would mean we need sType changed to a meta type Object
 	    // rather than a String.
@@ -184,7 +184,7 @@ class UMLValueSpecificationPanel extends JPanel {
 		// Select the Current type in the combobox
 
 		// if "expression" implements one of the combobox, select it
-		// TODO ? Do it in eUML module project ?
+		System.out.println("SATD ID: 1152");
 		Class<?>[] interfaces = expression.getClass().getInterfaces();
 		iSel = -1;
 		for (int iInterf = 0; iInterf < interfaces.length && iSel == -1; iInterf++) {
@@ -202,12 +202,12 @@ class UMLValueSpecificationPanel extends JPanel {
 
 	typeInstanceValueList.setSelectedIndex(iSel);
 
-	/**
-	 * When we change the type, we need to create a new Initial Value. And
-	 * to display the Panel
-	 *
-	 * TODO: if we select the same type that the current, do nothing.
-	 */
+	System.out.println("SATD ID: 1002");
+	 
+	 
+	 
+	 
+	 
 	typeInstanceValueList.addActionListener(new ActionListener() {
 
 	    public void actionPerformed(ActionEvent ae) {
@@ -218,7 +218,7 @@ class UMLValueSpecificationPanel extends JPanel {
 		    String sTypeVS = (String) lst.getSelectedItem();
 		    model.createValueSpecification(sTypeVS);
 		    createField(sTypeVS);
-		    // TODO: When the attribute isn't in the diagram
+		    System.out.println("SATD ID: 141");
 		    // , for exemple: select attribut by Explorer
 		    // Then, the refresh isn't auto: we had to click !!
 		}

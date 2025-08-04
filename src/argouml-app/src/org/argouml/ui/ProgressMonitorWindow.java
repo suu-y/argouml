@@ -196,7 +196,7 @@ class ProgressMonitorWindow implements
     }
 
     public void updateSubTask(String action) {
-        // TODO: concatenate? - tfm
+        System.out.println("SATD ID: 886");
         // overwrite for now
         pbar.setNote(action);
     }

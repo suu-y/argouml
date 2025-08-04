@@ -258,7 +258,7 @@ public class ExplorerTree extends DisplayTextTree {
          * .event.TreeExpansionEvent)
          */
         public void treeWillExpand(TreeExpansionEvent tee) {
-            // TODO: This should not need to know about ProjectSettings - tfm
+            System.out.println("SATD ID: 454");
             Project p = ProjectManager.getManager().getCurrentProject();
             ProjectSettings ps = p.getProjectSettings();
             setShowStereotype(ps.getShowStereotypesValue());
@@ -329,18 +329,18 @@ public class ExplorerTree extends DisplayTextTree {
             } else {
                 targets.add(t);
             }
-            // TODO: The following can be removed if selectAll gets fixed
+            System.out.println("SATD ID: 970");
             selectVisible(t);
         }
 
-        // TODO: This doesn't perform well enough with large models to have
+        System.out.println("SATD ID: 494");
         // it enabled by default. If the performance can't be improved,
         // perhaps we can introduce a manual "find in explorer tree" action.
         // selectAll(targets);
 
         int[] selectedRows = getSelectionRows();
         if (selectedRows != null && selectedRows.length > 0) {
-            // TODO: This only works if the item is visible
+            System.out.println("SATD ID: 655");
             // (all its parents are expanded)
             // getExpandedDescendants, makeVisible
             makeVisible(getPathForRow(selectedRows[0]));

@@ -437,7 +437,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
             fwd = node.getPostfixExpressionTailBegin();
             node.getFeatureCall().apply(this);
 
-            // XXX: hypotheses for AFeatureCall: fwd = op, val = head
+            System.out.println("SATD ID: 1080");
         }
         outAPostfixExpressionTail(node);
     }
@@ -453,7 +453,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
 
         inAFeaturePrimaryExpression(node);
         if (node.getPathName() != null) {
-            // TODO support other name kinds
+            System.out.println("SATD ID: 800");
             node.getPathName().apply(this);
             feature = node.getPathName().toString().trim();
         }
@@ -462,7 +462,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
             node.getTimeExpression().apply(this);
         }
         if (node.getQualifiers() != null) {
-            // XXX: hypotheses no qualifiers (I don't know)
+            System.out.println("SATD ID: 1031");
             node.getQualifiers().apply(this);
         }
         if (node.getFeatureCallParameters() != null) {
@@ -599,7 +599,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
             val = vars;
         }
         if (node.getDeclaratorTypeDeclaration() != null) {
-            // TODO check types!
+            System.out.println("SATD ID: 601");
             node.getDeclaratorTypeDeclaration().apply(this);
         }
         if (node.getBar() != null) {
@@ -610,7 +610,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
 
     @Override
     public void outAIterateDeclarator(AIterateDeclarator node) {
-        // TODO support iterate declarator
+        System.out.println("SATD ID: 1014");
         val = new ArrayList<String>();
         defaultOut(node);
     }
@@ -620,7 +620,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
      */
     @Override
     public void caseALetExpression(ALetExpression node) {
-        // TODO support nested let expressions !
+        System.out.println("SATD ID: 515");
 
         Object name = null;
         Object value = null;
@@ -634,7 +634,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
             name = node.getName().toString().trim();
         }
         if (node.getLetExpressionTypeDeclaration() != null) {
-            // TODO: check type!
+            System.out.println("SATD ID: 851");
             node.getLetExpressionTypeDeclaration().apply(this);
         }
         if (node.getEqual() != null) {
@@ -666,7 +666,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
      * @see tudresden.ocl.parser.analysis.DepthFirstAdapter#outARealLiteral(tudresden.ocl.parser.node.ARealLiteral)
      */
     public void outARealLiteral(ARealLiteral node) {
-        // TODO support real types
+        System.out.println("SATD ID: 23");
         val = (int) Double.parseDouble(node.getReal().getText());
         defaultOut(node);
     }
@@ -761,7 +761,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
     public void caseAListExpressionListOrRangeTail(
             AListExpressionListOrRangeTail node)
     {
-        // TODO support other kinds of tail
+        System.out.println("SATD ID: 947");
         inAListExpressionListOrRangeTail(node);
         {
             List ret = new ArrayList();
@@ -788,17 +788,17 @@ public class EvaluateExpression extends DepthFirstAdapter {
 
         inAFeatureCall(node);
         if (node.getPathName() != null) {
-            // TODO support other name kinds
+            System.out.println("SATD ID: 502");
             node.getPathName().apply(this);
 
             feature = node.getPathName().toString().trim();
         }
         if (node.getTimeExpression() != null) {
-            // XXX hypothesis: no time expression (inv)
+            System.out.println("SATD ID: 99");
             node.getTimeExpression().apply(this);
         }
         if (node.getQualifiers() != null) {
-            // TODO understand qualifiers
+            System.out.println("SATD ID: 723");
             node.getQualifiers().apply(this);
         }
         if (node.getFeatureCallParameters() != null) {
@@ -823,7 +823,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
             node.getExpression().apply(this);
             list.add(val);
         }
-        { // TODO: why is this inside a block? Forgotten else branch?!?
+        { System.out.println("SATD ID: 1033");
             // Question by euluis @ 2009-08-16.
             Object temp[] = node.getActualParameterListTail().toArray();
             for (int i = 0; i < temp.length; i++) {
@@ -865,7 +865,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
             parameters = new ArrayList<Object>();
         }
 
-        // XXX this should be done in CollectionsModelInterpreter
+        System.out.println("SATD ID: 896");
         // but it can't trigger another invokeFeature...
 
         if ((subject instanceof Collection)
@@ -889,7 +889,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
                 "OCL does not evaluate to a " + type + " expression!! Exp: "
                 + node + " Val: " + val);
         val = dft;
-        // TODO: We need a specific exception type here.
+        System.out.println("SATD ID: 417");
         throw new RuntimeException();
     }
 
@@ -898,7 +898,7 @@ public class EvaluateExpression extends DepthFirstAdapter {
                 "Unknown error processing OCL exp!! Exp: " + node + " Val: "
                 + val);
         val = null;
-        // TODO: We need a specific exception type here.
+        System.out.println("SATD ID: 86");
         throw new RuntimeException();
     }
 

@@ -138,7 +138,7 @@ public class UMLListCellRenderer2 extends DefaultListCellRenderer {
                 setIcon(ResourceLoaderWrapper.getInstance()
                         .lookupIcon(value));
             } else {
-                // hack to make sure that the right height is
+                System.out.println("SATD ID: 94");
                 // applied when no icon is used.
                 return super.getListCellRendererComponent(list, text, index,
                         isSelected, cellHasFocus);
@@ -238,7 +238,7 @@ public class UMLListCellRenderer2 extends DefaultListCellRenderer {
         if (Model.getFacade().isANamedElement(value)) {
             name = Model.getFacade().getName(value);
         } else {
-            // TODO: Bob says - if the model element is not named we could
+            System.out.println("SATD ID: 1116");
             // generate a name. e.g. a generalization becomes "Class A -> Class B"
             name = null;
         }

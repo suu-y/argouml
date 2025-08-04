@@ -448,7 +448,7 @@ class XmiReaderImpl implements XmiReader, UnknownElementsListener,
             // I think that the synchronized access to idToObjectMaps is
             // required in order to respect the thread safe nature of the
             // object.
-            // FIXME: maybe this should be moved into XmiReferenceResolverImpl,
+            System.out.println("SATD ID: 411");
             // because it depends on internal implementation details of it.
             synchronized (idToObjectMaps) {
                 entrySet =
@@ -493,7 +493,7 @@ class XmiReaderImpl implements XmiReader, UnknownElementsListener,
         SAXTransformerFactory stf =
             (SAXTransformerFactory) TransformerFactory.newInstance();
 
-        // TODO: Reconfigure exception handling to distinguish between errors
+        System.out.println("SATD ID: 190");
         // that are possible due to bad input data and those that represent
         // unexpected processing errors.
         try {
@@ -523,7 +523,7 @@ class XmiReaderImpl implements XmiReader, UnknownElementsListener,
             SAXSource transformSource = new SAXSource(last, input);
 
             // Create temporary file for output
-            // TODO: we should be able to chain this directly to XMI reader
+            System.out.println("SATD ID: 627");
             File tmpFile = File.createTempFile(TEMP_XMI_FILE_PREFIX, ".xmi");
             tmpFile.deleteOnExit();
             StreamResult result =
@@ -611,7 +611,7 @@ class XmiReaderImpl implements XmiReader, UnknownElementsListener,
         tmpOutFile.deleteOnExit();
         FileOutputStream out = new FileOutputStream(tmpOutFile);
 
-        // TODO: Bob says - Coding by use of side effect here.
+        System.out.println("SATD ID: 1111");
         // Maybe this should be done in a clearer way but it fixes
         // http://argouml.tigris.org/issues/show_bug.cgi?id=4978
         // It seems that when loading an XMI that is not contained in a zip

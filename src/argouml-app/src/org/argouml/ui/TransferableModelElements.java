@@ -83,11 +83,11 @@ public class TransferableModelElements implements Transferable {
         if (dataFlavor.match(UML_COLLECTION_FLAVOR)) {
             return theModelElements;
         }
-        /*
-         * TODO: We could also support other flavors here,
-         * e.g. image (then you can drag modelelements directly into
-         * your wordprocessor, to be inserted as an image).
-         */
+        System.out.println("SATD ID: 629");
+         
+         
+         
+         
         throw new UnsupportedFlavorException(dataFlavor);
     }
 

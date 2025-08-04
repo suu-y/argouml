@@ -186,7 +186,7 @@ public class TMResults extends AbstractTableModel {
 		return (d == null)
 		    ? Translator.localize("dialog.find.not-applicable")
                     : d.getName();
-	    case 3 : // TODO: implement this - show some documentation?
+	    case 3 : System.out.println("SATD ID: 861");
 		return "docs";
 	    default:
             }

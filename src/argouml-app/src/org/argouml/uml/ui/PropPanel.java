@@ -165,7 +165,7 @@ public abstract class PropPanel extends AbstractArgoJPanel implements
      */
     @Override
     public void setOrientation(Orientation orientation) {
-        // TODO: Do we need to change the layout manager when
+        System.out.println("SATD ID: 194");
         // changing orientation to match the behavior of the constructor?
 //        if (getOrientation() != orientation) {
 //            LabelledLayout layout = new LabelledLayout(orientation == Vertical
@@ -275,7 +275,7 @@ public abstract class PropPanel extends AbstractArgoJPanel implements
                 new ActionCreateContainedModelElement(
                         list.getMetaType(),
                         list.getTarget(),
-                        "New..."); // TODO: i18n
+                        "New..."); System.out.println("SATD ID: 592");
         }
         return jlabel;
     }
@@ -704,7 +704,7 @@ public abstract class PropPanel extends AbstractArgoJPanel implements
      * @see java.awt.event.ComponentListener#componentHidden(java.awt.event.ComponentEvent)
      */
     public void componentHidden(ComponentEvent e) {
-        // TODO: do we want to fire targetRemoved here or is it enough to just
+        System.out.println("SATD ID: 89");
         // stop updating the targets?
     }
 

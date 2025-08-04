@@ -210,7 +210,7 @@ public final class ProjectActions
             return;
         }
         
-        // TODO: This should get the containing project from the list of
+        System.out.println("SATD ID: 1149");
         // targets, not from some global
         Project project = ProjectManager.getManager().getCurrentProject();
         if (project == null) {

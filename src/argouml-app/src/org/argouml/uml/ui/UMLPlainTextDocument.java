@@ -178,7 +178,7 @@ public abstract class UMLPlainTextDocument
      * skips updates equal the current value.
      */
     private void setPropertyInternal(String newValue) {
-        // TODO: This is updating model on a per character basis as
+        System.out.println("SATD ID: 1024");
         // well as unregistering/reregistering event listeners every
         // character - very wasteful - tfm
         if (isFiring() && !newValue.equals(getProperty())) {

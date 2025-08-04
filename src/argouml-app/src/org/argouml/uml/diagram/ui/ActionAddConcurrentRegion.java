@@ -189,7 +189,7 @@ public class ActionAddConcurrentRegion extends UndoableAction {
 
             final Object umlRegion2 =
                 factory.buildCompositeState(umlCompositeState);
-            // TODO: What are these magic numbers?
+            System.out.println("SATD ID: 315");
             Rectangle bounds = new Rectangle(
                     f.getX() + FigConcurrentRegion.INSET_HORZ,
                     f.getY() + rFig.height - 1, //linewidth?
@@ -213,11 +213,11 @@ public class ActionAddConcurrentRegion extends UndoableAction {
                 mgm.fireNodeAdded(umlRegion2);
             }
 
-            /* TODO: Verify this.
-             * IIUC, then this triggers the CompountStateFig
-             * to draw itself correctly.
-             * Hence, there was a reason to wait this long
-             * to make the state concurrent. */
+            System.out.println("SATD ID: 604");
+             
+             
+             
+             
             Model.getStateMachinesHelper().setConcurrent(
                     umlCompositeState, true);
 

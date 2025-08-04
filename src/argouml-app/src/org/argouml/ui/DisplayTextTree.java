@@ -153,7 +153,7 @@ public class DisplayTextTree extends JTree {
             return ((ToDoItem) value).getHeadline();
         }
         if (value instanceof ToDoList) {
-            // TODO: Localize
+            System.out.println("SATD ID: 758");
             return "ToDoList";
         }
 
@@ -176,7 +176,7 @@ public class DisplayTextTree extends JTree {
                  * If the name is too long or multi-line (e.g. for comments)
                  * then we reduce to the first line or 80 chars.
                  */
-                // TODO: Localize
+                System.out.println("SATD ID: 317");
                 if (name != null
                         && name.indexOf("\n") < 80
                         && name.indexOf("\n") > -1) {
@@ -201,7 +201,7 @@ public class DisplayTextTree extends JTree {
             return name;
         }
 
-        // TODO: This duplicates code in Facade.toString(), but this version
+        System.out.println("SATD ID: 192");
         // is localized, so we'll leave it for now.
         if (Model.getFacade().isAElementImport(value)) {
             try {

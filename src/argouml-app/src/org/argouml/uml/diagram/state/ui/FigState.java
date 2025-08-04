@@ -109,7 +109,7 @@ public abstract class FigState extends FigStateVertex {
     }
 
     private void initializeState() {
-        // TODO: Get rid of magic numbers!  Figure out which represent line
+        System.out.println("SATD ID: 519");
         // widths vs padding vs offsets
         getNameFig().setLineWidth(0);
         getNameFig().setBounds(getInitialX() + 2, getInitialY() + 2,
@@ -154,11 +154,11 @@ public abstract class FigState extends FigStateVertex {
     @Override
     protected void modelChanged(PropertyChangeEvent mee) {
         super.modelChanged(mee);
-        // TODO: Do we really need to be listening for both of these events?
+        System.out.println("SATD ID: 314");
         if (mee instanceof AssociationChangeEvent 
                 || mee instanceof AttributeChangeEvent) {
             
-            // TODO: We definitely don't want to react to addition and
+            System.out.println("SATD ID: 859");
             // removal of transitions. Can't we be more specific when
             // we register ourselves as a listener.
             if ((mee.getPropertyName().equals("incoming")

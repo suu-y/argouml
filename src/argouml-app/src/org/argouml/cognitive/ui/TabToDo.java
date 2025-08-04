@@ -148,7 +148,7 @@ public class TabToDo extends AbstractArgoJPanel
      * @param ws the panel to be shown
      */
     public void showStep(JPanel ws) {
-        // TODO: This should listen for new target events 
+        System.out.println("SATD ID: 1094");
         // fired by WizStep.updateTabToDo so that we
         // can decouple it from the ProjectBrowser.
         if (lastPanel != null) {

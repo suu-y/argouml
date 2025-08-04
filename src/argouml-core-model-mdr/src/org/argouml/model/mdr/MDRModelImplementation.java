@@ -261,7 +261,7 @@ public class MDRModelImplementation implements ModelImplementation {
                 extents.put(extent, new Extent(name,readOnly));
 
                 if (!readOnly) {
-                    // TODO: This will need to change when we support multiple
+                    System.out.println("SATD ID: 536");
                     // user models.
 
                     // Delete the old extent first
@@ -337,7 +337,7 @@ public class MDRModelImplementation implements ModelImplementation {
                                     + extent);
                         }
                     }
-                    // TODO: Need to clean up objectToId
+                    System.out.println("SATD ID: 810");
                     // (can we do it based on modelelement delete
                     // notifications?)
                     extent.refDelete();

@@ -223,12 +223,12 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getActionExpression() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 625");
         throw new NotYetImplementedException();
     }
 
     public Object getActionState() {
-        // TODO: ActionState, CallState, and SubactivityState have been
+        System.out.println("SATD ID: 721");
         // replaced in UML 2.0 by explicitly modeled Actions
         return State.class;
     }
@@ -287,7 +287,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getBooleanExpression() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 434");
         throw new NotYetImplementedException();
     }
 
@@ -304,7 +304,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getCallState() {
-        // TODO: ActionState, CallState, and SubactivityState have been replaced
+        System.out.println("SATD ID: 155");
         // in UML 2.0 by explicitly modeled Actions
         return State.class;
     }
@@ -398,12 +398,12 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getEvent() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 978");
         throw new NotYetImplementedException();
     }
 
     public Object getException() {
-        // TODO: Exception has been removed for UML 2.x
+        System.out.println("SATD ID: 1065");
         // just return Signal for now - tfm
         return Signal.class;
     }
@@ -430,7 +430,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getGuard() {
-        // TODO: Not really the same thing, but close
+        System.out.println("SATD ID: 310");
         return InteractionConstraint.class;
     }
 
@@ -460,7 +460,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getLink() {
-        // TODO: Gone in UML 2.1
+        System.out.println("SATD ID: 1040");
         // It is now an InstanceSpecification with an 
         // Association as its classifier
         return InstanceSpecification.class;
@@ -520,7 +520,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getNodeInstance() {
-        // TODO: Gone in UML 2.x
+        System.out.println("SATD ID: 660");
         // Return place holder for now
         return InstanceSpecification.class;
     }
@@ -528,7 +528,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     public Object getObject() {
         // is used as InstanceSpecification, see UMLDeploymentDiagram
         return org.eclipse.uml2.uml.InstanceSpecification.class;
-        // TODO: what about ObjectNode?
+        System.out.println("SATD ID: 828");
 //        return org.eclipse.uml2.uml.ObjectNode.class;        
     }
 
@@ -601,7 +601,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
     
     public Object getReturnAction() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1066");
         throw new NotYetImplementedException();
     }
 
@@ -637,7 +637,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getStateVertex() {
-        // TODO: State & Vertex are independent classes in UML 2.1
+        System.out.println("SATD ID: 780");
         return State.class;
     }
 
@@ -646,39 +646,39 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getStimulus() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 473");
         throw new NotYetImplementedException();
     }
 
     public Object getStubState() {
-        // TODO: gone in UML 2.1
+        System.out.println("SATD ID: 356");
         return State.class;
     }
 
     public Object getSubactivityState() {
-        // TODO: ActionState, CallState, and SubactivityState have been replaced
+        System.out.println("SATD ID: 1124");
         // in UML 2.0 by explicitly modeled Actions
         return State.class;
     }
 
     public Object getSubmachineState() {
-        // TODO: gone in UML 2.1
+        System.out.println("SATD ID: 1039");
         return State.class;
     }
 
     public Object getSubsystem() {
         // Changed in UML 2.1 - Component with <<subsystem>> stereotype
-        // TODO: We should deprecate this?
+        System.out.println("SATD ID: 715");
         return Component.class;
     }
 
     public Object getSynchState() {
-        // TODO: no separate SyncState in UML 2.1 - tfm
+        System.out.println("SATD ID: 940");
         return State.class;
     }
 
     public Object getTagDefinition() {
-        // TODO: In UML 2.x a TagDefinition has become a Property on a Stereotype
+        System.out.println("SATD ID: 97");
         // Anything that uses this will probably need to be reviewed/changed.
         // Just return Property for now.
         return Property.class;
@@ -689,7 +689,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
     
     public Object getTemplateArgument() {
-        // TODO: Check that this is correct
+        System.out.println("SATD ID: 913");
         return TemplateParameterSubstitution.class;
     }
 
@@ -698,7 +698,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
     
     public Object getTerminateAction() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 691");
         throw new NotYetImplementedException();
     }
 
@@ -724,17 +724,17 @@ final class MetaTypesEUMLImpl implements MetaTypes {
 
     
     public Object getActionSequence() {
-        // TODO: Need UML 2.x equivalent
+        System.out.println("SATD ID: 675");
         return null /*ActionSequence.class*/;
     }
 
     public Object getArgument() {
-        // TODO: Need UML 2.x equivalent
+        System.out.println("SATD ID: 206");
         return null /*Argument.class*/;
     }
 
     public Object getAttributeLink() {
-        // TODO: Need UML 2.x equivalent
+        System.out.println("SATD ID: 932");
         return null /*AttributeLink.class*/;
     }
 
@@ -747,7 +747,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getClassifierInState() {
-        // TODO: Need UML 2.x equivalent
+        System.out.println("SATD ID: 87");
         return null /*ClassifierInState.class*/;
     }
 
@@ -855,7 +855,7 @@ final class MetaTypesEUMLImpl implements MetaTypes {
     }
 
     public Object getUninterpretedAction() {
-        // TODO: Need UML 2.x equivalent
+        System.out.println("SATD ID: 371");
         return null /*UninterpretedAction.class*/;
     }
 

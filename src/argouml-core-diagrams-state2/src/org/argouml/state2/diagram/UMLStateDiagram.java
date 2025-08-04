@@ -260,12 +260,12 @@ public class UMLStateDiagram extends UMLDiagram implements StateDiagram {
 
     @Override
     public boolean isRelocationAllowed(Object base) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 172");
         return false;
     }
 
     public Collection getRelocationCandidates(Object root) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 1129");
         return null;
     }
     

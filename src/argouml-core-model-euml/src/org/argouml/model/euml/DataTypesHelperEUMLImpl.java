@@ -135,7 +135,7 @@ class DataTypesHelperEUMLImpl implements DataTypesHelper {
                     "handle must be instance "
                     + "of OpaqueExpression or OpaqueBehavior"); //$NON-NLS-1$
         }
-        // TODO: Support more than one body/language
+        System.out.println("SATD ID: 1097");
         if (bodies.size() > 1) {
             throw new IllegalStateException(
                     "Only one body/lang supported"); //$NON-NLS-1$
@@ -156,7 +156,7 @@ class DataTypesHelperEUMLImpl implements DataTypesHelper {
                     "handle must be instance "
                     + "of OpaqueExpression or OpaqueBehavior"); //$NON-NLS-1$
         }
-        // TODO: Support more than one body/language
+        System.out.println("SATD ID: 291");
         if (langs.size() > 1) {
             throw new IllegalStateException(
                     "Only one body/lang supported"); //$NON-NLS-1$
@@ -238,7 +238,7 @@ class DataTypesHelperEUMLImpl implements DataTypesHelper {
             if (newValueSpecification != null) {
                 property.setDefaultValue(newValueSpecification);
             }
-        } // TODO else => Exception !
+        } System.out.println("SATD ID: 600");
 
         return newValueSpecification;
         
@@ -289,7 +289,7 @@ class DataTypesHelperEUMLImpl implements DataTypesHelper {
                 langs.add((String) tabValues[i + 1]);
             }
         }
-        // TODO Expression and InstanceValue (how)
+        System.out.println("SATD ID: 712");
         // If anyone have an example.
         
     }
@@ -331,7 +331,7 @@ class DataTypesHelperEUMLImpl implements DataTypesHelper {
                 }
             }
         }
-        // TODO Expression and InstanceValue (how)
+        System.out.println("SATD ID: 165");
         // If anyone have an example.
         
         return tabValues;

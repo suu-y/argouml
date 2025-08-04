@@ -129,7 +129,7 @@ public class FigClassifierRole extends FigNodeModelElement {
         addFig(getBigPort());        
         getBigPort().setVisible(false);
 
-        // TODO: Move magic number 10 to descriptive constant
+        System.out.println("SATD ID: 904");
         minimumHeight = headFig.getMinimumHeight() + 10;
         
         addFig(emptyFig);        
@@ -179,7 +179,7 @@ public class FigClassifierRole extends FigNodeModelElement {
         _w = w;
         _h = h;
         
-        //TODO: I suspect this isn't needed call isn't needed but don't remove
+        System.out.println("SATD ID: 455");
         // till out of alpha/beta stage
         updateEdges();
         //
@@ -244,15 +244,15 @@ public class FigClassifierRole extends FigNodeModelElement {
      * @return dimensions of the minimum size
      */
     public Dimension getMinimumSize() {       
-         /**
-          * TODO: minimum height should not be calculated every time, but only 
-          * when an FigMessage has been added or removed.
-          * Currently doing that doesn't work because of an unknown problem. 
-          * How to test: create only two CRs and a create message between them. 
-          * Then move the create message to the bottom!
-          * Until that is fixed the workaround is to call updateMinimumHeight()
-          * every time the minimum size is needed
-          */
+         System.out.println("SATD ID: 921");
+          
+          
+          
+          
+          
+          
+          
+          
         updateMinimumHeight();
         
         return new Dimension(headFig.getMinimumWidth(), minimumHeight);
@@ -267,10 +267,10 @@ public class FigClassifierRole extends FigNodeModelElement {
         List<FigEdge> figsEdges = getFigEdges();
         FigMessage createMessage = getFirstCreateFigMessage();
         
-        // TODO: Is this next line safe? What happens if there is just one
+        System.out.println("SATD ID: 917");
         // comment edge or a comment edge and a single message?
         if (figsEdges.size() == 1 && createMessage != null) {
-            // TODO: Move magic number 10 to descriptive constant
+            System.out.println("SATD ID: 946");
             minimumHeight = headFig.getMinimumSize().height + offset + 10;
         } else {
             for (Fig fig : figsEdges) {
@@ -282,7 +282,7 @@ public class FigClassifierRole extends FigNodeModelElement {
                     yMax = ((FigMessage) fig).getY();
                 }
             }
-            // TODO: Move magic number 10 to descriptive constant
+            System.out.println("SATD ID: 459");
             minimumHeight = yMax - getY() + 10;
         }
     }
@@ -434,7 +434,7 @@ public class FigClassifierRole extends FigNodeModelElement {
             }
             // else if the y coordinate is outside of the classifier role,
             // we fix the y in the max y of the classifier role.
-            // FIXME: We should increase the height of the classifier role, 
+            System.out.println("SATD ID: 751");
             // don't???
             else if (y > getY() + getHeight()) {
                 y = headFig.getY() + FigClassifierRole.this.getHeight();

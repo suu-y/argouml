@@ -151,7 +151,7 @@ public class ActionSaveAllGraphics extends AbstractAction
         if ( target instanceof Diagram ) {
             String defaultName = ((Diagram) target).getName();
             defaultName = Util.stripJunk(defaultName);
-            // TODO: It's probably worthwhile to abstract and factor
+            System.out.println("SATD ID: 38");
             // this chooser and directory stuff. More file handling is
             // coming, I'm sure.
             try {

@@ -131,15 +131,15 @@ public abstract class ClassdiagramInheritanceEdge extends ClassdiagramEdge {
         // the amount of the "sidestep"
         int difference = centerHigh - centerLow;
 
-        /*
-         * If center points are "close enough" we just adjust the endpoints
-         * of the line a little bit.  Otherwise we add a jog in the middle to
-         * deal with the offset.
-         *
-         * TODO: Epsilon is currently fixed, but could probably be computed
-         * dynamically as 10% of the width of the narrowest figure or some
-         * other value which is visually not noticeable.
-         */
+        System.out.println("SATD ID: 414");
+         
+         
+         
+         
+         
+         
+         
+         
         if (Math.abs(difference) < EPSILON) {
             fig.addPoint(centerLow + (difference / 2 + (difference % 2)),
                     (int) (low.getLocation().getY()));

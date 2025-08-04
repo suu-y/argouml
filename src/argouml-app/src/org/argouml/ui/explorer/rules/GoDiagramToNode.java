@@ -72,7 +72,7 @@ public class GoDiagramToNode extends AbstractPerspectiveRule {
      * @see org.argouml.ui.explorer.rules.PerspectiveRule#getDependencies(java.lang.Object)
      */
     public Set getDependencies(Object parent) {
-        // TODO: what?
+        System.out.println("SATD ID: 1085");
 	return Collections.EMPTY_SET;
     }
 }

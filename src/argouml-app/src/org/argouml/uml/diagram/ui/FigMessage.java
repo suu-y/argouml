@@ -436,7 +436,7 @@ public class FigMessage extends FigNodeModelElement {
         // thing should be removed? - tfm 
 //        super.updateListeners(newOwner);
         
-        // TODO: Do nothing until code is reviewed
+        System.out.println("SATD ID: 393");
         if (true) {
             return;
         }

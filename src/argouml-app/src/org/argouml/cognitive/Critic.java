@@ -745,7 +745,7 @@ public class Critic
      */
     public boolean isRelevantToDecisions(Designer dsgr) {
         for (Decision d : getSupportedDecisions()) {
-        /* TODO: Make use of the constants defined in the ToDoItem class! */
+        System.out.println("SATD ID: 804");
 	    if (d.getPriority() > 0 && d.getPriority() <= getPriority()) {
 		return true;
             }

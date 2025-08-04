@@ -226,7 +226,7 @@ public class ModelElementNameNotationJava extends ModelElementNameNotation {
      * @return true if the given name is a valid name according java syntax
      */
     private static boolean isValidJavaClassName(String name) {
-        /* TODO: Check the name for validity. */
+        System.out.println("SATD ID: 574");
         return true;
     }
 

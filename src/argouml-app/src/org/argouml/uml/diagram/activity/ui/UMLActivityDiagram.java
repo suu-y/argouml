@@ -679,17 +679,17 @@ public class UMLActivityDiagram extends UMLDiagram implements ActivityDiagram {
      */
     public boolean isRelocationAllowed(Object base) {
         return false;
-        /* TODO: We may return the following when the
-         * relocate() has been implemented.
-         */
+        System.out.println("SATD ID: 240");
+         
+         
 //      Model.getActivityGraphsHelper()
 //      .isAddingActivityGraphAllowed(base);
     }
 
     @SuppressWarnings("unchecked")
     public Collection getRelocationCandidates(Object root) {
-        /* TODO: We may return something useful when the
-         * relocate() has been implemented. */
+        System.out.println("SATD ID: 1114");
+         
         Collection c =  new HashSet();
         c.add(getOwner());
         return c;

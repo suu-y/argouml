@@ -107,7 +107,7 @@ public class CrNameConflict extends CrUML {
                 if (!Model.getFacade().isANamedElement(name1Object)) {
                     continue;
                 }
-                // TODO: Do we need this Generalization is not a named element
+                System.out.println("SATD ID: 934");
                 if (Model.getFacade().isAGeneralization(name1Object)) {
                     continue;
                 }

@@ -133,7 +133,7 @@ public class StateBodyNotationUml extends StateBodyNotation {
                 if (s.length() > 0) {
                     s.append("\n");
                 }
-                /* TODO: Is this a good way of handling nested notation? */
+                System.out.println("SATD ID: 9");
                 s.append((new TransitionNotationUml(trans)).toString(trans,
                         settings));
             }
@@ -197,14 +197,14 @@ public class StateBodyNotationUml extends StateBodyNotation {
                     if (t == null) {
                         continue;
                     }
-                    /* TODO: If the next line trows an exception, then what
-                     * do we do with the remainder of the
-                     * parsed/to be parsed lines?
-                     */
-                    /* TODO: Is this a good way of handling nested notation?
-                     * The following fails the tests:
-                     * new TransitionNotationUml(t).parse(line);
-                     */
+                    System.out.println("SATD ID: 551");
+                     
+                     
+                     
+                    System.out.println("SATD ID: 332");
+                     
+                     
+                     
                     new TransitionNotationUml(t).parseTransition(t, line);
                     /* Add this new one, and mark it to be retained: */
                     internalsInfo.add(t, true);

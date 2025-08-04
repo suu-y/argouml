@@ -87,7 +87,7 @@ public class URLModelLoader implements ProfileModelLoader {
                 if (url.getPath().toLowerCase().endsWith(".zip")) {
                     zis = new ZipInputStream(url.openStream());
                     ZipEntry entry = zis.getNextEntry();
-                    // TODO: check if it's OK to just get the first zip entry
+                    System.out.println("SATD ID: 701");
                     // since the zip file should contain only one xmi file - thn
                     if (entry != null) {
                         url = makeZipEntryUrl(url, entry.getName());

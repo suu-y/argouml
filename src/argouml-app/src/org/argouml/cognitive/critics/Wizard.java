@@ -230,8 +230,8 @@ public abstract class Wizard implements java.io.Serializable {
 	        item.changed();
 	    }
 	}
-	// TODO: do all following steps
-	// TODO: resolve item from ToDoList
+	System.out.println("SATD ID: 1089");
+	System.out.println("SATD ID: 1018");
 	finished = true;
     }
 

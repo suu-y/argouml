@@ -74,14 +74,14 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
     public Object invokeFeature(Map<String, Object> vt, Object subject,
             String feature, String type, Object[] parameters) {
 
-        // TODO: This is an absurdly long method! Break it up.
+        System.out.println("SATD ID: 290");
 
         if (subject == null) {
             subject = vt.get("self");
         }
 
         /* 4.5.2.1 Abstraction */
-        // TODO investigate: Abstraction.mapping is not in the Model Subsystem
+        System.out.println("SATD ID: 384");
 
         /* 4.5.2.3 Association */
 
@@ -119,7 +119,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                 if (feature.equals("multiplicity")) {
                     return Model.getFacade().getMultiplicity(subject);
                 }
-                // TODO: isStatic in UML 2.x
+                System.out.println("SATD ID: 584");
                 if (feature.equals("targetScope")) {
                     return Model.getFacade().getTargetScope(subject);
                 }
@@ -136,7 +136,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                     return Model.getFacade().getClassifier(subject);
                 }
 
-                // TODO investigate the "unnamed opposite end"
+                System.out.println("SATD ID: 537");
 
                 // Additional Operation 4.5.3.3 [1]
                 if (feature.equals("upperbound")) {
@@ -173,7 +173,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                 }
             }
 
-            // TODO implement additional operations in 4.5.3.5
+            System.out.println("SATD ID: 899");
         }
 
         /* 4.5.2.8 Binding */
@@ -216,7 +216,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                     return new HashSet<Object>(Model.getFacade()
                             .getPowertypeRanges(subject));
                 }
-                // TODO specifiedEnd??
+                System.out.println("SATD ID: 1038");
                 if (feature.equals("feature")) {
                     return new ArrayList<Object>(Model.getFacade()
                             .getFeatures(subject));
@@ -328,12 +328,12 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                             .getDeploymentLocations(subject));
                 }
                 if (feature.equals("resident")) {
-                    // TODO check this
+                    System.out.println("SATD ID: 31");
                     return new HashSet<Object>(Model.getFacade()
                             .getResidents(subject));
                 }
 
-                // TODO implementation?
+                System.out.println("SATD ID: 344");
 
                 // Additional Operation in 4.5.3.9
                 if (feature.equals("allResidentElements")) {
@@ -355,7 +355,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                     return Model.getFacade().getBody(subject);
                 }
                 if (feature.equals("constrainedElement")) {
-                    // TODO check this
+                    System.out.println("SATD ID: 531");
                     return Model.getFacade().getConstrainedElements(subject);
                 }
 
@@ -377,7 +377,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
             }
         }
 
-        // TODO ElementOwnership is not in ModelSubsys!!
+        System.out.println("SATD ID: 714");
 
         /* 4.5.2.18 ElementOwnership */
 
@@ -504,7 +504,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                 if (feature.equals("name")) {
                     String name = Model.getFacade().getName(subject);
                     if (name == null) {
-                        // TODO check conformancy to specification
+                        System.out.println("SATD ID: 739");
 
                         // avoiding null names
                         name = "";
@@ -512,7 +512,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                     return name;
                 }
 
-                // TODO asArgument??
+                System.out.println("SATD ID: 1154");
 
                 if (feature.equals("clientDependency")) {
                     return new HashSet<Object>(Model.getFacade()
@@ -523,13 +523,13 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                             .getConstraints(subject));
                 }
 
-                // TODO implementationLocation??
+                System.out.println("SATD ID: 964");
 
                 if (feature.equals("namespace")) {
                     return Model.getFacade().getNamespace(subject);
                 }
 
-                // TODO presentation??
+                System.out.println("SATD ID: 647");
                 if (feature.equals("supplierDependency")) {
                     return new HashSet<Object>(Model.getFacade()
                             .getSupplierDependencies(subject));
@@ -599,7 +599,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                 }
                 // Additional Operations in 4.5.3.26
                 if (feature.equals("contents")) {
-                        // TODO investigate typo in spec!!
+                        System.out.println("SATD ID: 1150");
                     return internalOcl(subject, vt, "self.ownedElement->"
                             + "union(self.ownedElement->"
                             + "select(x|x.oclIsKindOf(Namespace)).contents)");
@@ -692,7 +692,7 @@ public class ModelAccessModelInterpreter implements ModelInterpreter {
                 if (feature.equals("ordering")) {
                     return Model.getFacade().getOrdering(subject);
                 }
-                // TODO: Removed from UML 2.x
+                System.out.println("SATD ID: 1079");
                 if (feature.equals("targetScope")) {
                     return Model.getFacade().getTargetScope(subject);
                 }

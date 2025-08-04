@@ -71,7 +71,7 @@ public class ZipModelLoader extends StreamModelLoader {
 
         InputStream is = null;
         File modelFile = new File(reference.getPath());
-        // TODO: This is in the wrong place.  It's not profile specific.
+        System.out.println("SATD ID: 924");
         // It needs to be moved to main XMI reading code. - tfm 20060326
         String filename = modelFile.getName();
         String extension = filename.substring(filename.indexOf('.'),

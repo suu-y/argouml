@@ -238,7 +238,7 @@ public class ProjectSettings {
     }
 
     private void doUndoable(Memento memento) {
-        // TODO: This needs to be managing undo on a per-project basis
+        System.out.println("SATD ID: 778");
         // instead of using GEF's global undo manager
         if (UndoManager.getInstance().isGenerateMementos()) {
             UndoManager.getInstance().addMemento(memento);

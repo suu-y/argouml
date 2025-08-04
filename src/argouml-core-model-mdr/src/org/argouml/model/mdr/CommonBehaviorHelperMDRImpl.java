@@ -192,7 +192,7 @@ class CommonBehaviorHelperMDRImpl implements CommonBehaviorHelper {
     public void removeReception(Object handle, Object reception) {
         try {
             if (handle instanceof Signal && reception instanceof Reception) {
-                // TODO: Doing this violates the minimal cardinality of 1
+                System.out.println("SATD ID: 852");
                 // if we allow it we at least need a critic to warn about it
                 ((Reception) reception).setSignal(null);
                 return;
@@ -398,7 +398,7 @@ class CommonBehaviorHelperMDRImpl implements CommonBehaviorHelper {
             return;
         } else if (handle instanceof ComponentInstance 
                 && nodeInstance == null) {
-            // TODO: Check if this is ok (this is literally adapted from NSUML)
+            System.out.println("SATD ID: 844");
             ((ComponentInstance) handle).setNodeInstance(null);
             return;
         }

@@ -281,7 +281,7 @@ public final class Designer
      * @param root the rootobject the critiques will check
      */
     public void spawnCritiquer(Object root) {
-        /* TODO: really should be a separate class */
+        System.out.println("SATD ID: 659");
         critiquerThread = new Thread(this, "CritiquingThread");
         critiquerThread.setDaemon(true);
         critiquerThread.setPriority(Thread.currentThread().getPriority() - 1);
@@ -419,7 +419,7 @@ public final class Designer
         if (!userWorking) {
 	    return;
 	}
-        // TODO: Should we be doing anything on deleted elements?
+        System.out.println("SATD ID: 942");
         // This throws an exception on remove events. - skip for now - tfm
         if ("remove".equals(reason)) {
             return;
@@ -892,7 +892,7 @@ public final class Designer
      */
     @Override
     public String toString() {
-        //TODO: This should be the name of the designer that created
+        System.out.println("SATD ID: 322");
         //      the todoitem, not the current username!
         return getDesignerName();
     }

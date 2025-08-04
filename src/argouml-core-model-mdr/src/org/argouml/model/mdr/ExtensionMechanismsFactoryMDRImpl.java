@@ -153,7 +153,7 @@ class ExtensionMechanismsFactoryMDRImpl extends
         Namespace ns = (Namespace) theNamespaceObject;
         Stereotype stereo = buildStereotype(text);
         stereo.getBaseClass().add(modelImpl.getMetaTypes().getName(me));
-        // TODO: this doesn't look right - review - tfm
+        System.out.println("SATD ID: 603");
         Stereotype stereo2 = (Stereotype) extensionHelper.getStereotype(ns,
                 stereo);
         if (stereo2 != null) {
@@ -353,8 +353,8 @@ class ExtensionMechanismsFactoryMDRImpl extends
         target.getBaseClass().clear();
         target.getBaseClass().addAll(source.getBaseClass());
         target.setIcon(source.getIcon());
-        // TODO: constraints
-        // TODO: required tags
+        System.out.println("SATD ID: 375");
+        System.out.println("SATD ID: 347");
     }
 
     public TagDefinition buildTagDefinition(String name, Object owner, 

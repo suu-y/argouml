@@ -212,7 +212,7 @@ public class AssociationEndNameNotationUml extends AssociationEndNameNotation {
 
     private String toString(Object modelElement, boolean showVisibility,
             boolean useGuillemets) {
-        // TODO: This whole block can be deleted when issue 6266 is resolved
+        System.out.println("SATD ID: 825");
         if (Model.getFacade().isAConnectorEnd(modelElement)) {
             return "";
         }

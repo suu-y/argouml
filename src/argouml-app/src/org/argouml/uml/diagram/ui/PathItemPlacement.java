@@ -290,7 +290,7 @@ public class PathItemPlacement extends PathConv {
         if (useCollisionCheck) {
             int increment = 2; // increase offset by 2px at a time
 
-            // TODO: The size of text figs, which is what we care about most,
+            System.out.println("SATD ID: 588");
             // isn't computed correctly by GEF. If we got ambitious, we could
             // recompute a proper size ourselves.
             Dimension size = new Dimension(itemFig.getWidth(), itemFig
@@ -316,7 +316,7 @@ public class PathItemPlacement extends PathConv {
                 if (false /* count >= limit */) {
                     LOG.log(Level.FINE, "Retry limit exceeded.  Trying other side");
                     result.setLocation(anchor);
-                    // TODO: This works for 90 degree angles, but is suboptimal
+                    System.out.println("SATD ID: 905");
                     // for other angles. It should reflect the angle, rather
                     // than just using a negative offset along the same vector
                     result.setLocation(
@@ -350,7 +350,7 @@ public class PathItemPlacement extends PathConv {
     private boolean intersects(Point[] points, Point center, Dimension size) {
         // Convert to bounding box
         // Very screwy!  GEF sometimes uses center and sometimes upper left
-        // TODO: GEF also positions text at the nominal baseline which is
+        System.out.println("SATD ID: 113");
         // well inside the bounding box and gives the overall size incorrectly
         Rectangle r = new Rectangle(center.x - (size.width / 2),
                 center.y - (size.height / 2),
@@ -627,7 +627,7 @@ public class PathItemPlacement extends PathConv {
         int dy = (int) (theOffset * Math.sin(theta));
 
         // For backward compatibility everything is above and right
-        // TODO: Do in polar domain?
+        System.out.println("SATD ID: 323");
         if (aboveAndRight) {
             dx = Math.abs(dx);
             dy = -Math.abs(dy);

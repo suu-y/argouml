@@ -65,7 +65,7 @@ public class CrConsiderFacade extends CrUML {
      */
     @Override
     public boolean predicate2(Object dm, Designer dsgr) {
-	/* TODO: Add implementation. */
+	System.out.println("SATD ID: 814");
 	return NO_PROBLEM;
     }
 

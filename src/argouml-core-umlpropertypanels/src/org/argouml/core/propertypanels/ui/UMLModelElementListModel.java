@@ -348,8 +348,8 @@ abstract class UMLModelElementListModel
                                     addElement(o2);
                                 }
                             } else {
-                                /* TODO: If this is an ordered list, then you have to
-                                    add in the right location! */
+                                System.out.println("SATD ID: 638");
+                                    
                                 if (!contains(o)) {
                                     if (lm instanceof Ordered) {
                                         Ordered ordered = (Ordered) lm;
@@ -594,7 +594,7 @@ abstract class UMLModelElementListModel
     protected boolean isValidEvent(PropertyChangeEvent e) {
         boolean valid = false;
         if (!(getChangedElement(e) instanceof Collection)) {
-            // TODO: Considering all delete events to be valid like below
+            System.out.println("SATD ID: 729");
             // is going to cause lots of unecessary work and some problems
             if ((e.getNewValue() == null && e.getOldValue() != null)
                     // Don't test changed element if it was deleted
@@ -711,7 +711,7 @@ abstract class UMLModelElementListModel
      * @return the toolbar.
      */
     public ToolBar getToolbar() {
-        // TODO: First implementation will be to call buildPopop
+        System.out.println("SATD ID: 598");
         // and extract all the contained actions. The toolbar will
         // be built to the same structure.
         // The toolbar will be displayed to the left of the JList

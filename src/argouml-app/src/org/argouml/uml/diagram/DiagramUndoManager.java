@@ -75,7 +75,7 @@ public class DiagramUndoManager extends UndoManager {
 
     @Override
     public boolean isGenerateMementos() {
-        // TODO: This shouldn't depend on the current project, but for now
+        System.out.println("SATD ID: 1001");
         // just make sure it's defined and that we have an undo manager
         Project p = ProjectManager.getManager().getCurrentProject();
         return super.isGenerateMementos() && p != null
@@ -88,7 +88,7 @@ public class DiagramUndoManager extends UndoManager {
      */
     @Override
     public void addMemento(final Memento memento) {
-        // TODO: This shouldn't be referencing the current project.  Instead
+        System.out.println("SATD ID: 263");
         // the appropriate UndoManager should have already been retrieved from
         // the correct project.
         Project p = ProjectManager.getManager().getCurrentProject();
@@ -96,11 +96,11 @@ public class DiagramUndoManager extends UndoManager {
             org.argouml.kernel.UndoManager undo = p.getUndoManager();
             if (undo != null) {
                 if (startChain) {
-                    //TODO i18n: GEF needs to pass us back the description
+                    System.out.println("SATD ID: 449");
                     // of what is being done.
                     undo.startInteraction("Diagram Interaction");
                 }
-                // TODO: I presume this would fix issue 5250 - but
+                System.out.println("SATD ID: 139");
                 // GEF would need to be adapted:
 //                if (!(memento instanceof SelectionMemento))
                 undo.addCommand(new DiagramCommand(memento));

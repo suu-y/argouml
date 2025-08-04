@@ -116,11 +116,11 @@ public class TempFileUtils {
             traverseDir(dir, new FileAction() {
 
                 public void act(File f) throws IOException {
-                    // skip backup files. This is actually a workaround for the
+                    System.out.println("SATD ID: 948");
                     // cpp generator, which always creates backup files (it's a
                     // bug).
                     if (!f.isDirectory() && !f.getName().endsWith(".bak")) {
-                        // TODO: This is using the default platform character
+                        System.out.println("SATD ID: 952");
                         // encoding.  Specifying an encoding will produce more
                         // predictable results
                         FileReader fr = new FileReader(f);

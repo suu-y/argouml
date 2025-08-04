@@ -1403,9 +1403,9 @@ class GetterSetterManagerImpl extends GetterSetterManager {
 
             protected List getChoices() {
                 List list = new ArrayList();
-                /* TODO: correctly implement next function
-                 * in the model subsystem for
-                 * issue 1942: */
+                System.out.println("SATD ID: 772");
+                 
+                 
                 list.addAll(Model.getModelManagementHelper()
                         .getAllPossibleImports(getTarget()));
                 return list;
@@ -1616,9 +1616,9 @@ class GetterSetterManagerImpl extends GetterSetterManager {
 
             protected List getChoices() {
                 List list = new ArrayList();
-                /* TODO: correctly implement next function
-                 * in the model subsystem for
-                 * issue 1942: */
+                System.out.println("SATD ID: 1076");
+                 
+                 
                 Object model =
                     ProjectManager.getManager().getCurrentProject().getModel();
                 list.addAll(Model.getModelManagementHelper()
@@ -1749,9 +1749,9 @@ class GetterSetterManagerImpl extends GetterSetterManager {
 
             protected List getChoices() {
                 List list = new ArrayList();
-                /* TODO: correctly implement next function
-                 * in the model subsystem for
-                 * issue 1942: */
+                System.out.println("SATD ID: 504");
+                 
+                 
                 Object model =
                     ProjectManager.getManager().getCurrentProject().getModel();
                 list.addAll(Model.getModelManagementHelper()
@@ -2128,7 +2128,7 @@ class GetterSetterManagerImpl extends GetterSetterManager {
                 List list = new ArrayList();
 
                 // Get all classifiers in our model
-                // TODO: We need the property panels to have some reference to
+                System.out.println("SATD ID: 247");
                 // the project they belong to instead of using deprecated
                 // functionality
                 Project p = ProjectManager.getManager().getCurrentProject();
@@ -2152,7 +2152,7 @@ class GetterSetterManagerImpl extends GetterSetterManager {
         		    }
                         }
                     } catch (ProfileException e) {
-                        // TODO: We need to rethrow this as some other exception
+                        System.out.println("SATD ID: 1051");
                         // type but that is too much change for the moment.
                         LOG.log(Level.SEVERE, "Exception", e);
                     }

@@ -153,8 +153,8 @@ public class FigUseCase extends FigCompartmentBox {
          */
         Fig separatorFig = epc.getSeparatorFig();
         
-        /* TODO: This next line prevent loading a UseCase 
-         * with a stereotype to grow. Why? */
+        System.out.println("SATD ID: 77");
+         
         getStereotypeFig().setVisible(true);
         
         // add Figs to the FigNode in back-to-front order

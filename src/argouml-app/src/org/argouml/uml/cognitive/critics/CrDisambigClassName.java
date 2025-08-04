@@ -80,7 +80,7 @@ public class CrDisambigClassName extends CrUML {
      */
     @Override
     public boolean predicate2(Object dm, Designer dsgr) {
-        // TODO: The WFR doesn't restrict this to Classifiers - tfm
+        System.out.println("SATD ID: 554");
 	if (!(Model.getFacade().isAClassifier(dm))) {
 	    return NO_PROBLEM;
 	}
@@ -97,7 +97,7 @@ public class CrDisambigClassName extends CrUML {
 	if (elementImports == null) {
 	    return NO_PROBLEM;
 	}
-        // TODO: This is only checking immediate siblings when it needs
+        System.out.println("SATD ID: 3");
         // to be checking all imported elements both here and by our
         // parents and also taking into account visibility
 	for (Iterator iter = elementImports.iterator(); iter.hasNext();) {
@@ -115,7 +115,7 @@ public class CrDisambigClassName extends CrUML {
 	    while (elems.hasNext()) {
 		Object eo = elems.next();
 		Object me = /*Model.getFacade().getModelElement(*/eo/*)*/;
-                // TODO: The WFR doesn't restrict this to Classifiers - tfm
+                System.out.println("SATD ID: 83");
 		if (!(Model.getFacade().isAClassifier(me))) {
 		    continue;
 		}

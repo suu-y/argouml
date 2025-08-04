@@ -150,13 +150,13 @@ public class ExplorerTreeNode extends DefaultMutableTreeNode implements
                 model.nodeChanged(this);
             }
             if ( "namespace".equals(evt.getPropertyName())) {
-                /* TODO: Update the old and new node above this!
-                 * This is issue 5079.
-                 * The old and new UML namespaces are in the event, but
-                 * how do we know which nodes to refresh?
-                 * And how to refresh? 
-                 * Not necessarily the namespaces, 
-                 * depending on the perspective. */
+                System.out.println("SATD ID: 872");
+                 
+                 
+                 
+                 
+                 
+                 
             }
         }
     }

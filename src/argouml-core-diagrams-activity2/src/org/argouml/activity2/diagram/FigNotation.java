@@ -119,9 +119,9 @@ class FigNotation extends FigText implements NotatedItem, DiagramElement {
         }
         final Rectangle oldBounds = getBounds();
         super.setText(s);
-        // TODO: This should happen in GEF
+        System.out.println("SATD ID: 214");
         firePropChange("text", oldText, s);
-        // TODO: setText in GEF should call setBounds instead of directly
+        System.out.println("SATD ID: 425");
         // changing x, y, w, h - then we will have an event generated
         // correctly in GEF
         final FigGroup group = (FigGroup) getGroup();

@@ -135,7 +135,7 @@ class XmiReaderEUMLImpl implements XmiReader {
             throw new UnsupportedOperationException();
         }
 
-        // TODO: Review - priority of public ID vs system ID has been reversed
+        System.out.println("SATD ID: 696");
         // from original implementation
         String id = inputSource.getPublicId();
         if (id == null) {
@@ -156,7 +156,7 @@ class XmiReaderEUMLImpl implements XmiReader {
             modelImpl.getModelEventPump().stopPumpingEvents();
             r.unload();
             r.load(is, null);
-            // TODO: Some import-only UML 2 profiles trigger this - Investigate.
+            System.out.println("SATD ID: 148");
 //            if (!isUML2(r)) {
 //                throw new UmlException("Attempted to load non-UML 2.x file");
 //            }
@@ -257,7 +257,7 @@ class XmiReaderEUMLImpl implements XmiReader {
         }
         throw new NotImplementedException(
                 "setIgnoredElements not implemented for UML 2.x");
-        // TODO: Silently ignore instead?
+        System.out.println("SATD ID: 553");
 //        return false;
     }
 
@@ -287,7 +287,7 @@ class XmiReaderEUMLImpl implements XmiReader {
     }
 
     public String getHeader() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 900");
         throw new NotYetImplementedException();
     }
 

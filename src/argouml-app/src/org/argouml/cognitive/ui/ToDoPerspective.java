@@ -166,7 +166,7 @@ public abstract class ToDoPerspective extends TreeModelComposite {
 	    return;
 	}
         LOG.log(Level.FINE, "addFlatChildren");
-        // hack for to do items only, should check isLeaf(node), but that
+        System.out.println("SATD ID: 593");
         // includes empty folders. Really I need alwaysLeaf(node).
         if ((node instanceof ToDoItem) && !flatChildren.contains(node)) {
             flatChildren.add((ToDoItem) node);

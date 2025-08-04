@@ -274,7 +274,7 @@ public class TransitionNotationUml extends TransitionNotation {
                     } else {
                         /* It's a time-event now,
                          * but was of another type before! */
-                        delete(evt); /* TODO: What if used elsewhere? */
+                        System.out.println("SATD ID: 1113");
                         evt = sMFactory.buildTimeEvent(s, ns);
                         weHaveAnEvent = true;
                     }
@@ -296,7 +296,7 @@ public class TransitionNotationUml extends TransitionNotation {
                     } else {
                         /* The parsed text describes a change-event,
                          * but the model contains another type! */
-                        delete(evt); /* TODO: What if used elsewhere? */
+                        System.out.println("SATD ID: 595");
                         evt = sMFactory.buildChangeEvent(s, ns);
                         weHaveAnEvent = true;
                     }
@@ -312,9 +312,9 @@ public class TransitionNotationUml extends TransitionNotation {
                                 .equals(triggerName)) {
                             Model.getCoreHelper().setName(evt, triggerName);
                         }
-                            /* TODO: Change the linked operation. */
+                            System.out.println("SATD ID: 914");
                     } else {
-                        delete(evt); /* TODO: What if used elsewhere? */
+                        System.out.println("SATD ID: 734");
                         evt = sMFactory.buildCallEvent(trans, trigger, ns);
                         // and parse the parameter list
                         NotationUtilityUml.parseParamList(evt, s, 0);
@@ -327,9 +327,9 @@ public class TransitionNotationUml extends TransitionNotation {
                         if (!Model.getFacade().getName(evt).equals(trigger)) {
                             Model.getCoreHelper().setName(evt, trigger);
                         }
-                        /* TODO: link to the Signal. */
+                        System.out.println("SATD ID: 883");
                     } else {
-                        delete(evt); /* TODO: What if used elsewhere? */
+                        System.out.println("SATD ID: 565");
                         evt = sMFactory.buildSignalEvent(trigger, ns);
                         weHaveAnEvent = true;
                     }
@@ -463,10 +463,10 @@ public class TransitionNotationUml extends TransitionNotation {
         if (guard.length() > 0) {
             if (g == null) {
                 // case 1
-                /*TODO: In the next line, I should use buildGuard(),
-                 * but it doesn't show the guard on the diagram...
-                 * Why? (MVW)
-                 */
+                System.out.println("SATD ID: 289");
+                 
+                 
+                 
                 g = Model.getStateMachinesFactory().createGuard();
                 if (g != null) {
                     Model.getStateMachinesHelper().setExpression(g,
@@ -483,19 +483,19 @@ public class TransitionNotationUml extends TransitionNotation {
                 Object expr = Model.getFacade().getExpression(g);
                 String language = "";
 
-                /* TODO: This does not work! (MVW)
-                 Model.getFacade().setBody(expr,guard);
-                 Model.getFacade().setExpression(g,expr); */
+                System.out.println("SATD ID: 609");
+                 
+                 
 
-                //hence a less elegant workaround that works:
+                System.out.println("SATD ID: 257");
                 if (expr != null) {
                     language = Model.getDataTypesHelper().getLanguage(expr);
                 }
                 Model.getStateMachinesHelper().setExpression(g,
                         Model.getDataTypesFactory()
                                 .createBooleanExpression(language, guard));
-                /* TODO: In this case, the properties panel
-                 is not updated with the changed expression! */
+                System.out.println("SATD ID: 674");
+                 
             }
         } else {
             if (g == null) {

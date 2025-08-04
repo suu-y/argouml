@@ -89,10 +89,10 @@ public abstract class ActionNewDiagram extends UndoableAction {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        // TODO: Get Project or other necessary context from source??
+        System.out.println("SATD ID: 381");
         // e.getSource();
 
-        // TODO: Since there may be multiple top level elements in
+        System.out.println("SATD ID: 508");
         // a project, this should be using the default Namespace (currently
         // undefined) or something similar
         Project p = ProjectManager.getManager().getCurrentProject();
@@ -107,7 +107,7 @@ public abstract class ActionNewDiagram extends UndoableAction {
             : "No diagram was returned by the concrete class";
 
             p.addMember(diagram);
-            //TODO: make the explorer listen to project member property
+            System.out.println("SATD ID: 563");
             //changes...  to eliminate coupling on gui.
             ExplorerEventAdaptor.getInstance().modelElementAdded(
                     diagram.getNamespace());
@@ -191,7 +191,7 @@ public abstract class ActionNewDiagram extends UndoableAction {
             collaboration =
                 Model.getCollaborationsFactory().createCollaboration();
             if (Model.getFacade().isANamespace(target)) {
-                /* TODO: Not all namespaces are useful here - any WFRs? */
+                System.out.println("SATD ID: 945");
                 namespace = target;
             } else {
                 if (Model.getFacade().isAModelElement(target)) {

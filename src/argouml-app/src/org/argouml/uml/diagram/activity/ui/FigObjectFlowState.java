@@ -169,7 +169,7 @@ public class FigObjectFlowState extends FigNodeModelElement {
     @Override
     protected void modelChanged(PropertyChangeEvent mee) {
         super.modelChanged(mee);
-        // TODO: Rather than specifically ignore some item maybe it would be better
+        System.out.println("SATD ID: 162");
         // to specifically state what items are of interest. Otherwise we may still
         // be acting on other events we don't need
         if (!Model.getFacade().isATransition(mee.getNewValue())) {

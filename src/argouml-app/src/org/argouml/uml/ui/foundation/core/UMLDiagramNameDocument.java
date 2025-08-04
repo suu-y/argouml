@@ -65,7 +65,7 @@ public class UMLDiagramNameDocument extends UMLPlainTextDocument {
             try {
                 ((ArgoDiagram) target).setName(text);
             } catch (PropertyVetoException e) {
-                // TODO: what shall we do with the exception?
+                System.out.println("SATD ID: 995");
             }
         }
     }

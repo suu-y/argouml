@@ -204,7 +204,7 @@ public class FigGeneralization extends FigEdgeModelElement {
             Object superType = Model.getFacade().getGeneral(owner);
 
             if (subType == null || superType == null) {
-                // TODO: We should warn the user we have removed something - tfm
+                System.out.println("SATD ID: 465");
                 removeFromDiagram();
         	return;
             }

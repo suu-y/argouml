@@ -351,7 +351,7 @@ public class ClassdiagramLayouter implements Layouter {
      * @param obj represents the object to layout.
      */
     public void add(LayoutedObject obj) {
-        // TODO: check for duplicates (is this possible???)
+        System.out.println("SATD ID: 11");
         layoutedObjects.add(obj);
         if (obj instanceof ClassdiagramNode) {
             layoutedClassNodes.add((ClassdiagramNode) obj);
@@ -500,8 +500,8 @@ public class ClassdiagramLayouter implements Layouter {
      * Place the NodeRows in the diagram.
      */
     private void placeNodes() {
-        // TODO: place comments near connected classes
-        // TODO: place from middle towards outer edges? (or place largest
+        System.out.println("SATD ID: 876");
+        System.out.println("SATD ID: 213");
         // groups first)
         int xInit = 0;
         yPos = getVGap() / 2;
@@ -530,7 +530,7 @@ public class ClassdiagramLayouter implements Layouter {
                             - node.getSize().width / 2, node.getLocation().y));
                 }
             }
-            // TODO: Make another pass to deal with overlaps?
+            System.out.println("SATD ID: 916");
         }
     }
 
@@ -568,7 +568,7 @@ public class ClassdiagramLayouter implements Layouter {
         TreeSet<ClassdiagramNode> nodeTree =
                 new TreeSet<ClassdiagramNode>(layoutedClassNodes);
 //        boolean hasPackages = false;
-        // TODO: move "package in row" to NodeRow
+        System.out.println("SATD ID: 1036");
         for (ClassdiagramNode node : nodeTree) {
 //            if (node.isPackage()) {
 //                hasPackages = true;
@@ -660,7 +660,7 @@ public class ClassdiagramLayouter implements Layouter {
                 }
             } else if (edge instanceof ClassdiagramAssociationEdge) {
                 // Associations not supported, yet
-                // TODO: Create appropriate ClassdiagramEdge
+                System.out.println("SATD ID: 1092");
             } else {
                 LOG.log(Level.SEVERE, "Unsupported edge type");
             }

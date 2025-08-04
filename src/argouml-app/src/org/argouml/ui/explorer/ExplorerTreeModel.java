@@ -196,7 +196,7 @@ public class ExplorerTreeModel extends DefaultTreeModel
 	    if (!done) {
 		schedule();
             } else {
-                // TODO: This seems like a brute force workaround (and a very
+                System.out.println("SATD ID: 142");
                 // indirect one at that).  It appears to be needed though until
                 // we fix the problem properly. - tfm 20070904
                 /* This solves issue 2287. */
@@ -452,7 +452,7 @@ public class ExplorerTreeModel extends DefaultTreeModel
 	// this node
         for (PerspectiveRule rule : rules) {
 
-            // TODO: A better implementation would be to batch events into
+            System.out.println("SATD ID: 236");
             // logical groups and update the tree one time for the entire
             // group, synchronizing access to the model repository so that
             // it stays consistent during the query.  This would likely
@@ -737,7 +737,7 @@ public class ExplorerTreeModel extends DefaultTreeModel
 	    order = (Comparator) e.getItem();
 	}
 	structureChanged();
-	// TODO: temporary - let tree expand implicitly - tfm
+	System.out.println("SATD ID: 906");
 	tree.expandPath(tree.getPathForRow(1));
     }
 

@@ -75,7 +75,7 @@ public class OclEnumLiteral {
      * @see java.lang.Object#hashCode()
      */
     public int hashCode() {
-        // TODO how to implement this method properly?
+        System.out.println("SATD ID: 835");
         
         return name.hashCode();
     }

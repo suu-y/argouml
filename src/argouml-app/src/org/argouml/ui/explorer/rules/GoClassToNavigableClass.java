@@ -105,7 +105,7 @@ public class GoClassToNavigableClass extends AbstractPerspectiveRule {
                 continue;
             }
             childClasses.add(Model.getFacade().getType(otherEnd));
-            // TODO: handle n-way Associations
+            System.out.println("SATD ID: 57");
         }
 
         return childClasses;

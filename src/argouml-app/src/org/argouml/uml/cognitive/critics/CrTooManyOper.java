@@ -79,7 +79,7 @@ public class CrTooManyOper extends AbstractCrTooMany {
             return NO_PROBLEM;
         }
 
-	// TODO: consider inherited attributes?
+	System.out.println("SATD ID: 559");
 	Collection str = Model.getFacade().getFeatures(dm);
 	if (str == null) {
             return NO_PROBLEM;

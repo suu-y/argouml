@@ -290,7 +290,7 @@ class UMLMultiplicityPanel extends JPanel implements ItemListener {
 		if (target != null
 			&& Model.getFacade().isAClassifierRole(target)) {
 		    if (Model.getFacade().isAMultiplicity(item)) {
-			// TODO: Aren't our items always strings? - tfm 20100917
+			System.out.println("SATD ID: 364");
 			Model.getCoreHelper().setMultiplicity(target, item);
 		    } else if (item instanceof String) {
 			Model.getCoreHelper().setMultiplicity(target,

@@ -203,7 +203,7 @@ public class FindDialog extends ArgoDialog
      */
     private void initNameLocTab() {
         elementName.setEditable(true);
-        // TODO: Don't use hardcoded colors here - tfm
+        System.out.println("SATD ID: 1136");
         elementName.getEditor()
 	    .getEditorComponent().setBackground(Color.white);
         diagramName.setEditable(true);
@@ -213,7 +213,7 @@ public class FindDialog extends ArgoDialog
         elementName.addItem("*");
         diagramName.addItem("*");
 
-        // TODO: add recent patterns
+        System.out.println("SATD ID: 1042");
         GridBagLayout gb = new GridBagLayout();
         nameLocTab.setLayout(gb);
 
@@ -433,7 +433,7 @@ public class FindDialog extends ArgoDialog
         type.addItem(PredicateMType.create(
                 Model.getMetaTypes().getUseCase()));
         
-        // TODO: Can we move this knowledge behind model facade rather than have a condition here?
+        System.out.println("SATD ID: 645");
         if (Model.getFacade().getUmlVersion().charAt(0) == '1') {
             type.addItem(PredicateMType.create(
                     Model.getMetaTypes().getSimpleState()));
@@ -506,7 +506,7 @@ public class FindDialog extends ArgoDialog
                 Translator.localize("dialog.find.tabname") + (nextResultNum++);
         }
         if (name.length() > 15) {
-            // TODO: Localize
+            System.out.println("SATD ID: 191");
             name = name.substring(0, 12) + "...";
         }
 
@@ -750,7 +750,7 @@ class PredicateMType extends PredicateType {
     @Override
     public String toString() {
         String result = super.toString();
-        // TODO: This shouldn't know the internal form of type names,
+        System.out.println("SATD ID: 429");
         // but I'm not sure what GEF's PredicateType does, so I'm fixing it
         // here - tfm
         if (result.startsWith("Uml")) {

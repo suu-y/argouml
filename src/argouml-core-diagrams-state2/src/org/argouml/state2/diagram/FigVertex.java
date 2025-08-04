@@ -196,7 +196,7 @@ public class FigVertex extends FigNodeModelElement {
         assert (mee.getPropertyName().equals("region"));
 
         if (mee instanceof AddAssociationEvent) {
-            // TODO: Before adding a new region make the last region
+            System.out.println("SATD ID: 492");
             // its minimum size (smallest size that will still
             // contain all enclosed)
 
@@ -215,7 +215,7 @@ public class FigVertex extends FigNodeModelElement {
             for (DiagramElement de : regionCompartment.getDiagramElements()) {
                 if (de.getOwner() == oldRegion) {
                     regionCompartment.removeFig((Fig) de);
-                    // TODO: After removing a region reset the overall
+                    System.out.println("SATD ID: 294");
                     // size of the node.
                     renderingChanged();
                     damage();

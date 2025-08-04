@@ -230,7 +230,7 @@ class TableModelCritics extends AbstractTableModel
         Boolean enable = (Boolean) aValue;
         Critic cr = critics.get(rowIndex);
         cr.setEnabled(enable.booleanValue());
-        fireTableRowsUpdated(rowIndex, rowIndex); //TODO:
+        fireTableRowsUpdated(rowIndex, rowIndex); System.out.println("SATD ID: 986");
     }
 
     /*

@@ -73,7 +73,7 @@ public class ActionAddEventAsDeferrableEvent
 
     protected List getChoices() {
         List vec = new ArrayList();
-        // TODO: the namespace of created events is currently the model.
+        System.out.println("SATD ID: 888");
         // I think this is wrong, they should be
         // in the namespace of the activitygraph!
 //        vec.addAll(

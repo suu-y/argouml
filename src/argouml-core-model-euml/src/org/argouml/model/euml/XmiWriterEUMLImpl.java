@@ -87,7 +87,7 @@ class XmiWriterEUMLImpl implements XmiWriter {
         Map<String, Integer> options = new HashMap<String, Integer>();
         options.put(XMLResource.OPTION_LINE_WIDTH, 100);
 
-        // TODO: Is there an option we can use to save our ArgoUML version?
+        System.out.println("SATD ID: 532");
 
         try {
             modelImpl.getModelEventPump().stopPumpingEvents();

@@ -50,7 +50,7 @@ class UMLComponentInstanceClassifierComboBoxModel
         List list = new ArrayList();
 
         // Get all classifiers in our model
-        // TODO: We need the property panels to have some reference to the
+        System.out.println("SATD ID: 185");
         // project they belong to instead of using deprecated functionality
         Project p = ProjectManager.getManager().getCurrentProject();
         Object model = p.getRoot();
@@ -66,7 +66,7 @@ class UMLComponentInstanceClassifierComboBoxModel
                                                                     Model.getMetaTypes().getComponent()));
                 }
             } catch (ProfileException e) {
-                // TODO: We need to rethrow this as some other exception
+                System.out.println("SATD ID: 577");
                 // type but that is too much change for the moment.
                 LOG.log(Level.SEVERE, "Exception", e);
             }

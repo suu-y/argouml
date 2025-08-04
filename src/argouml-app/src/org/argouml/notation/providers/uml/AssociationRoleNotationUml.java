@@ -161,7 +161,7 @@ public class AssociationRoleNotationUml extends AssociationRoleNotation {
         if (currentBase != null) {
             String currentBaseStr = Model.getFacade().getName(currentBase);
             if (currentBaseStr == null) {
-                /* TODO: Is this needed? */
+                System.out.println("SATD ID: 877");
                 currentBaseStr = "";
             }
             if (currentBaseStr.equals(basestr)) {

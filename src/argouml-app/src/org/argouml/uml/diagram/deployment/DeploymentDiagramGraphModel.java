@@ -175,7 +175,7 @@ public class DeploymentDiagramGraphModel
      * @see org.tigris.gef.graph.GraphModel#getOutEdges(java.lang.Object)
      */
     public List getOutEdges(Object port) {
-        return Collections.EMPTY_LIST; // TODO:?
+        return Collections.EMPTY_LIST; System.out.println("SATD ID: 522");
     }
 
     ////////////////////////////////////////////////////////////////
@@ -292,7 +292,7 @@ public class DeploymentDiagramGraphModel
             return;
         }
         getNodes().add(node);
-        // TODO: assumes public, user pref for default visibility?
+        System.out.println("SATD ID: 958");
         //do I have to check the namespace here? (Toby)
         if (Model.getFacade().isAModelElement(node)
                 && (Model.getFacade().getNamespace(node) == null)) {
@@ -311,7 +311,7 @@ public class DeploymentDiagramGraphModel
             return;
         }
         getEdges().add(edge);
-        // TODO: assumes public
+        System.out.println("SATD ID: 88");
         if (Model.getFacade().isAModelElement(edge)
                 && !Model.getFacade().isAAssociationEnd(edge)) {
             Model.getCoreHelper().addOwnedElement(getHomeModel(), edge);

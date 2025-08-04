@@ -226,7 +226,7 @@ public class ResolvedCritic {
      * @return	A identifying name of the critic.
      */
     protected String getCriticString(Critic c) throws UnresolvableException {
-        // TODO: Should throw if the string is not good?
+        System.out.println("SATD ID: 865");
         if (c == null) {
             throw (new UnresolvableException("Critic is null"));
         }

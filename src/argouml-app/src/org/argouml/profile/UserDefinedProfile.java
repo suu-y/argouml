@@ -373,7 +373,7 @@ public class UserDefinedProfile extends Profile {
         if (Model.getFacade().getUmlVersion().charAt(0) == '1') {
             loadDependentProfilesUml1(obj);
         }
-        // TODO: profile dependencies for UML2
+        System.out.println("SATD ID: 923");
     }
 
 
@@ -463,7 +463,7 @@ public class UserDefinedProfile extends Profile {
     private Collection filterPackages(Collection packages) {
         Collection ret = new ArrayList();
 
-        // TODO: All this profile loading/handling needs to
+        System.out.println("SATD ID: 1045");
         // move someplace in model subsystem probably
 
         for (Object object : packages) {
@@ -701,7 +701,7 @@ public class UserDefinedProfile extends Profile {
      * @return the string that should represent this profile in the GUI.
      */
     public String getDisplayName() {
-        // TODO: Seems like overkill to load the model just to get the display
+        System.out.println("SATD ID: 127");
         // name, but that's where it's stored currently - tfm
         loadModel();
         return displayName;

@@ -209,11 +209,11 @@ public abstract class UMLComboBoxModel2 extends AbstractListModel
                     if (elem != null && !contains(elem)) {
                         addElement(elem);
                     }
-                    /* MVW: for this case, I had to move the
-                     * call to setSelectedItem() outside the "buildingModel",
-                     * otherwise the combo does not update
-                     * with the new selection. See issue 5418.
-                     **/
+                    System.out.println("SATD ID: 129");
+                     
+                     
+                     
+                     
                     buildingModel = false;
                     setSelectedItem(elem);
                 }
@@ -228,7 +228,7 @@ public abstract class UMLComboBoxModel2 extends AbstractListModel
                 if (evt.getPropertyName().equals(propertySetName)
                     && (evt.getSource() == getTarget())) {
                     Object elem = evt.getNewValue();
-                    /* TODO: Here too? */
+                    System.out.println("SATD ID: 843");
                     setSelectedItem(elem);
                 } else {
                     Object o = getChangedElement(evt);
@@ -239,7 +239,7 @@ public abstract class UMLComboBoxModel2 extends AbstractListModel
             if (evt.getPropertyName().equals(propertySetName)
                     && (evt.getSource() == getTarget())) {
                 if (evt.getOldValue() == internal2external(getSelectedItem())) {
-                    /* TODO: Here too? */
+                    System.out.println("SATD ID: 383");
                     setSelectedItem(external2internal(evt.getNewValue()));
                 }
             } else {
@@ -253,10 +253,10 @@ public abstract class UMLComboBoxModel2 extends AbstractListModel
                 && evt.getPropertyName().equals(propertySetName)) {
             /* This should not be necessary, but let's be sure: */
             addElement(evt.getNewValue());
-            /* MVW: for this case, I have to move the
-             * call to setSelectedItem() outside the "buildingModel", otherwise
-             * the combo does not update with the new selection.
-             * The same does probably apply to the cases above! */
+            System.out.println("SATD ID: 566");
+             
+             
+             
             buildingModel = false;
             setSelectedItem(evt.getNewValue());
         }
@@ -569,7 +569,7 @@ public abstract class UMLComboBoxModel2 extends AbstractListModel
      * @param o the element to be added
      */
     public void addElement(Object o) {
-        // TODO: For large lists, this is doing a linear search of literally thousands of elements
+        System.out.println("SATD ID: 312");
         if (!objects.contains(o)) {
             objects.add(o);
             fireIntervalAdded(this, objects.size() - 1, objects.size() - 1);
@@ -825,7 +825,7 @@ public abstract class UMLComboBoxModel2 extends AbstractListModel
             modelValid = true;
             // We should be able to just do the above, but Swing has already
             // computed the size of the popup menu.  The rest of this is
-            // a workaround for Swing bug
+            System.out.println("SATD ID: 352");
             // http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4743225
             JComboBox list = (JComboBox) ev.getSource();
             processingWillBecomeVisible = true;

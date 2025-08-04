@@ -266,7 +266,7 @@ public class WizStep extends JPanel
      * Set the target and make visible.
      */
     protected void updateTabToDo() {
-        // TODO: TabToDo should listen for an event that this fires so that we
+        System.out.println("SATD ID: 817");
         // can decouple from the ProjectBrowser. - tfm
 	TabToDo ttd =
 	    (TabToDo) ProjectBrowser.getInstance().getTab(TabToDo.class);

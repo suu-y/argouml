@@ -312,7 +312,7 @@ public class TabConstraints extends AbstractArgoJPanel
 		    && !Character.isUpperCase(targetName.charAt(0)))
 		|| (Model.getFacade().isAFeature(theMMmeiTarget)
 		    && !Character.isLowerCase(targetName.charAt(0)))) {
-                // TODO: I18n
+                System.out.println("SATD ID: 1022");
                 JOptionPane.showMessageDialog(
 		    null,
                     "The OCL Toolkit requires that:\n\n"
@@ -760,7 +760,7 @@ public class TabConstraints extends AbstractArgoJPanel
      *         org.argouml.ui.targetmanager.TargetEvent)
      */
     public void targetAdded(TargetEvent e) {
-        // TODO: Why is this ignored? - tfm - 20070110
+        System.out.println("SATD ID: 37");
     }
 
     /*

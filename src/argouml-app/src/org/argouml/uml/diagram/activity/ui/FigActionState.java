@@ -147,7 +147,7 @@ public class FigActionState extends FigStateVertex {
         figClone.setBigPort((FigRRect) it.next());
         figClone.cover = (FigRRect) it.next();
         figClone.setNameFig((FigText) it.next());
-        /* TODO: Do we need to clone the stereotype(s)? */
+        System.out.println("SATD ID: 1141");
         return figClone;
     }
 
@@ -264,7 +264,7 @@ public class FigActionState extends FigStateVertex {
         super.modelChanged(mee);
         if (mee instanceof AddAssociationEvent
                 || mee instanceof AttributeChangeEvent) {
-            // TODO: Rather than specifically ignore some item maybe it would be better
+            System.out.println("SATD ID: 792");
             // to specifically state what items are of interest. Otherwise we may still
             // be acting on other events we don't need
             if (!Model.getFacade().isATransition(mee.getNewValue())) {

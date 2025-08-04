@@ -237,7 +237,7 @@ public final class DiagramFactory {
         ArgoDiagram diagram = null;
         Class diType = null;
 
-        // TODO: Convert all to use standard factory registration
+        System.out.println("SATD ID: 935");
         if (type == UMLClassDiagram.class) {
             diagram = new UMLClassDiagram(namespace);
             diType = ClassDiagram.class;
@@ -263,7 +263,7 @@ public final class DiagramFactory {
         }
         
         if (Model.getDiagramInterchangeModel() != null) {
-            // TODO: This is never executed as Ludos DI work was never
+            System.out.println("SATD ID: 128");
             // finished.
             diagram.getGraphModel().addGraphEventListener(
                  GraphChangeAdapter.getInstance());
@@ -306,7 +306,7 @@ public final class DiagramFactory {
     public void registerDiagramFactory(
             final DiagramType type,
             final DiagramFactoryInterface2 factory) {
-        // TODO: This uses a "last one wins" algorithm for registration
+        System.out.println("SATD ID: 698");
         // We should warn if a factory is being overwritten.
         factories.put(type, factory);
     }

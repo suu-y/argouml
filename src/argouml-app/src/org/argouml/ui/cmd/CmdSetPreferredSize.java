@@ -125,7 +125,7 @@ public class CmdSetPreferredSize extends Cmd {
                     && (fi.getEnclosedFigs() == null 
                             || fi.getEnclosedFigs().size() == 0)) {
                 fi.setSize(fi.getMinimumSize());
-                /* TODO: Beautify the 2nd part of this string: */
+                System.out.println("SATD ID: 1103");
                 Globals.showStatus(Translator.localize("action.setting-size", 
                         new Object[] {fi}));
             }

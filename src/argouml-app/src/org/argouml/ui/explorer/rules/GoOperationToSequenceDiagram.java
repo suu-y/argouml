@@ -89,7 +89,7 @@ public class GoOperationToSequenceDiagram extends AbstractPerspectiveRule {
      * @see org.argouml.ui.explorer.rules.PerspectiveRule#getDependencies(java.lang.Object)
      */
     public Set getDependencies(Object parent) {
-        // TODO: What?
+        System.out.println("SATD ID: 785");
 	return Collections.emptySet();
     }
 }

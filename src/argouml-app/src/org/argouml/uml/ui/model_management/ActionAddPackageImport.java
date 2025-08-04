@@ -63,9 +63,9 @@ class ActionAddPackageImport extends AbstractActionAddModelElement2 {
 
     protected List getChoices() {
         List vec = new ArrayList();
-        /* TODO: correctly implement next function 
-         * in the model subsystem for 
-         * issue 1942: */
+        System.out.println("SATD ID: 765");
+         
+         
         vec.addAll(Model.getModelManagementHelper()
                 .getAllPossibleImports(getTarget()));
         return vec;

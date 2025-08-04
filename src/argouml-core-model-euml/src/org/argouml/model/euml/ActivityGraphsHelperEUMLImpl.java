@@ -36,27 +36,27 @@ class ActivityGraphsHelperEUMLImpl implements ActivityGraphsHelper {
     }
 
     public void addContent(Object partition, Object modeElement) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 105");
 
     }
 
     public void addInState(Object classifierInState, Object state) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 1026");
 
     }
 
     public void addParameter(Object objectFlowState, Object parameter) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 571");
 
     }
 
     public Object findClassifierByName(Object ofs, String s) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 17");
         return null;
     }
 
     public Object findStateByName(Object c, String s) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 174");
         return null;
     }
 
@@ -65,32 +65,32 @@ class ActivityGraphsHelperEUMLImpl implements ActivityGraphsHelper {
     }
 
     public void removeContent(Object partition, Object modeElement) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 297");
 
     }
 
     public void removeParameter(Object objectFlowState, Object parameter) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 868");
 
     }
 
     public void setContents(Object partition, Collection newContents) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 1134");
 
     }
 
     public void setInStates(Object classifierInState, Collection newStates) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 681");
 
     }
 
     public void setParameters(Object objectFlowState, Collection parameters) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 910");
 
     }
 
     public void setSynch(Object objectFlowState, boolean isSynch) {
-        // TODO Auto-generated method stub
+        System.out.println("SATD ID: 114");
 
     }
 

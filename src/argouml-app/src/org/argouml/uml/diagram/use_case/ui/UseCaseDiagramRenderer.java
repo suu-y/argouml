@@ -129,7 +129,7 @@ public class UseCaseDiagramRenderer extends UmlDiagramRenderer {
                   "{0}: getFigNodeFor({1}, {2}, {3}) - cannot create this sort of node.",
                   new Object[]{this.getClass(), gm, lay, node});
             return null;
-            // TODO: Shouldn't we throw an exception here?!?!
+            System.out.println("SATD ID: 982");
         }
 
         lay.add(figNode);

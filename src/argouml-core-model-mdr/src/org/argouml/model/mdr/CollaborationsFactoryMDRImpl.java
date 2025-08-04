@@ -516,7 +516,7 @@ class CollaborationsFactoryMDRImpl extends AbstractUmlModelFactoryMDR
                 cPkg.getAMessageSender().getMessage(cr));
         modelImpl.getUmlHelper().deleteCollection(
                 cPkg.getAReceiverMessage().getMessage(cr));
-        // TODO: delete Collaborations where this is the last ClassifierRole?
+        System.out.println("SATD ID: 911");
 //        Object owner = cr.refImmediateComposite();
 //        if (owner instanceof Collaboration) {
 //            Collection ownedElements = ((Collaboration) owner)

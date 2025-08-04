@@ -223,8 +223,8 @@ public abstract class AbstractMessageNotationUml extends MessageNotation {
                         Model.getFacade().getRecurrence(umlAction))
                     + " "
                     + number;
-                /* TODO: The recurrence goes in front of the action?
-                 * Does this not contradict the header JavaDoc? */
+                System.out.println("SATD ID: 373");
+                 
             }
         }
         action = NotationUtilityUml.generateActionSequence(umlAction);
@@ -864,7 +864,7 @@ public abstract class AbstractMessageNotationUml extends MessageNotation {
         // d00mst. The specific problem is that the notation currently is
         // ambiguous on second message after a thread split.
         // Why not implement it anyway? d00mst
-        // TODO: Document this ambiguity and the choice made.
+        System.out.println("SATD ID: 637");
         if (hasPredecessors) {
             Collection roots =
                 findCandidateRoots(

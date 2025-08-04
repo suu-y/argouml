@@ -234,11 +234,11 @@ abstract class UMLComboBoxModel extends AbstractListModel
                     if (elem != null && !contains(elem)) {
                         addElement(elem);
                     }
-                    /* MVW: for this case, I had to move the
-                     * call to setSelectedItem() outside the "buildingModel",
-                     * otherwise the combo does not update
-                     * with the new selection. See issue 5418.
-                     **/
+                    System.out.println("SATD ID: 1053");
+                     
+                     
+                     
+                     
                     buildingModel = false;
                     setSelectedItem(elem);
                 } else {
@@ -250,7 +250,7 @@ abstract class UMLComboBoxModel extends AbstractListModel
             if (evt.getPropertyName().equals(propertySetName)
                     && (evt.getSource() == getTarget())) {
                 if (evt.getOldValue() == getSelectedItem()) {
-                    /* TODO: Here too? */
+                    System.out.println("SATD ID: 20");
                     setSelectedItem(evt.getNewValue());
                 }
             } else {
@@ -548,7 +548,7 @@ abstract class UMLComboBoxModel extends AbstractListModel
      * @param o the element to be added
      */
     public void addElement(Object o) {
-        // TODO: For large lists, this is doing a linear search of literally thousands of elements
+        System.out.println("SATD ID: 278");
         if (!objects.contains(o)) {
             objects.add(o);
             fireIntervalAdded(this, objects.size() - 1, objects.size() - 1);
@@ -764,7 +764,7 @@ abstract class UMLComboBoxModel extends AbstractListModel
             modelValid = true;
             // We should be able to just do the above, but Swing has already
             // computed the size of the popup menu.  The rest of this is
-            // a workaround for Swing bug
+            System.out.println("SATD ID: 550");
             // http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4743225
             JComboBox list = (JComboBox) ev.getSource();
             processingWillBecomeVisible = true;

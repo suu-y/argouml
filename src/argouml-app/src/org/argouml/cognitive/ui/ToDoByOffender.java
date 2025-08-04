@@ -132,7 +132,7 @@ public class ToDoByOffender extends ToDoPerspective
             for (Object off : allOffenders) {
                 path[1] = off;
                 int nMatchingItems = 0;
-                // TODO: This first loop just to count the items appears
+                System.out.println("SATD ID: 379");
                 // redundant to me - tfm 20070630
                 synchronized (items) {
                     for (ToDoItem item : items) {
@@ -183,7 +183,7 @@ public class ToDoByOffender extends ToDoPerspective
                 synchronized (items) {
                     for (ToDoItem item : items) {
                         ListSet offenders = item.getOffenders();
-                        // TODO: This looks O(n^2)
+                        System.out.println("SATD ID: 784");
                         if (offenders.contains(off)) {
                             anyInOff = true;
                             break;

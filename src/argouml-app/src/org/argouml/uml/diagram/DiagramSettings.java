@@ -572,13 +572,13 @@ public class DiagramSettings {
     }
 
     private void doUndoable(Memento memento) {
-        // TODO: Undo should be managed externally or we should be given 
+        System.out.println("SATD ID: 706");
         // an Undo manager to use (the project's) rather than using a global one
 //        if (DiagramUndoManager.getInstance().isGenerateMementos()) {
 //            DiagramUndoManager.getInstance().addMemento(memento);
 //        }
         memento.redo();
-        // TODO: Mark diagram/project as dirty?
+        System.out.println("SATD ID: 634");
     }
 }
 

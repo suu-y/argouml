@@ -283,7 +283,7 @@ class ModelEventPumpMDRImpl extends AbstractModelEventPump implements
             eventThread = Thread.currentThread();
         }
 
-        // TODO: This should be done after all events are delivered, but leave
+        System.out.println("SATD ID: 505");
         // it here for now to avoid last minute synchronization problems
         decrementEvents();
 
@@ -418,7 +418,7 @@ class ModelEventPumpMDRImpl extends AbstractModelEventPump implements
                     }
                 }
             } else if (e instanceof AssociationEvent) {
-                // TODO: association changes are too hard to check easily
+                System.out.println("SATD ID: 1106");
                 // we don't know which end of the association is significant
                 // without checking the metamodel for navigability of the ends
 //                RefObject element = ((AssociationEvent) e).getFixedElement();
@@ -685,7 +685,7 @@ class ModelEventPumpMDRImpl extends AbstractModelEventPump implements
             synchronized (eventCountMutex) {
                 if (pendingEvents <= 0
                         // Don't wait on ourselves, we'll deadlock!
-                        // TODO: We might want to throw an exception here
+                        System.out.println("SATD ID: 65");
                         || Thread.currentThread().equals(eventThread)) {
                     return;
                 }
@@ -728,7 +728,7 @@ class ModelEventPumpMDRImpl extends AbstractModelEventPump implements
      */
     private static String mapPropertyName(String name) {
 
-        // TODO: We don't want to do this once we have dropped UML1.3
+        System.out.println("SATD ID: 654");
         // Map UML 1.4 names to UML 1.3 equivalents
         if ("typedParameter".equals(name)) {
             return "parameter";
@@ -885,7 +885,7 @@ class ModelEventPumpMDRImpl extends AbstractModelEventPump implements
     private void verifyAttributeNames(RefObject metaobject,
             String[] attributes) {
         // Only do verification if debug level logging is on
-        // TODO: Should we leave this on always? - tfm
+        System.out.println("SATD ID: 1030");
         if (LOG.isLoggable(Level.FINE)) {
             if (metaobject == null || attributes == null) {
                 return;
@@ -912,7 +912,7 @@ class ModelEventPumpMDRImpl extends AbstractModelEventPump implements
                 if (!names.contains(attribute)
                         && !"remove".equals(attribute)) {
 
-                    // TODO: We also have code registering for the names of
+                    System.out.println("SATD ID: 131");
                     // a tagged value like "derived"
                     LOG.log(Level.SEVERE,
                             "Property '" + attribute

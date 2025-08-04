@@ -155,7 +155,7 @@ final class ModelManagementFactoryMDRImpl extends
     public Model createProfile() {
         Model profile = createModel();
         // apply <<profile>> stereotype to make it a "profile" (our convention)
-        // (hack: create that stereotype instead using the UML 1.4 profile)
+        System.out.println("SATD ID: 503");
         Stereotype stereo =
             (Stereotype)modelImpl.getExtensionMechanismsFactory()
                 .buildStereotype("profile", profile);

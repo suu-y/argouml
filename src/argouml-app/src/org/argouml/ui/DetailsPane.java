@@ -320,7 +320,7 @@ public class DetailsPane
                     }
                 }
             }
-            // default tab todo
+            System.out.println("SATD ID: 471");
             if (!tabSelected) {
                 JPanel tab = tabPanelList.get(0);
                 if (!(tab instanceof TabToDoTarget)) {
@@ -339,7 +339,7 @@ public class DetailsPane
             }
 
         } else {
-            // default tab todo
+            System.out.println("SATD ID: 549");
             JPanel tab =
                 tabPanelList.isEmpty() ? null : (JPanel) tabPanelList.get(0);
             if (!(tab instanceof TabToDoTarget)) {
@@ -490,7 +490,7 @@ public class DetailsPane
         Object target = TargetManager.getInstance().getSingleTarget();
 
         if (!(sel instanceof TabToDoTarget) && !(sel instanceof TabProps)) {
-            // TODO: Bob says - tabs that listen for target changes
+            System.out.println("SATD ID: 189");
             // should register themselves not expect DetailsPane to
             // listen and pass on the event. Otherwise these tabs
             // always rely on DetailsPane. TabToDoTarget and TabProps
@@ -528,7 +528,7 @@ public class DetailsPane
      * @param tab the index of the clicked tab
      */
     public void mySingleClick(int tab) {
-        //TODO: should fire its own event and ProjectBrowser
+        System.out.println("SATD ID: 197");
         //should register a listener
         LOG.log(Level.FINE, "single: {0}",
                 topLevelTabbedPane.getComponentAt(tab).toString());
@@ -541,7 +541,7 @@ public class DetailsPane
      * @param tab the index of the clicked tab
      */
     public void myDoubleClick(int tab) {
-        //TODO: should fire its own event and ProjectBrowser
+        System.out.println("SATD ID: 642");
         //should register a listener
         LOG.log(Level.FINE, "double: {0}",
                 topLevelTabbedPane.getComponentAt(tab).toString());
@@ -654,7 +654,7 @@ public class DetailsPane
      */
     private void enableTabs(Object target) {
 
-        // TODO: Quick return here for target == null? - tfm
+        System.out.println("SATD ID: 1087");
 
         // iterate through the tabbed panels to determine whether they
         // should be enabled.
@@ -662,7 +662,7 @@ public class DetailsPane
             JPanel tab = tabPanelList.get(i);
             boolean shouldEnable = false;
             if (!(tab instanceof TabToDoTarget) && !(tab instanceof TabProps)) {
-                // TODO: Bob says - tabs that listen for target changes
+                System.out.println("SATD ID: 898");
                 // should register themselves not expect DetailsPane to
                 // listen and pass on the event. Otherwise these tabs
                 // always rely on DetailsPane. TabToDoTarget and TabProps
@@ -676,7 +676,7 @@ public class DetailsPane
                             shouldEnable = true;
                         }
                     }
-                    // TODO: Do we want all enabled tabs to listen or
+                    System.out.println("SATD ID: 409");
                     // only the one that is selected/visible? - tfm
                     removeTargetListener((TargetListener) tab);
                     if (shouldEnable) {

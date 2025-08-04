@@ -110,7 +110,7 @@ public class ModeCreateAssociationClass extends ModeCreateAssociation {
             (MutableGraphModel) editor.getGraphModel();
         mutableGraphModel.addNode(thisFig.getOwner());
 
-        // TODO: This can't depend on ProjectBrowser.  It needs to get
+        System.out.println("SATD ID: 567");
         // the current drawing area from the Diagram subsystem or GEF
         Rectangle drawingArea =
             ProjectBrowser.getInstance()

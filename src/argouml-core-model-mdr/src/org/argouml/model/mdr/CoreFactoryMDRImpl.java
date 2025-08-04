@@ -983,7 +983,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         Permission per = buildPermissionInternal((ModelElement) client,
                 (UmlPackage) supplier);
 
-        // TODO: This should fetch the stereotype from our profile
+        System.out.println("SATD ID: 1070");
         modelImpl.getExtensionMechanismsFactory().buildStereotype(per,
                 ModelManagementHelper.IMPORT_STEREOTYPE,
                 per.getNamespace());
@@ -1014,7 +1014,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         Permission per = buildPermissionInternal((ModelElement) client,
                 (UmlPackage) supplier);
 
-        // TODO: This should fetch the stereotype from our profile
+        System.out.println("SATD ID: 470");
         modelImpl.getExtensionMechanismsFactory().buildStereotype(per,
                 ModelManagementHelper.ACCESS_STEREOTYPE,
                 per.getNamespace());
@@ -1023,7 +1023,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
 
 
     public Generalization buildGeneralization(Object child1, Object parent1) {
-        // TODO: This is a part implementation of well-formedness rule
+        System.out.println("SATD ID: 143");
         // UML1.4.2 - 4.5.3.20 [3] Circular inheritance is not allowed.
         // not self.allParents->includes(self)
         if (!(child1 instanceof GeneralizableElement
@@ -1037,7 +1037,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         GeneralizableElement parent = (GeneralizableElement) parent1;
 
         // Check that the two elements aren't already linked the opposite way
-        // TODO: This is a part implementation of well-formedness rule
+        System.out.println("SATD ID: 718");
         // UML1.4.2 - 4.5.3.20 [3] Circular inheritance is not allowed.
         // not self.allParents->includes(self)
         for (Generalization gen : parent.getGeneralization()) {
@@ -1047,7 +1047,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
             }
         }
 
-        // TODO: This is well-formedness rule from UML1.4.2
+        System.out.println("SATD ID: 270");
         // 4.5.3.20 [2] No GeneralizableElement can have a parent
         // Generalization to an element that is a leaf.
         // self.parent->forAll(s | not s.isLeaf)
@@ -1055,7 +1055,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
             throw new IllegalArgumentException("parent is leaf");
         }
 
-        // TODO: This is well-formedness rule from UML1.4.2
+        System.out.println("SATD ID: 389");
         // 4.5.3.20 [1] A root cannot have any Generalizations.
         // self.isRoot implies self.generalization->isEmpty
         if (child.isRoot()) {
@@ -1252,7 +1252,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         if (!(supplier instanceof ModelElement)) {
             throw new IllegalArgumentException("supplier ModelElement");
         }
-        // TODO: UML 1.4 spec requires both client and supplier to be
+        System.out.println("SATD ID: 980");
         // in the same model - tfm
         Usage usage = createUsage();
         usage.getSupplier().add((ModelElement) supplier);
@@ -1262,7 +1262,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         } else if (((ModelElement) client).getNamespace() != null) {
             usage.setNamespace(((ModelElement) client).getNamespace());
         }
-        // TODO: Add standard stereotype?  Set is open ended, but
+        System.out.println("SATD ID: 410");
         // predefined names include: call, create, instantiate, send
         return usage;
     }
@@ -1326,7 +1326,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         }
 
         // Check arguments against parameters for type and number
-        // TODO: Perhaps move this to a critic instead? - tfm - 20070326
+        System.out.println("SATD ID: 1011");
         if (arguments != null) {
             List<TemplateParameter> params =
                 ((ModelElement) supplier).getTemplateParameter();
@@ -1337,7 +1337,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
             Iterator<TemplateArgument> ita = arguments.iterator();
             for (TemplateParameter param : params) {
                 TemplateArgument ta = ita.next();
-                // TODO: Before allowing this, we should really check that
+                System.out.println("SATD ID: 985");
                 // TemplateParameter.defaultElement is defined
                 if (ta == null || ta.getModelElement() == null) {
                     continue;
@@ -1512,17 +1512,17 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
                 ((org.omg.uml.UmlPackage) cls.refOutermostPackage())
                         .getCommonBehavior().getACreateActionInstantiation()
                         .getCreateAction(cls));
-        // TODO: ?delete Instances which have this as their classifier?
+        System.out.println("SATD ID: 28");
         // or should we leave them since they contain so much state that the
         // user would have to recreate??
 //        nsmodel.getUmlHelper().deleteCollection(
 //                nsmodel.getUmlPackage().getCommonBehavior()
 //                        .getAInstanceClassifier().getInstance(cls));
-        // TODO: ?delete ObjectFlowStates which have this as their type?
+        System.out.println("SATD ID: 1004");
 //        nsmodel.getUmlHelper().deleteCollection(
 //                nsmodel.getUmlPackage().getActivityGraphs()
 //                        .getATypeObjectFlowState().getObjectFlowState(cls));
-        // TODO: ?delete ClassifierInStates which have this as their type?
+        System.out.println("SATD ID: 1077");
         modelImpl.getUmlHelper().deleteCollection(
                 ((org.omg.uml.UmlPackage) cls.refOutermostPackage())
                         .getActivityGraphs().getATypeClassifierInState()
@@ -1743,7 +1743,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         }
 
         List<ModelElement> ownedElements = new ArrayList<ModelElement>();
-        // TODO: This is a composite association, so these will get deleted
+        System.out.println("SATD ID: 175");
         // automatically.  The only thing we need to do is check for any
         // additional elements that need to be deleted as a result.
         ownedElements.addAll(((Namespace) elem).getOwnedElement());
@@ -1963,7 +1963,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         } else if (source instanceof Operation) {
             Operation oper = createOperation();
             doCopyOperation((Operation) source, oper);
-            // TODO: build a return parameter
+            System.out.println("SATD ID: 96");
             f = oper;
         } else if (source instanceof Method) {
             Method method = createMethod();
@@ -2112,7 +2112,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
             throw new IllegalArgumentException();
         }
 
-        // TODO: how to merge multiple inheritance? Necessary?
+        System.out.println("SATD ID: 181");
         // This currently copies the common ancestors multiple times
         doCopyNamespace(source, target);
         doCopyGeneralizableElement(source, target);
@@ -2259,7 +2259,7 @@ class CoreFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
      * @param target the new attribute to be adapted
      */
     void doCopyAttribute(Attribute source, Attribute target) {
-        // TODO: Delete old multiplicity? Why is "copy" using hard coded value? - tfm
+        System.out.println("SATD ID: 1107");
         target.setMultiplicity(getMultiplicity11());
         target.setChangeability(source.getChangeability());
         target.setTargetScope(source.getTargetScope());

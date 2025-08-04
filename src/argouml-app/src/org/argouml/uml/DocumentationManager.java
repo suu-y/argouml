@@ -186,7 +186,7 @@ public class DocumentationManager {
      */
     public static String defaultFor(Object o, String indent) {
 	if (Model.getFacade().isAClass(o)) {
-            // TODO: Needs localization
+            System.out.println("SATD ID: 313");
 	    return " A class that represents ...\n\n"
 		+ indent + " @see OtherClasses\n"
 		+ indent + " @author your_name_here";

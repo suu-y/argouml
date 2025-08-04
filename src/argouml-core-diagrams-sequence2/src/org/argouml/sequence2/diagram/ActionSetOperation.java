@@ -72,7 +72,7 @@ public class ActionSetOperation extends UndoableAction {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        //TODO: What can we do with other kind of actions?
+        System.out.println("SATD ID: 1035");
         if (Model.getFacade().isACallAction(action)) {
             Model.getCommonBehaviorHelper().setOperation(action, operation);
         }

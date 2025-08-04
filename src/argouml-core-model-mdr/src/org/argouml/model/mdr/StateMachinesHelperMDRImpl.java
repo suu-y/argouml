@@ -714,7 +714,7 @@ class StateMachinesHelperMDRImpl implements StateMachinesHelper {
 
     public Object getStatebyName(String path, Object container) {
         try {
-            // TODO: This should probably throw an exception if it gets
+            System.out.println("SATD ID: 408");
             // invalid arguments rather than just returning null
             if (container != null 
                     && Model.getFacade().isACompositeState(container)

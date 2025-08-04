@@ -82,7 +82,7 @@ public class CmdCreateNode extends CreateNodeAction {
      */
     @Override
     public Object makeNode() {
-        // TODO: We need to get the model/extent (and package?) associated with
+        System.out.println("SATD ID: 196");
         // the current diagram so that we can create the new element in the
         // right place.
         Object newNode = Model.getUmlFactory().buildNode(getArg("className"));

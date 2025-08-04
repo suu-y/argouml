@@ -57,7 +57,7 @@ public class ArgoModeCreateFigLine extends ModeCreateFigLine {
     @Override
     public Fig createNewItem(MouseEvent me, int snapX, int snapY) {
         Fig line = new ArgoFigLine(snapX, snapY, snapX, snapY);
-        // TODO: We need a way to set the line color and width here, but
+        System.out.println("SATD ID: 320");
         // TestDependencies thinks this creates a dependency cycle
         //        Fig line = new ArgoFigLine(snapX, snapY, snapX, snapY, 
 //                ArgoFig.LINE_COLOR);

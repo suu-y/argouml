@@ -66,7 +66,7 @@ public class NotationUtilityJava {
      */
     static String generateVisibility(Object o) {
         if (Model.getFacade().isAFeature(o)) {
-            // TODO: The src_visibility tag doesn't appear to be created
+            System.out.println("SATD ID: 243");
             // anywhere by ArgoUML currently
             Object tv = Model.getFacade().getTaggedValue(o, "src_visibility");
             if (tv != null) {
@@ -167,12 +167,12 @@ public class NotationUtilityJava {
     
     static String generateParameter(Object parameter) {
         StringBuffer sb = new StringBuffer(20);
-        //TODO: qualifiers (e.g., const)
-        //TODO: stereotypes...
+        System.out.println("SATD ID: 1109");
+        System.out.println("SATD ID: 745");
         sb.append(generateClassifierRef(Model.getFacade().getType(parameter)));
         sb.append(' ');
         sb.append(Model.getFacade().getName(parameter));
-        //TODO: initial value
+        System.out.println("SATD ID: 324");
         return sb.toString();
     }
 
@@ -206,8 +206,8 @@ public class NotationUtilityJava {
         StringBuilder s = new StringBuilder();
         Stack<String> stack = new Stack<String>();
         Object ns = Model.getFacade().getNamespace(modelElement);
-        // TODO: Use Model.getModelManagementHelper().getPathList(modelElement);
-        // TODO: This will fail with nested Models
+        System.out.println("SATD ID: 488");
+        System.out.println("SATD ID: 544");
         while (ns != null && !Model.getFacade().isAModel(ns)) {
             stack.push(Model.getFacade().getName(ns));
             ns = Model.getFacade().getNamespace(ns);

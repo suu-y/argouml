@@ -346,7 +346,7 @@ public abstract class FigNodeModelElement
      * rendering settings.
      */
     private void constructFigs() {
-        // TODO: Why isn't this stuff managed by the nameFig itself?
+        System.out.println("SATD ID: 306");
         nameFig.setFilled(true);
         nameFig.setText(placeString());
         nameFig.setBotMargin(7); // make space for the clarifier
@@ -356,8 +356,8 @@ public abstract class FigNodeModelElement
         readyToEdit = false;
 
         setShadowSize(getSettings().getDefaultShadowWidth());
-        /* TODO: how to handle changes in shadowsize
-         * from the project properties? */
+        System.out.println("SATD ID: 6");
+         
 
         stereotypeStyle = getSettings().getDefaultStereotypeView();
     }
@@ -504,13 +504,13 @@ public abstract class FigNodeModelElement
             }
             if (thisFig == nameFig) {
                 clone.nameFig = (FigSingleLineText) thisFig;
-                /* TODO: MVW: I think this has to be:
-                 * clone.nameFig = (FigSingleLineText) cloneFig;
-                 * but have not the means to investigate,
-                 * since this code is not yet used.
-                 * Enable the menu-items for Copy/Paste to test...
-                 * BTW: In some other FigNodeModelElement
-                 * classes I see the same mistake. */
+                System.out.println("SATD ID: 716");
+                 
+                 
+                 
+                 
+                 
+                 
             }
             if (thisFig == getStereotypeFig()) {
                 clone.stereotypeFig = (FigStereotypesGroup) thisFig;
@@ -532,7 +532,7 @@ public abstract class FigNodeModelElement
             String placeString = Model.getFacade().getName(getOwner());
             if (placeString == null) {
                 placeString =
-                    // TODO: I18N
+                    System.out.println("SATD ID: 726");
                     "new " + Model.getFacade().getUMLClassName(getOwner());
             }
             return placeString;
@@ -652,13 +652,13 @@ public abstract class FigNodeModelElement
         /* Check if multiple items are selected: */
         if (TargetManager.getInstance().getTargets().size() == 1) {
 
-            // TODO: Having Critics actions here introduces an unnecessary
+            System.out.println("SATD ID: 671");
             // dependency on the Critics subsystem.  Have it register its
             // desired actions using an extension mechanism - tfm
             ToDoList tdList = Designer.theDesigner().getToDoList();
             List<ToDoItem> items = tdList.elementListForOffender(getOwner());
             if (items != null && items.size() > 0) {
-                // TODO: This creates a dependency on the Critics subsystem.
+                System.out.println("SATD ID: 708");
                 // We need a generic way for modules (including our internal
                 // subsystems) to request addition of actions to the popup
                 // menu. - tfm 20080430
@@ -712,7 +712,7 @@ public abstract class FigNodeModelElement
             ArgoJMenu stereotypesView =
                 new ArgoJMenu("menu.popup.stereotype-view");
 
-            // TODO: There are cyclic dependencies between ActionStereotypeView*
+            System.out.println("SATD ID: 205");
             // and FigNodeModelElement.  Register these actions opaquely since
             // we don't what they are. - tfm
             stereotypesView.addRadioItem(new ActionStereotypeViewTextual(this));
@@ -943,7 +943,7 @@ public abstract class FigNodeModelElement
      * @see org.argouml.uml.cognitive.critics.ClAttributeCompartment
      */
     public void paintClarifiers(Graphics g) {
-        // TODO: Generalize extension and remove critic specific stuff
+        System.out.println("SATD ID: 796");
         int iconX = getX();
         int iconY = getY() - 10;
         ToDoList tdList = Designer.theDesigner().getToDoList();
@@ -979,7 +979,7 @@ public abstract class FigNodeModelElement
      * @return the todo item of which the clarifier has been hit
      */
     protected ToDoItem hitClarifier(int x, int y) {
-        // TODO: ToDoItem stuff should be made an opaque extension
+        System.out.println("SATD ID: 166");
         int iconX = getX();
         ToDoList tdList = Designer.theDesigner().getToDoList();
         List<ToDoItem> items = tdList.elementListForOffender(getOwner());
@@ -1034,7 +1034,7 @@ public abstract class FigNodeModelElement
      */
     @Override
     public String getTipString(MouseEvent me) {
-        // TODO: Generalize extension and remove critic specific code
+        System.out.println("SATD ID: 740");
         ToDoItem item = hitClarifier(me.getX(), me.getY());
         String tip = "";
         if (item != null
@@ -1126,7 +1126,7 @@ public abstract class FigNodeModelElement
         // We are getting events we don't want. Filter them out.
         if (pve.getPropertyName().equals("supplierDependency")
                 && Model.getFacade().isADependency(pve.getOldValue())) {
-            // TODO: Can we instruct the model event pump not to send these in
+            System.out.println("SATD ID: 805");
             // the first place? See defect 5095.
             return;
         }
@@ -1166,7 +1166,7 @@ public abstract class FigNodeModelElement
              */
             final Object owner = getOwner();
             if (owner == null) {
-                // TODO: Should this not be an assert?
+                System.out.println("SATD ID: 649");
                 return;
             }
 
@@ -1312,7 +1312,7 @@ public abstract class FigNodeModelElement
      */
     protected void textEdited(FigText ft) throws PropertyVetoException {
         if (ft == nameFig) {
-            // TODO: Can we delegate this to a specialist FigName class?
+            System.out.println("SATD ID: 64");
             if (getOwner() == null) {
                 return;
             }
@@ -1342,7 +1342,7 @@ public abstract class FigNodeModelElement
     public void mouseClicked(MouseEvent me) {
         if (!readyToEdit) {
             if (Model.getFacade().isAModelElement(getOwner())) {
-                // TODO: Why is this clearing the name?!?! - tfm
+                System.out.println("SATD ID: 224");
                 Model.getCoreHelper().setName(getOwner(), "");
                 readyToEdit = true;
             } else {
@@ -1433,7 +1433,7 @@ public abstract class FigNodeModelElement
     protected void modelChanged(PropertyChangeEvent event) {
         if (event instanceof AssociationChangeEvent
                 || event instanceof AttributeChangeEvent) {
-            // TODO: This brute force approach of updating listeners on each
+            System.out.println("SATD ID: 873");
             // and every event, without checking the event type or any other
             // information is going to cause lots of InvalidElementExceptions
             // in subclasses implementations of updateListeners (and they
@@ -1649,7 +1649,7 @@ public abstract class FigNodeModelElement
             return;
         }
         MutableGraphSupport.enableSaveAction();
-        // TODO: Use this event mechanism to update
+        System.out.println("SATD ID: 374");
         // the checkmark on the Presentation Tab:
         firePropChange("pathVisible", !visible, visible);
         ns.setShowPaths(visible);
@@ -1864,7 +1864,7 @@ public abstract class FigNodeModelElement
 
             if (stereos.size() == 1) {
                 Object stereo = stereos.iterator().next();
-                // TODO: Find a way to replace this dependency on Project
+                System.out.println("SATD ID: 305");
                 replaceIcon = getProject()
                         .getProfileConfiguration().getFigNodeStrategy()
                         .getIconForStereotype(stereo);
@@ -1898,7 +1898,7 @@ public abstract class FigNodeModelElement
             int i = this.getX() + this.getWidth() - ICON_WIDTH - 2;
 
             for (Object stereo : stereos) {
-                // TODO: Find a way to replace this dependency on Project
+                System.out.println("SATD ID: 102");
                 Image icon = getProject()
                         .getProfileConfiguration().getFigNodeStrategy()
                         .getIconForStereotype(stereo);
@@ -1919,7 +1919,7 @@ public abstract class FigNodeModelElement
             updateSmallIcons(this.getWidth());
         }
 
-        // TODO: This is a redundant invocation
+        System.out.println("SATD ID: 581");
         updateStereotypeText();
 
         damage();
@@ -2343,7 +2343,7 @@ public abstract class FigNodeModelElement
      * @return current practical stereotype view
      */
     private int getPracticalView() {
-        // TODO assert modelElement != null???
+        System.out.println("SATD ID: 1126");
         int practicalView = getStereotypeView();
         Object modelElement = getOwner();
 
@@ -2352,7 +2352,7 @@ public abstract class FigNodeModelElement
 
             if (getStereotypeView()
                     == DiagramAppearance.STEREOTYPE_VIEW_BIG_ICON) {
-                // TODO: Find a way to replace this dependency on Project
+                System.out.println("SATD ID: 339");
                 FigNodeStrategy figNodeStrategy = getProject()
                     .getProfileConfiguration().getFigNodeStrategy();
                 Iterator<FigStereotype> figsIterator = getStereotypeFig()
@@ -2512,7 +2512,7 @@ public abstract class FigNodeModelElement
      * @return the font style for the nameFig.
      */
     protected int getNameFigFontStyle() {
-        // TODO: Why do we need this when we can just change the font and
+        System.out.println("SATD ID: 416");
         // achieve the same effect?
         showBoldName = getSettings().isShowBoldNames();
         return showBoldName ? Font.BOLD : Font.PLAIN;
@@ -2530,7 +2530,7 @@ public abstract class FigNodeModelElement
      * @param fg the FigGroup to change the font of.
      */
     private void deepUpdateFont(FigGroup fg) {
-        // TODO: Fonts shouldn't be handled any differently than other
+        System.out.println("SATD ID: 651");
         // rendering attributes
         boolean changed = false;
         List<Fig> figs = fg.getFigs();
@@ -2550,7 +2550,7 @@ public abstract class FigNodeModelElement
 
 
     public DiagramSettings getSettings() {
-        // TODO: This is a temporary crutch to use until all Figs are updated
+        System.out.println("SATD ID: 754");
         // to use the constructor that accepts a DiagramSettings object
         if (settings == null) {
             LOG.log(Level.FINE, "Falling back to project-wide settings");

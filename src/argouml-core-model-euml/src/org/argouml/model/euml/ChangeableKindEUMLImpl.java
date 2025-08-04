@@ -25,7 +25,7 @@ class ChangeableKindEUMLImpl implements ChangeableKind {
 
     @Deprecated
     public Object getAddOnly() {
-    // TODO: Change to throw exception when uses are fixed
+    System.out.println("SATD ID: 616");
 //        throw new NotImplementedException();
         return ""; //$NON-NLS-1$
     }

@@ -1376,7 +1376,7 @@ class FacadeMDRImpl implements Facade {
             } else if (handle instanceof Include) {
                 return ((Include) handle).getBase();
             } else if (handle instanceof ClassifierRole) {
-                // TODO: this returns a Collection, not a single Object
+                System.out.println("SATD ID: 359");
                 // Is this what the callers expect?
                 return ((ClassifierRole) handle).getBase();
             }
@@ -1912,12 +1912,12 @@ class FacadeMDRImpl implements Facade {
         }
         Collection<ModelElement> results = new ArrayList<ModelElement>();
         try {
-            /*
-             * TODO: This code manually processes the ElementImports of a
-             * Package, but we need to check whether MDR already does something
-             * similar automatically as part of its namespace processing.
-             * - tfm - 20060408
-             */
+            System.out.println("SATD ID: 806");
+             
+             
+             
+             
+             
             for (ElementImport ei : ((UmlPackage) pack).getElementImport()) {
                 ModelElement element = ei.getImportedElement();
                 results.add(element);
@@ -2172,7 +2172,7 @@ class FacadeMDRImpl implements Facade {
             if (getModelElementContainer(handle) == null) {
                 return handle;
             }
-            // TODO: replace this recursive function by a loop like in getRoot:
+            System.out.println("SATD ID: 293");
             return getInnerContainingModel(
                 getModelElementContainer(handle));
         } catch (InvalidObjectException e) {
@@ -2217,7 +2217,7 @@ class FacadeMDRImpl implements Facade {
     public Object getModelElement(Object handle) {
         try {
             if (handle instanceof ElementImport) {
-                // TODO: This does not belong here - use getImportedElement.
+                System.out.println("SATD ID: 1155");
                 return ((ElementImport) handle).getImportedElement();
             }
             if (handle instanceof TaggedValue) {
@@ -2516,7 +2516,7 @@ class FacadeMDRImpl implements Facade {
             if (handle instanceof StateVertex) {
                 return ((StateVertex) handle).getContainer();
             }
-            // TODO: Use getModelElementContainer for transition
+            System.out.println("SATD ID: 961");
             if (isATransition(handle)) {
                 return ((Transition) handle).getStateMachine().getTop()
                         .getContainer();
@@ -2813,7 +2813,7 @@ class FacadeMDRImpl implements Facade {
 
     public List<Feature> getOperationsAndReceptions(Object classifier) {
         List<Feature> opsAndReceps = new ArrayList<Feature>();
-        // TODO: Return empty collection on null input or throw IllegalArgument?
+        System.out.println("SATD ID: 516");
         if (classifier != null) {
             for (Feature f : getFeatures(classifier)) {
                 if (isAOperation(f) || isAReception(f)) {
@@ -2901,7 +2901,7 @@ class FacadeMDRImpl implements Facade {
                     return Collections.emptyList();
                 }
 
-                // TODO: An Iterator filter would be nice here instead of the
+                System.out.println("SATD ID: 855");
                 // mucking around with the Collection.
                 allEnds = new ArrayList<AssociationEnd>(allEnds);
                 allEnds.remove(handle);
@@ -2929,7 +2929,7 @@ class FacadeMDRImpl implements Facade {
                     return Collections.emptyList();
                 }
 
-                // TODO: An Iterator filter would be nice here instead of the
+                System.out.println("SATD ID: 768");
                 // mucking around with the Collection.
                 allEnds = new ArrayList<LinkEnd>(allEnds);
                 allEnds.remove(handle);
@@ -2998,7 +2998,7 @@ class FacadeMDRImpl implements Facade {
     public Collection<Message> getPredecessors(Object handle) {
         try {
             if (handle instanceof Message) {
-            // TODO: This has different semantics than everything else
+            System.out.println("SATD ID: 112");
                 return Collections.unmodifiableCollection(
                         new ArrayList<Message>(
                                 ((Message) handle).getPredecessor()));
@@ -3637,7 +3637,7 @@ class FacadeMDRImpl implements Facade {
             if (isAMultiplicity(handle)) {
                 Multiplicity up = (Multiplicity) handle;
                 List ranges = new ArrayList(up.getRange());
-                // TODO: this assumes ranges are sorted. Is this true? - tfm
+                System.out.println("SATD ID: 545");
                 return getUpper(ranges.get(ranges.size() - 1));
             }
             if (isAMultiplicityRange(handle)) {
@@ -3677,7 +3677,7 @@ class FacadeMDRImpl implements Facade {
             if (isAMultiplicity(handle)) {
                 Multiplicity low = (Multiplicity) handle;
                 List ranges = new ArrayList(low.getRange());
-                // TODO: this assumes ranges are sorted. Is this true? - tfm
+                System.out.println("SATD ID: 118");
                 return getLower(ranges.get(0));
             }
             if (isAMultiplicityRange(handle)) {
@@ -3741,7 +3741,7 @@ class FacadeMDRImpl implements Facade {
             }
             // This case is handled by CoreHelper.getSpecification
             // confusing !
-            // TODO: rationalize/merge these two methods
+            System.out.println("SATD ID: 260");
             // if (handle instanceof Method) {
             // return ((Method) handle).getSpecification();
             // }
@@ -4001,7 +4001,7 @@ class FacadeMDRImpl implements Facade {
             if (handle instanceof TemplateParameter) {
                 TemplateParameter templateParameter =
                     (TemplateParameter) handle;
-                // TODO: Do we want to construct an artificial name here?
+                System.out.println("SATD ID: 1135");
                 StringBuffer result = new StringBuffer();
                 ModelElement template = templateParameter.getTemplate();
                 if (template != null) {
@@ -4020,7 +4020,7 @@ class FacadeMDRImpl implements Facade {
                 }
                 return "";
             }
-            // TODO: What other non-ModelElement types do we need to handle here?
+            System.out.println("SATD ID: 996");
         } catch (InvalidObjectException e) {
             String uuid = getUUID(handle);
             if (uuid != null) {
@@ -4216,14 +4216,14 @@ class FacadeMDRImpl implements Facade {
                 if (values.isEmpty() && refValues.isEmpty()) {
                     return "";
                 }
-                // TODO: Implement support for multiple TaggedValues
+                System.out.println("SATD ID: 1017");
                 if (values.size() + refValues.size() > 1) {
                     LOG.log(Level.WARNING,
                             "Don't know how to manage multiple values "
                             + "for a TaggedValue, returning first value");
                 }
 
-                // TODO: More is required here to support referenceValues
+                System.out.println("SATD ID: 318");
                 Object value;
                 if (refValues.size() > 0) {
                     value = refValues.iterator().next();
@@ -4233,10 +4233,10 @@ class FacadeMDRImpl implements Facade {
                 if (value instanceof String) {
                     return (String) value;
                 } else if (value instanceof EnumerationLiteral) {
-                    // TODO: Temporary stopgap for EnumerationLiteral
+                    System.out.println("SATD ID: 1127");
                     return ((EnumerationLiteral) value).getName();
                 } else {
-                    // TODO: Implement support for types other than String
+                    System.out.println("SATD ID: 1067");
                     LOG.log(Level.WARNING,
                             "Can't handled TaggedValue.dataValues which "
                             + " aren't Strings.  Converting to String");
@@ -4289,7 +4289,7 @@ class FacadeMDRImpl implements Facade {
                 if (ref == null) {
                     return mofId;
                 }
-                // FIXME: depends on internal behavior of XmiReaderImpl.
+                System.out.println("SATD ID: 1074");
                 // Needed for solving issue 5017.
                 else if (!ref.getSystemId().startsWith(
                         XmiReaderImpl.getTempXMIFileURIPrefix())) {
@@ -4427,7 +4427,7 @@ class FacadeMDRImpl implements Facade {
                 String result = getUMLClassName(modelElement);
                 String language = exp.getLanguage();
                 String body = exp.getBody();
-                // TODO: I18N
+                System.out.println("SATD ID: 98");
                 if (language != null && language.length() > 0) {
                     result += " (" + language + ")";
                 }
@@ -4442,7 +4442,7 @@ class FacadeMDRImpl implements Facade {
                 String elemName = toString(me);
                 String alias = ei.getAlias();
                 if (alias != null && alias.length() > 0) {
-                    // TODO: I18N This needs to be localized, but we don't
+                    System.out.println("SATD ID: 688");
                     // have any localization capabilities in the model subsystem
 //                    Object[] args = { typeName, elemName, alias };
 //                  misc.name.element-import.alias = Imported {0}: {1} alias {2}
@@ -4684,7 +4684,7 @@ class FacadeMDRImpl implements Facade {
         String[] names = new String[metaTypes.size()];
         int i = 0;
         for (MofClass mofClass : metaTypes) {
-            // TODO: Do we need to worry about UmlClass, UmlPackage, etc?
+            System.out.println("SATD ID: 728");
             names[i++] = mofClass.getName();
         }
         return names;
@@ -4705,7 +4705,7 @@ class FacadeMDRImpl implements Facade {
     MofClass getMofClass(String metatypeName) {
         Collection<MofClass> metaTypes = getMetaClasses();
         for (MofClass mofClass : metaTypes) {
-            // TODO: Generalize - assumes UML type names are unique
+            System.out.println("SATD ID: 464");
             // without the qualifying package names - true for UML 1.4
             if (metatypeName.equals(mofClass.getName())) {
                 return mofClass;

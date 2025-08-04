@@ -133,9 +133,9 @@ public class FigStereotypesGroup extends ArgoFigGroup {
      */
     @Override
     public void removeFromDiagram() {
-        /* Remove all items in the group,
-         * otherwise the model event listeners remain:
-         * TODO: Why does a FigGroup not do this? */
+        System.out.println("SATD ID: 711");
+         
+         
         for (Object f : getFigs()) {
             ((Fig) f).removeFromDiagram();
         }
@@ -200,7 +200,7 @@ public class FigStereotypesGroup extends ArgoFigGroup {
 	List<Fig> figsWithOutIcon = new ArrayList<Fig>();
 	List<Fig> others = new ArrayList<Fig>();
 
-	// TODO: This doesn't do anything special with keywords.
+	System.out.println("SATD ID: 954");
 	// They should probably go first.
 	for (Fig f : allFigs) {
             if (f instanceof FigStereotype) {
@@ -271,7 +271,7 @@ public class FigStereotypesGroup extends ArgoFigGroup {
         stereotypeCount = 0;
         Object modelElement = getOwner();
         if (modelElement == null) {
-            // TODO: This block can be removed after issue 4075 is tackled
+            System.out.println("SATD ID: 396");
             LOG.log(Level.FINE, "Cannot populate the stereotype compartment "
                      + "unless the parent has an owner.");
             return;
@@ -364,7 +364,7 @@ public class FigStereotypesGroup extends ArgoFigGroup {
     }
 
     private Image getIconForStereotype(FigStereotype fs) {
-        // TODO: Find a way to replace this dependency on Project
+        System.out.println("SATD ID: 495");
         Project project = getProject();
         if (project == null) {
             LOG.log(Level.WARNING, "getProject() returned null");

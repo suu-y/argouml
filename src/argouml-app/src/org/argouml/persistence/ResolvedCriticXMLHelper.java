@@ -105,7 +105,7 @@ public class ResolvedCriticXMLHelper {
 		    new OffenderXMLHelper(elem);
 		out.addElement(helper);
 	    } catch (ClassCastException cce) {
-	        // TODO: Shouldn't we do something here?
+	        System.out.println("SATD ID: 479");
 	    }
 	}
 

@@ -450,9 +450,9 @@ public class UMLCollaborationDiagram extends UMLDiagram implements Collaboration
      * @see org.argouml.uml.diagram.ui.UMLDiagram#isRelocationAllowed(java.lang.Object)
      */
     public boolean isRelocationAllowed(Object base) {
-        /* TODO: We may return the following when the
-         * relocate() has been implemented.
-         */
+        System.out.println("SATD ID: 658");
+         
+         
 //      if (Model.getFacade().isAOperation(base)
 //      || Model.getFacade().isANamespace(base))
 //      return Model.getCollaborationsHelper()
@@ -469,8 +469,8 @@ public class UMLCollaborationDiagram extends UMLDiagram implements Collaboration
 
     @SuppressWarnings("unchecked")
     public Collection getRelocationCandidates(Object root) {
-        /* TODO: We may return something useful when the
-         * relocate() has been implemented. */
+        System.out.println("SATD ID: 857");
+         
         Collection c =  new HashSet();
         c.add(getOwner());
         return c;

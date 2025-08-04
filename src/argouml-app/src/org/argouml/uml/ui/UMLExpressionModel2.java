@@ -256,9 +256,9 @@ public abstract class UMLExpressionModel2
                 SwingUtilities.invokeLater(new Runnable() {
                     public void run() {
                         ((TabTarget) container).refresh();
-                        /* TODO: The above statement also refreshes when 
-                         * we are not shown (to be verified) - hence 
-                         * not entirely correct. */
+                        System.out.println("SATD ID: 1156");
+                         
+                         
                     }
                 });
             }

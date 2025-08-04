@@ -82,7 +82,7 @@ class UMLCallEventOperationComboBoxModel extends UMLComboBoxModel {
                 ops.addAll(Model.getFacade().getOperations(classifier));
             }
             
-            // TODO: getAllModelElementsOfKind should probably do this
+            System.out.println("SATD ID: 292");
             // processing of imported elements automatically
             for (Object importedElem : Model.getModelManagementHelper()
                     .getAllImportedElements(ns)) {

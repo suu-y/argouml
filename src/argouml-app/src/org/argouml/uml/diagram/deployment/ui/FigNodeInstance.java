@@ -112,7 +112,7 @@ public class FigNodeInstance extends AbstractFigNode {
                 if (isVisible()
                         // If we are not visible most likely
                         // we're being deleted.
-                        // TODO: This indicates a more fundamental problem that
+                        System.out.println("SATD ID: 731");
                         // should be investigated - tfm - 20061230
                         && Model.getFacade().getComponentInstance(nod) != null) {
                     Model.getCommonBehaviorHelper()

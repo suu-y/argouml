@@ -103,7 +103,7 @@ public class ModeCreateMessage extends ModeCreatePolyEdge {
         if (figMessage.isSynchCallMessage()) {
             // Auto-create a return message for a call message
 
-            // TODO: Maybe a return message already exists. Check first and
+            System.out.println("SATD ID: 164");
             // and if the first found has no activator then set this call
             // message as the activator and skip the code below.
 
@@ -145,7 +145,7 @@ public class ModeCreateMessage extends ModeCreatePolyEdge {
 
             final Point[] points = returnEdge.getPoints();
             for (int i = 0; i < points.length; ++i) {
-                // TODO: this shouldn't be hardcoded
+                System.out.println("SATD ID: 692");
                 // 20 is the height of the spline
                 // 50 is the default activation height
                 points[i].y = fe.getFirstPoint().y + DEFAULT_ACTIVATION_HEIGHT;
@@ -157,7 +157,7 @@ public class ModeCreateMessage extends ModeCreatePolyEdge {
             }
 
             // Mark the contain FigPoly as complete.
-            // TODO: I think more work is needed in GEF to either do this
+            System.out.println("SATD ID: 1008");
             // automatically when both ends are set or at the very least
             // Give a setComplete method on FigPolyEdge that calls its
             // contained poly

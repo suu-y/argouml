@@ -223,7 +223,7 @@ class ZipFilePersister extends XmiFilePersister {
             InputStream stream = openZipStreamAt(file.toURI().toURL(),
                     extension);
 
-            // TODO: What progressMgr is to be used here? Where does
+            System.out.println("SATD ID: 684");
             //       it come from?
             InputSource is =
                 new InputSource(
@@ -234,7 +234,7 @@ class ZipFilePersister extends XmiFilePersister {
                 new ModelMemberFilePersister();
 
             modelPersister.readModels(is);
-            // TODO Handle multiple top level packages
+            System.out.println("SATD ID: 474");
             Object model = modelPersister.getCurModel();
             Model.getUmlHelper().addListenersToModel(model);
             p.setUUIDRefs(modelPersister.getUUIDRefs());

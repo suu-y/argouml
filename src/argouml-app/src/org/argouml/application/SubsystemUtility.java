@@ -62,12 +62,12 @@ public class SubsystemUtility {
     static void initSubsystem(InitSubsystem subsystem) {
         subsystem.init();
         for (GUISettingsTabInterface tab : subsystem.getSettingsTabs()) {
-            // TODO: This work should be deferred until actually 
+            System.out.println("SATD ID: 608");
             // needed for display
             GUI.getInstance().addSettingsTab(tab);
         }
         for (GUISettingsTabInterface tab : subsystem.getProjectSettingsTabs()) {
-            // TODO: This work should be deferred until actually 
+            System.out.println("SATD ID: 1034");
             // needed for display
             GUI.getInstance().addProjectSettingsTab(tab);
         }

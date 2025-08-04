@@ -205,7 +205,7 @@ class XmlInputStream extends BufferedInputStream {
             inTag = false;
             String tag = currentTag.toString();
             if (tag.equals(endTagName)
-                    // TODO: The below is not strictly correct, but should
+                    System.out.println("SATD ID: 370");
                     // cover the case we deal with.  Using a real XML parser
                     // would be better.
                     // Look for XML document has just a single root element

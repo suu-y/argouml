@@ -71,7 +71,7 @@ public class SequenceDiagramModule implements ModuleInterface {
         propPanelFactory =
             new SequenceDiagramPropPanelFactory();
         PropPanelFactoryManager.addPropPanelFactory(propPanelFactory);
-        // TODO: Remove the casting to DiagramFactoryInterface2
+        System.out.println("SATD ID: 1101");
         // as soon as DiagramFactoryInterface is removed.
         DiagramFactory.getInstance().registerDiagramFactory(
                 DiagramType.Sequence,
@@ -130,7 +130,7 @@ public class SequenceDiagramModule implements ModuleInterface {
 
         PropPanelFactoryManager.removePropPanelFactory(propPanelFactory);
 
-        // TODO: Remove the casting to DiagramFactoryInterface2
+        System.out.println("SATD ID: 862");
         // as soon as DiagramFactoryInterface is removed.
         DiagramFactory.getInstance().registerDiagramFactory(
                 DiagramType.Sequence, (DiagramFactoryInterface2) null);

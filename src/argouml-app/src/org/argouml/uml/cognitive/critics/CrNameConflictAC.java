@@ -72,7 +72,7 @@ public class CrNameConflictAC extends CrUML {
      */
     @Override
     public boolean predicate2(Object dm, Designer dsgr) {
-	// TODO: not implemented
+	System.out.println("SATD ID: 607");
 	return NO_PROBLEM;
     }
 

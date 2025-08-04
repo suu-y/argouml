@@ -445,7 +445,7 @@ class TodoParser extends SAXParserBase {
                         try {
                             sb.append((char) Integer.parseInt(ent));
                         } catch (NumberFormatException nfe) {
-                            // TODO: handle parse error
+                            System.out.println("SATD ID: 568");
                         }
                     }
                 }

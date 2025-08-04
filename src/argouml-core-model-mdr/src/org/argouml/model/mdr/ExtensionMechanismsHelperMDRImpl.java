@@ -109,7 +109,7 @@ class ExtensionMechanismsHelperMDRImpl implements ExtensionMechanismsHelper {
         }
 
         List<Stereotype> l = new ArrayList<Stereotype>();
-        // TODO: this could be a huge collection - find a more efficient way
+        System.out.println("SATD ID: 881");
         try {
             for (Object o : ((Namespace) ns).getOwnedElement()) {
                 if (o instanceof Stereotype) {
@@ -177,7 +177,7 @@ class ExtensionMechanismsHelperMDRImpl implements ExtensionMechanismsHelper {
             String baseClass = baseClasses.iterator().next();
 
             for (Model model : ((Collection<Model>) models)) {
-                // TODO: this should call the single namespace form
+                System.out.println("SATD ID: 1016");
                 // getStereotype(it2.next(); stereo);
                 for (Stereotype o : getStereotypes(model)) {
                     if (name.equals(o.getName())
@@ -224,7 +224,7 @@ class ExtensionMechanismsHelperMDRImpl implements ExtensionMechanismsHelper {
      * @see org.argouml.model.ExtensionMechanismsHelper#getCommonTaggedValueTypes()
      */
     public Collection getCommonTaggedValueTypes() {
-        // TODO: still not used, because in ArgoUML String is "hardwired"
+        System.out.println("SATD ID: 902");
         return null;
     }
 
@@ -333,8 +333,8 @@ class ExtensionMechanismsHelperMDRImpl implements ExtensionMechanismsHelper {
             if (isStereotype(object, name, base)) {
                 return true;
             }
-            /* TODO: mvw: do we really look into super-types of the stereotype,
-             * or should we be looking into super-types of the baseclass? */
+            System.out.println("SATD ID: 372");
+             
             Iterator it =
                 modelImpl.getCoreHelper().getSupertypes(object).iterator();
             while (it.hasNext()) {
@@ -478,7 +478,7 @@ class ExtensionMechanismsHelperMDRImpl implements ExtensionMechanismsHelper {
 
     public void setTagType(Object handle, String tagType) {
         if (handle instanceof TagDefinition) {
-            // TODO: What type of validation can we do here on tagType?
+            System.out.println("SATD ID: 59");
             ((TagDefinition) handle).setTagType(tagType);
             return;
         }

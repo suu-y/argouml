@@ -315,11 +315,11 @@ class XmiReferenceResolverImpl extends XmiContext {
             ro = super.getReference(docId, xmiId);
         }
         if (ro == null) {
-            // TODO: Distinguish between deferred resolution and things which
+            System.out.println("SATD ID: 428");
             // are unresolved at end of load and should be reported to user.
             LOG.log(Level.SEVERE, "Failed to resolve " + docId + "#" + xmiId );
         }
-        // TODO: Count/report unresolved references
+        System.out.println("SATD ID: 497");
         return ro;
     }
 
@@ -373,7 +373,7 @@ class XmiReferenceResolverImpl extends XmiContext {
         LOG.log(Level.FINE,
                 "attempting to resolve Xmi Href --> {0}", systemId);
 
-        // TODO: Using just the last piece of the ID leaves the potential for
+        System.out.println("SATD ID: 378");
         // name collisions if two linked files have the same name in different
         // directories
         final String suffix = getSuffix(systemId);
@@ -393,7 +393,7 @@ class XmiReferenceResolverImpl extends XmiContext {
             }
             if (modelUrl == null) {
                 // If systemId is a valid URL, simply use it.
-                // TODO: This causes a network connection attempt for profiles
+                System.out.println("SATD ID: 967");
                 modelUrl = getValidURL(fixupURL(systemId));
             }
             if (modelUrl == null) {
@@ -434,13 +434,13 @@ class XmiReferenceResolverImpl extends XmiContext {
                     LOG.log(Level.SEVERE, "Error relativizing system ID " + systemId, e);
                     relativeUri = systemId;
                 }
-                // TODO: Check whether this is really needed.  I think it's
+                System.out.println("SATD ID: 847");
                 // left over from an incomplete understanding of the MagicDraw
                 // composition error problem - tfm
                 reverseUrlMap.put(modelUrl.toString(), relativeUri);
                 reverseUrlMap.put(systemId, relativeUri);
             } else {
-                // TODO: We failed to resolve URL - signal error
+                System.out.println("SATD ID: 928");
             }
         }
         return modelUrl;
@@ -556,12 +556,12 @@ class XmiReferenceResolverImpl extends XmiContext {
 
         URL modelUrl = Thread.currentThread().getContextClassLoader()
                 .getResource(modelName);
-        // TODO: Not sure whether the above is better in some cases, but
+        System.out.println("SATD ID: 687");
         // the code below is better for both Java Web Start and Eclipse.
         if (modelUrl == null) {
             modelUrl = this.getClass().getResource(modelName);
         }
-        // TODO: Is this adequate for finding profiles in Java WebStart jars?
+        System.out.println("SATD ID: 360");
         //       - tfm
         if (modelUrl == null) {
             if (CLASSPATH_MODEL_SUFFIXES != null

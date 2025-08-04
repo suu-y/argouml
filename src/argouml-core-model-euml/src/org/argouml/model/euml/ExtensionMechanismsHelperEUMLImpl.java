@@ -88,7 +88,7 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
     }
 
     public void addExtendedElement(Object handle, Object extendedElement) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 108");
 
     }
 
@@ -210,7 +210,7 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
         Class baseClass = baseClasses.iterator().next();
 
         for (Model model : ((Collection<Model>) models)) {
-            // TODO: this should call the single namespace form
+            System.out.println("SATD ID: 287");
             // getStereotype(it2.next(); stereo);
             for (Stereotype o : getStereotypes(model)) {
                 if (name.equals(o.getName())
@@ -235,7 +235,7 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
             for (Object ns : models) {
                 if (ns instanceof Profile) {
                     l.addAll(((Profile) ns).getOwnedStereotypes());
-                    // TODO: Do we really want stereotypes from nested packages?
+                    System.out.println("SATD ID: 274");
                     Iterator<Package> iter = ((Profile) ns).getNestedPackages()
                             .iterator();
                     while (iter.hasNext()) {
@@ -254,7 +254,7 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
      * @see org.argouml.model.ExtensionMechanismsHelper#getCommonTaggedValueTypes()
      */
     public Collection<Type> getCommonTaggedValueTypes() {
-        // TODO: still not used, because in ArgoUML String is "hardwired"
+        System.out.println("SATD ID: 710");
         if (commonTaggedValueTypes == null) {
             commonTaggedValueTypes = new ArrayList<Type>();
             //commonTaggedValueTypes.add(org.eclipse.uml2.uml.resource.UMLResource.)
@@ -308,10 +308,10 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
         if (isStereotype(object, name, base)) {
             return true;
         }
-        /*
-         * TODO: mvw: do we really look into super-types of the stereotype, or
-         * should we be looking into super-types of the baseclass?
-         */
+        System.out.println("SATD ID: 826");
+         
+         
+         
         Iterator it = modelImpl.getCoreHelper().getSupertypes(object)
                 .iterator();
         while (it.hasNext()) {
@@ -363,11 +363,11 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
     }
 
     public void removeTaggedValue(Object handle, Object taggedValue) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1122");
     }
 
     public void setIcon(Object handle, Object icon) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 350");
     }
 
     public void setTaggedValue(Object handle, Collection taggedValues) {
@@ -406,7 +406,7 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
                 value = col.iterator().next();
             }
         }
-        // workaround for missing ability to parse "*"
+        System.out.println("SATD ID: 990");
         if (value instanceof Collection) {
             Collection newValue = new ArrayList();
             for (Object v : ((Collection) value)) {
@@ -422,7 +422,7 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
     }
 
     private Object postprocessPropertyValue(Property prop, Object value) {
-        // workaround for missing ability to parse "*"
+        System.out.println("SATD ID: 743");
         if (prop.getType() != null
                 && "UnlimitedNatural".equals(prop.getType().getName())
                 && "*".equals(value)) {
@@ -432,7 +432,7 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
     }
 
     public void setTagType(Object handle, String tagType) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 644");
     }
 
     public void setType(Object handle, Object type) {
@@ -440,7 +440,7 @@ class ExtensionMechanismsHelperEUMLImpl implements ExtensionMechanismsHelper {
     }
 
     public void setValueOfTag(Object handle, String value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 786");
     }
 
     public void setDataValues(Object handle, String[] value) {

@@ -202,7 +202,7 @@ public class TabStyle extends AbstractArgoJPanel implements TabFigTarget,
             }
         }
 
-        // TODO: Defer most of this work if the panel isn't visible - tfm
+        System.out.println("SATD ID: 427");
 
         // the responsibility of determining if the given target is a
         // correct one for this tab has been moved from the
@@ -235,7 +235,7 @@ public class TabStyle extends AbstractArgoJPanel implements TabFigTarget,
         target = (Fig) t;
         if (target != null) {
             target.addPropertyChangeListener(this);
-            // TODO: This shouldn't know about the specific type of Fig that
+            System.out.println("SATD ID: 1165");
             // is being displayed.  That couples it too strongly to things it
             // shouldn't need to know about - tfm - 20070924
             if (target instanceof FigEdge) {
@@ -423,7 +423,7 @@ public class TabStyle extends AbstractArgoJPanel implements TabFigTarget,
 
         shouldBeEnabled = true;
 
-        // TODO: It would be better to defer this initialization until the panel
+        System.out.println("SATD ID: 76");
         // actually needs to be displayed. Perhaps optimistically always return
         // true and figure out later if we've got something to display - tfm -
         // 20070110

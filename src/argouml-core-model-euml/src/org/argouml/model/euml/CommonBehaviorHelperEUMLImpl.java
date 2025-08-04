@@ -37,87 +37,87 @@ class CommonBehaviorHelperEUMLImpl implements CommonBehaviorHelper {
     }
 
     public void addAction(Object handle, Object action) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 815");
         
     }
 
     public void addAction(Object handle, int position, Object action) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 193");
         
     }
 
     public void addActualArgument(Object handle, Object argument) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1052");
         
     }
 
     public void addActualArgument(Object handle, int position, Object argument) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 380");
         
     }
 
     public void addClassifier(Object handle, Object classifier) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 209");
         
     }
 
     public void addStimulus(Object handle, Object stimulus) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 650");
         
     }
 
     public Object getActionOwner(Object handle) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1054");
         return null;
     }
 
     public Object getDestination(Object link) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 614");
         return null;
     }
 
     public Object getInstantiation(Object createaction) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 309");
         return null;
     }
 
     public Object getSource(Object link) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 446");
         return null;
     }
 
     public void removeAction(Object handle, Object action) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 499");
         
     }
 
     public void removeActualArgument(Object handle, Object argument) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 186");
         
     }
 
     public void removeClassifier(Object handle, Object classifier) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 542");
         
     }
 
     public void removeContext(Object handle, Object context) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 220");
         
     }
 
     public void removeReception(Object handle, Object reception) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 672");
         
     }
 
     public void setActualArguments(Object action, List arguments) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 951");
         
     }
 
     public void setAsynchronous(Object handle, boolean value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1050");
         
     }
 
@@ -129,92 +129,92 @@ class CommonBehaviorHelperEUMLImpl implements CommonBehaviorHelper {
     }
     
     public void setCommunicationLink(Object handle, Object c) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 909");
         
     }
 
     public void setComponentInstance(Object handle, Object c) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 354");
         
     }
 
     public void setContexts(Object handle, Collection c) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 871");
         
     }
 
     public void setDispatchAction(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 13");
         
     }
 
     public void setInstance(Object handle, Object inst) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 890");
         
     }
 
     public void setInstantiation(Object createaction, Object instantiation) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 749");
         
     }
 
     public void setNodeInstance(Object handle, Object nodeInstance) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 228");
         
     }
 
     public void setOperation(Object handle, Object operation) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 48");
         
     }
 
     public void setReceiver(Object handle, Object receiver) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1055");
         
     }
 
     public void setReception(Object handle, Collection receptions) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 463");
         
     }
 
     public void setRecurrence(Object handle, Object expr) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 69");
         
     }
 
     public void setScript(Object handle, Object expr) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 578");
         
     }
 
     public void setSender(Object handle, Object sender) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 25");
         
     }
 
     public void setSignal(Object handle, Object signal) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1166");
         
     }
 
     public void setSpecification(Object handle, String specification) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 892");
         
     }
 
     public void setTarget(Object handle, Object element) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 878");
         
     }
 
     public void setTransition(Object handle, Object trans) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 788");
         
     }
 
     public void setValue(Object handle, Object value) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 432");
         
     }
 

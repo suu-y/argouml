@@ -59,7 +59,7 @@ class GenericUMLPlainTextDocument extends UMLPlainTextDocument {
     @Override
     protected String getProperty() {
         Object target = getTarget();
-        // TODO: This can be a mess... There are any better solution?
+        System.out.println("SATD ID: 82");
         if ("name".equals(fieldName)) {
             return Model.getFacade().getName(target);
         }
@@ -69,7 +69,7 @@ class GenericUMLPlainTextDocument extends UMLPlainTextDocument {
     @Override
     protected void setProperty(String text) {
         Object target = getTarget();
-        // TODO: This can be a mess... There are any better solution?        
+        System.out.println("SATD ID: 1056");
         if ("name".equals(fieldName)) {
             Model.getCoreHelper().setName(target, text);
         }

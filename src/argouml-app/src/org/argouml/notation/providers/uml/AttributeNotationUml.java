@@ -119,8 +119,8 @@ public class AttributeNotationUml extends AttributeNotation {
             return;
         }
 
-        /* TODO: We should have all the information that is required in the
-         * NotationSettings object */
+        System.out.println("SATD ID: 423");
+         
         Project project = ProjectManager.getManager().getCurrentProject();
 
         ParseException pex = null;

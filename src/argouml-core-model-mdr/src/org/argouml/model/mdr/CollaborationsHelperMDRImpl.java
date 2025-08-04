@@ -552,7 +552,7 @@ class CollaborationsHelperMDRImpl implements CollaborationsHelper {
                 ClassifierRole.class));
 
         // A Classifier can only have a single unnamed ClassifierRole, so
-        // TODO: This probably belongs in a critic instead of here
+        System.out.println("SATD ID: 133");
         Collection<Classifier> listToRemove = new ArrayList<Classifier>();
         for (Classifier classifier : returnList) {
             Collection<ClassifierRole> classifierRoles =
@@ -590,7 +590,7 @@ class CollaborationsHelperMDRImpl implements CollaborationsHelper {
             }
         }
         // now get all classifiers imported from other packages
-        // TODO: This should probably happen automatically in
+        System.out.println("SATD ID: 475");
         // getAllModelElementsOfKind() - tfm
         if (modelImpl.getFacade().isAPackage(ns)) {
             returnList.addAll(getAllImportedClassifiers(ns));
@@ -630,7 +630,7 @@ class CollaborationsHelperMDRImpl implements CollaborationsHelper {
             AssociationRole role = (AssociationRole) arole;
             UmlAssociation base = (UmlAssociation) abase;
 
-            // TODO: Must we calculate the whole list?
+            System.out.println("SATD ID: 555");
             if (base != null && !getAllPossibleBases(role).contains(base)) {
                 throw new IllegalArgumentException("base is not allowed for "
                         + "this role");

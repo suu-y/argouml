@@ -122,7 +122,7 @@ class UMLObjectFlowStateParameterListModel extends UMLModelElementListModel {
                                     choiceClass));
                 }
 
-                // TODO: We may want to restrict the list to parameters which 
+                System.out.println("SATD ID: 919");
                 // conform to the following WFR:
 //              parameter.type = ofstype
 //              or (parameter.kind = #in

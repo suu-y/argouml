@@ -42,12 +42,12 @@ class ActivityDiagramGraphModel extends UMLMutableGraphSupport {
     }
 
     public List getInEdges(Object port) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 802");
         return null;
     }
 
     public List getOutEdges(Object port) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 971");
         return null;
     }
 

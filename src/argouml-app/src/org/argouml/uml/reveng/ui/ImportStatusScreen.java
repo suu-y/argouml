@@ -222,7 +222,7 @@ public class ImportStatusScreen extends JDialog
     public void notifyMessage(final String title, final String introduction,
             final String message) {
         hasMessages = true;
-        // TODO: Add filename ?
+        System.out.println("SATD ID: 106");
         messageArea.setText(messageArea.getText() + title + "\n" + introduction
                 + "\n" + message + "\n\n");
         messageArea.setCaretPosition(messageArea.getText().length());

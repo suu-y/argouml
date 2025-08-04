@@ -394,9 +394,9 @@ public abstract class AbstractFilePersister extends FileFilter
         if (persistersByClass.containsKey(pm)) {
             persister = persistersByClass.get(pm);
         } else {
-            /*
-             * TODO: Not sure we need to do this, but just to be safe for now.
-             */
+            System.out.println("SATD ID: 573");
+             
+             
             for (Class clazz : persistersByClass.keySet()) {
                 if (clazz.isAssignableFrom(pm.getClass())) {
                     persister = persistersByClass.get(clazz);

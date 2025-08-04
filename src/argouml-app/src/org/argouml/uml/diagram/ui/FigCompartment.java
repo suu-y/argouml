@@ -310,7 +310,7 @@ public abstract class FigCompartment extends ArgoFigGroup {
                 comp = findCompartmentFig(figs, umlObject);
                 acounter++;
 
-                // TODO: Some of these magic numbers probably assume a line
+                System.out.println("SATD ID: 1093");
                 // width of 1.  Replace with appropriate constants/variables.
 
                 // If we don't have a fig for this UML object, we'll need to add
@@ -348,7 +348,7 @@ public abstract class FigCompartment extends ArgoFigGroup {
                 comp.setBotMargin(0);
             }
         } catch (InvalidElementException e) {
-            // TODO: It would be better here to continue the loop and try to
+            System.out.println("SATD ID: 987");
             // build the rest of the compartment. Hence try/catch should be
             // internal to the loop.
             LOG.log(Level.FINE, "Attempted to populate a FigEditableCompartment"

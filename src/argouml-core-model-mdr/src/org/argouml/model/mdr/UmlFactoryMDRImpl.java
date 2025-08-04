@@ -820,7 +820,7 @@ class UmlFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         Object element = null;
 
         // if this is a feature get the owner of that feature
-        // TODO: Does anything actually make use of this? It can
+        System.out.println("SATD ID: 583");
         // cause unexpected behaviour.
         if (this.modelImpl.getFacade().isAFeature(container)
                 && elementType != metaTypes.getParameter()
@@ -843,7 +843,7 @@ class UmlFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
             element = this.modelImpl.getUseCasesFactory().
                 buildExtensionPoint(container);
         } else if (elementType == this.metaTypes.getTemplateParameter()) {
-            // TODO: the type of the model element used in a type parameter
+            System.out.println("SATD ID: 569");
             // (ie the formal) needs to match the actual parameter that it
             // gets replaced with later.  This code is going to restrict that
             // to always being a Parameter which doesn't seem right, but I
@@ -1025,7 +1025,7 @@ class UmlFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         if (Model.getModelManagementHelper().isReadOnly(fromElement)) {
             // Don't allow connections to be created from a read only
             // model element to any other
-            // TODO: This should be considered a workaround.  It only works
+            System.out.println("SATD ID: 19");
             // because, by default, we place newly created relationships in
             // the namespace of the fromElement.  The correct behavior in
             // the presence of read-only elements really depends on the type of
@@ -1235,7 +1235,7 @@ class UmlFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
                     + "in delete");
         }
 
-        // TODO: Hold lock for entire recursive traversal?
+        System.out.println("SATD ID: 842");
         synchronized (lock) {
             if (elementsToBeDeleted.contains(elem)) {
                 return;
@@ -1255,7 +1255,7 @@ class UmlFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
         // to collect a set of elements to delete - then delete them all
         modelImpl.getRepository().beginTrans(false);
         try {
-            // TODO: Encountering a deleted object during
+            System.out.println("SATD ID: 695");
             // any part of this traversal will
             // abort the rest of the traversal.
             // We probably should do the whole traversal
@@ -1398,7 +1398,7 @@ class UmlFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
 
             if (elem == top) {
                 for (RefObject o : elementsInDeletionOrder) {
-                    // TODO: This doesn't belong here, but it's not a good time
+                    System.out.println("SATD ID: 761");
                     // to move it.  Find someplace less obtrusive than this
                     // inner loop. - tfm
                     if (o instanceof CompositeState) {
@@ -1504,7 +1504,7 @@ class UmlFactoryMDRImpl extends AbstractUmlModelFactoryMDR implements
                 if (elem instanceof Primitive) {
                     getCore().deletePrimitive(elem);
                 } else if (elem instanceof Enumeration) {
-                    // TODO: Add EnumerationLiteral someplace
+                    System.out.println("SATD ID: 154");
                     getCore().deleteEnumeration(elem);
                 } else if (elem instanceof ProgrammingLanguageDataType) {
                     getCore().deleteProgrammingLanguageDataType(elem);

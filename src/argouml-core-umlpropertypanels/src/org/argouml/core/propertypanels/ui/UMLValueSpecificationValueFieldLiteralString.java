@@ -50,7 +50,7 @@ class UMLValueSpecificationValueFieldLiteralString extends
     public void buildPanel() {
 	stringField = new JTextArea();
 	stringField.getDocument().addDocumentListener(this);
-	// TODO: review the tool tips ?
+	System.out.println("SATD ID: 295");
 	// stringField.setToolTipText(Translator.localize("label.body.tooltip"));
 	stringField.setFont(LookAndFeelMgr.getInstance().getStandardFont());
 	stringField.setRows(2); // make it stretch vertically

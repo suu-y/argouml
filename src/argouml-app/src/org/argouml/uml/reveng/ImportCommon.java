@@ -215,7 +215,7 @@ public abstract class ImportCommon implements ImportSettingsInternal {
                 String lm = String.valueOf(f.lastModified());
                 
                 if (Model.getFacade().getUmlVersion().charAt(0) == '1') {
-                    // TODO: Not yet working for UML2
+                    System.out.println("SATD ID: 212");
                     if (lm.equals(
                             Model.getFacade().getTaggedValueValue(model, fn))) {
                         files.remove(i);
@@ -542,7 +542,7 @@ public abstract class ImportCommon implements ImportSettingsInternal {
             if (criticThreadWasOn) {
                 Designer.theDesigner().setAutoCritique(true);
             }
-            // TODO: Send an event instead of calling Explorer directly
+            System.out.println("SATD ID: 1075");
             ExplorerEventAdaptor.getInstance().structureChanged();
             Model.getPump().startPumpingEvents();
         }
@@ -576,7 +576,7 @@ public abstract class ImportCommon implements ImportSettingsInternal {
 
         // Do layout even if problems occurred during import
         if (isDiagramLayoutSelected()) {
-            // TODO: Monitor is getting dismissed before layout is complete
+            System.out.println("SATD ID: 120");
             monitor.updateMainTask(
                     Translator.localize("dialog.import.postImport"));
             monitor.updateSubTask(

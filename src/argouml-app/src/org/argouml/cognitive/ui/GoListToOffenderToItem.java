@@ -76,7 +76,7 @@ public class GoListToOffenderToItem extends AbstractGoList2 {
      * @see javax.swing.tree.TreeModel#getChild(java.lang.Object, int)
      */
     public Object getChild(Object parent, int index) {
-        // TODO: This should only be building list up to 'index'
+        System.out.println("SATD ID: 827");
 	return getChildrenList(parent).get(index);
     }
 
@@ -102,7 +102,7 @@ public class GoListToOffenderToItem extends AbstractGoList2 {
         if (node instanceof ToDoList) {
             return false;
         }
-        // TODO: This is a very expensive way to do this
+        System.out.println("SATD ID: 321");
 //        if (getChildCount(node) > 0) {
 //            return false;
 //        }

@@ -127,7 +127,7 @@ public class ToDoByGoal extends ToDoPerspective
 	    int[] childIndices = new int[nMatchingItems];
 	    Object[] children = new Object[nMatchingItems];
 	    nMatchingItems = 0;
-            // TODO: This shouldn't require two passes through the list - tfm
+            System.out.println("SATD ID: 115");
             for (ToDoItem item : tde.getToDoItemList()) {
 		if (!item.supports(g)) {
                     continue;

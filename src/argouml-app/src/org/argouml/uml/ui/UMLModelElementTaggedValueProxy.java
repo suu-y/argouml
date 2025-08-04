@@ -157,7 +157,7 @@ public class UMLModelElementTaggedValueProxy implements UMLDocument {
                 }
                 panelTarget = target;
                 eventPump.addModelEventListener(this, panelTarget, EVENT_NAME);
-                // TODO: see if the new target has a TV that we can proxy
+                System.out.println("SATD ID: 90");
                 document.setTarget(Model.getFacade().getTaggedValue(
                         panelTarget, tagName));
             }

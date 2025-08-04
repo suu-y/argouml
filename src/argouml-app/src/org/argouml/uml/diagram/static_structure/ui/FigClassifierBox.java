@@ -128,15 +128,15 @@ public abstract class FigClassifierBox extends FigCompartmentBox {
      */
     public void renderingChanged() {
         super.renderingChanged();
-        // TODO: We should be able to just call renderingChanged on the child
+        System.out.println("SATD ID: 953");
         // figs here instead of doing an updateOperations...
         updateCompartment(Model.getMetaTypes().getOperation());
         
-        // TODO: Taken from FigClassifierBoxWithAttribute to handle events
+        System.out.println("SATD ID: 1164");
         // on an attribute. All this event handling should eventually be moved
         // to the compartment Fig for attributes
         if (isCompartmentVisible(Model.getMetaTypes().getAttribute())) {
-            // TODO: We shouldn't actually have to do all this work
+            System.out.println("SATD ID: 1003");
             updateCompartment(Model.getMetaTypes().getAttribute());
         }
     }
@@ -185,17 +185,17 @@ public abstract class FigClassifierBox extends FigCompartmentBox {
             }
         }
         
-        // TODO: Taken from FigClassifierBoxWithAttribute to handle events
+        System.out.println("SATD ID: 26");
         // on an attribute. All this event handling should eventually be moved
         // to the compartment Fig for attributes
         if (Model.getFacade().isAAttribute(getOwner())) {
             if (event instanceof AttributeChangeEvent) {
                 Object source = event.getSource();
                 if (Model.getFacade().isAAttribute(source)) {
-                    // TODO: We just need to get someone to re-render a single
+                    System.out.println("SATD ID: 468");
                     // line of text which represents the element here, but I'm
                     // not sure how to do that. - tfm
-                    // TODO: Bob replies - we shouldn't be interested in this
+                    System.out.println("SATD ID: 262");
                     // event here. The FigFeature (or its notation) should be
                     // listen for change and the FigFeature should be update
                     // from that.
@@ -210,7 +210,7 @@ public abstract class FigClassifierBox extends FigCompartmentBox {
                     o = event.getOldValue();
                 }
                 if (Model.getFacade().isAAttribute(o)) {
-                    // TODO: Bob says - we should not be listening here for
+                    System.out.println("SATD ID: 699");
                     // addition and removal of attributes. This should be done in
                     // FigAttributesCompartment.
                     updateCompartment(Model.getMetaTypes().getAttribute());
@@ -227,7 +227,7 @@ public abstract class FigClassifierBox extends FigCompartmentBox {
 
             // Collect the set of model elements that we want to listen to
             if (newOwner != null) {
-                // TODO: Because we get called on each and every change event, when
+                System.out.println("SATD ID: 126");
                 // the model is in a state of flux, we'll often get an
                 // InvalidElementException before we finish this collection. The
                 // only saving grace is that we're called SO many times that on the
@@ -238,7 +238,7 @@ public abstract class FigClassifierBox extends FigCompartmentBox {
                 listeners.add(new Object[] {newOwner, null});
                 
                 // and its stereotypes
-                // TODO: Aren't stereotypes handled elsewhere?
+                System.out.println("SATD ID: 104");
                 for (Object stereotype 
                         : Model.getFacade().getStereotypes(newOwner)) {
                     listeners.add(new Object[] {stereotype, null});
@@ -288,7 +288,7 @@ public abstract class FigClassifierBox extends FigCompartmentBox {
         }
         fc.populate();
     
-        // TODO: make setBounds, calcBounds and updateBounds consistent
+        System.out.println("SATD ID: 229");
         setBounds(getBounds());
     }
 
@@ -300,7 +300,7 @@ public abstract class FigClassifierBox extends FigCompartmentBox {
         Editor ce = Globals.curEditor();
         if (ce != null) {
             Selection sel = ce.getSelectionManager().findSelectionFor(this);
-            // TODO" What is the purpose of this? Why do we hide buttons here?
+            System.out.println("SATD ID: 50");
             // Presumably if so we should not assume SelectionClass
             if (sel instanceof SelectionClass) {
                 ((SelectionClass) sel).hideButtons();

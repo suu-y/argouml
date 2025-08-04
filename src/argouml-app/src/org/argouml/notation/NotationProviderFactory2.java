@@ -233,27 +233,27 @@ public final class NotationProviderFactory2 {
                 };
                 return (NotationProvider) constructor.newInstance(params);
             } catch (SecurityException e) {
-                // TODO: Why aren't we throwing an exception here?
+                System.out.println("SATD ID: 774");
             	// Returning null results in NPE and no explanation why.
                 LOG.log(Level.SEVERE, "Exception caught", e);
             } catch (NoSuchMethodException e) {
-                // TODO: Why aren't we throwing an exception here?
+                System.out.println("SATD ID: 467");
             	// Returning null results in NPE and no explanation why.
                 LOG.log(Level.SEVERE, "Exception caught", e);
             } catch (IllegalArgumentException e) {
-                // TODO: Why aren't we throwing an exception here?
+                System.out.println("SATD ID: 657");
             	// Returning null results in NPE and no explanation why.
                 LOG.log(Level.SEVERE, "Exception caught", e);
             } catch (InstantiationException e) {
-                // TODO: Why aren't we throwing an exception here?
+                System.out.println("SATD ID: 894");
             	// Returning null results in NPE and no explanation why.
                 LOG.log(Level.SEVERE, "Exception caught", e);
             } catch (IllegalAccessException e) {
-                // TODO: Why aren't we throwing an exception here?
+                System.out.println("SATD ID: 481");
             	// Returning null results in NPE and no explanation why.
                 LOG.log(Level.SEVERE, "Exception caught", e);
             } catch (InvocationTargetException e) {
-                // TODO: Why aren't we throwing an exception here?
+                System.out.println("SATD ID: 377");
             	// Returning null results in NPE and no explanation why.
                 LOG.log(Level.SEVERE, "Exception caught", e);
             }

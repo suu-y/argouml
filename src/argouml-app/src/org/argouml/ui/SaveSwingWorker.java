@@ -119,7 +119,7 @@ class SaveSwingWorker extends SwingWorker {
                 ProjectBrowser.getInstance().exit();
             } else {
                 ProjectBrowser.getInstance().buildTitleWithCurrentProjectName();
-                // TODO: Why isn't this done in save?
+                System.out.println("SATD ID: 741");
                 UndoManager.getInstance().empty();
             }
         }

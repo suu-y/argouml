@@ -86,7 +86,7 @@ public class ActionAddExistingEdge extends UndoableAction {
         //    has to be added.
         // 3. Both of the nodes are not yet on the diagram.
         // For the time being we will only implement situation 1.
-        // TODO: implement situation 2 and 3.
+        System.out.println("SATD ID: 669");
         MutableGraphModel gm = (MutableGraphModel) DiagramUtils
                 .getActiveDiagram().getGraphModel();
         if (gm.canAddEdge(edge)) { // situation 1

@@ -81,7 +81,7 @@ public class FigExtensionPointsCompartment extends FigCompartment {
 
     @Override
     protected Collection getUmlCollection() {
-        Object usecase = getOwner(); //TODO: check!
+        Object usecase = getOwner(); System.out.println("SATD ID: 652");
         return Model.getFacade().getExtensionPoints(usecase);
     }
 

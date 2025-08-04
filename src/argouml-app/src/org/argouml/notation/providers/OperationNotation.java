@@ -86,7 +86,7 @@ public abstract class OperationNotation extends NotationProvider {
                 }
             }
             // We also show tagged values for UML 1
-            // TODO: what to do for UML2 here?
+            System.out.println("SATD ID: 43");
             if ( Model.getFacade().getUmlVersion().charAt(0) == '1') {
                 for (Object uml : Model.getFacade().getTaggedValuesCollection(
                         modelElement)) {

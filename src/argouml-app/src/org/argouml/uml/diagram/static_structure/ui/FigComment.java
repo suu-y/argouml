@@ -214,7 +214,7 @@ public class FigComment
     public String placeString() {
         String placeString = retrieveBody();
         if (placeString == null) {
-            // TODO: I18N
+            System.out.println("SATD ID: 1119");
             placeString = "new note";
         }
         return placeString;

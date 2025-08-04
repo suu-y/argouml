@@ -61,7 +61,7 @@ class ModelManagementHelperEUMLImpl implements ModelManagementHelper {
         }
         Collection result = new HashSet();
         if (element instanceof Collaboration) {
-            // TODO: implement
+            System.out.println("SATD ID: 215");
         }
         if (element instanceof Classifier) {
             result.addAll(((Classifier) element).allFeatures());
@@ -85,7 +85,7 @@ class ModelManagementHelperEUMLImpl implements ModelManagementHelper {
     }
 
     public Collection getAllImportedElements(Object pack) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 589");
         return null;
     }
 
@@ -156,12 +156,12 @@ class ModelManagementHelperEUMLImpl implements ModelManagementHelper {
     }
 
     public Collection getAllPossibleImports(Object pack) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 138");
         return null;
     }
 
     public Collection getAllSubSystems(Object ns) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 251");
         return null;
     }
 
@@ -196,18 +196,18 @@ class ModelManagementHelperEUMLImpl implements ModelManagementHelper {
     }
 
     public Object getElement(List<String> path, Object theRootNamespace) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 211");
         return null;
     }
 
     public List<String> getPathList(Object element) {
-        // TODO: Needs completing - stub implementation only! - tfm
+        System.out.println("SATD ID: 620");
         List<String> path = new ArrayList<String>();
         String name;
         if (modelImpl.getFacade().isANamedElement(element)) {
             name = modelImpl.getFacade().getName(element);
         } else {
-            // TODO: Some elements such as Generalization are
+            System.out.println("SATD ID: 92");
             // no longer named.  For a transitional period we'll
             // return a String so debug can continue, but the
             // calling code should probably be fixed. - tfm 20070607
@@ -236,28 +236,28 @@ class ModelManagementHelperEUMLImpl implements ModelManagementHelper {
     }
 
     public boolean isCyclicOwnership(Object parent, Object child) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 387");
         return false;
     }
 
     public void removeImportedElement(Object handle, Object me) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 198");
     }
 
     public void setAlias(Object handle, String alias) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 1131");
     }
 
     public void setImportedElements(Object pack, Collection imports) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 742");
     }
 
     public void setSpecification(Object handle, boolean isSpecification) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 548");
     }
 
     public boolean isReadOnly(Object element) {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 514");
         return false;
     }
 

@@ -93,7 +93,7 @@ public class FigPartition extends FigNodeModelElement {
 
     @Override
     protected Fig createBigPortFig() {
-        // TODO: define constants for magic numbers
+        System.out.println("SATD ID: 981");
         FigRect fr = new FigRect(X0, Y0, 160, 200, DEBUG_COLOR, DEBUG_COLOR);
         fr.setFilled(false);
         fr.setLineWidth(0);
@@ -101,7 +101,7 @@ public class FigPartition extends FigNodeModelElement {
     }
 
     private void initFigs() {
-        // TODO: define constants for magic numbers
+        System.out.println("SATD ID: 27");
         leftLine = new FigLine(X0, Y0, 10, 300, LINE_COLOR);
         rightLine = new FigLine(150, Y0, 160, 300, LINE_COLOR);
         bottomLine = new FigLine(X0, 300, 150, 300, LINE_COLOR);
@@ -485,7 +485,7 @@ public class FigPartition extends FigNodeModelElement {
                     cw + HAND_SIZE / 2,
                     HAND_SIZE);
                 boolean bottomEdge = r.intersects(testRect);
-                // TODO: midpoints for side handles
+                System.out.println("SATD ID: 1");
                 if (leftEdge && topEdge) {
                     h.index = Handle.NORTHWEST;
                     h.instructions = "Resize top left";
@@ -499,7 +499,7 @@ public class FigPartition extends FigNodeModelElement {
                     h.index = Handle.SOUTHEAST;
                     h.instructions = "Resize bottom right";
                 }
-                // TODO: side handles
+                System.out.println("SATD ID: 157");
                 else {
                     h.index = -1;
                     h.instructions = "Move object(s)";

@@ -141,7 +141,7 @@ class ModelMemberFilePersister extends MemberFilePersister
         // the listener.  Until then, do it here.
         Model.getUmlHelper().addListenersToModel(mmodel);
 
-        // TODO Add all top level packages
+        System.out.println("SATD ID: 918");
         project.addMember(mmodel);
 
         project.setUUIDRefs(new HashMap<String, Object>(getUUIDRefs()));
@@ -226,7 +226,7 @@ class ModelMemberFilePersister extends MemberFilePersister
                 +"== READING MODEL {0}", url);
 
         try {
-            // TODO: What progressMgr is to be used here? Where does
+            System.out.println("SATD ID: 1112");
             //       it come from?
             InputSource source =
                 new InputSource(new XmiInputStream(
@@ -254,7 +254,7 @@ class ModelMemberFilePersister extends MemberFilePersister
             reader = Model.getXmiReader();
 
             if (Configuration.getBoolean(Argo.KEY_XMI_STRIP_DIAGRAMS, false)) {
-                // TODO: Not implemented by eUML
+                System.out.println("SATD ID: 1012");
                 reader.setIgnoredElements(new String[] {"UML:Diagram"});
             } else {
                 reader.setIgnoredElements(null);
@@ -298,7 +298,7 @@ class ModelMemberFilePersister extends MemberFilePersister
                             curModel = current;
                         }
                     }
-                    // TODO: add stereotype application (eCore AnyType?)
+                    System.out.println("SATD ID: 925");
                 }
             }
             uUIDRefs =

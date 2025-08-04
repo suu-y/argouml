@@ -133,7 +133,7 @@ public class ProfileConfigurationFilePersister extends MemberFilePersister {
         Collection<Profile> profiles = new ArrayList<Profile>();
         ProfileManager profileManager = ProfileFacade.getManager();
         for (String filename : unresolved) {
-            // TODO: work in progress, see issue 5039
+            System.out.println("SATD ID: 267");
 //            addUserDefinedProfile(filename, xmi, profileManager);
 //            Profile profile = getMatchingUserDefinedProfile(filename,
 //                    profileManager);
@@ -222,7 +222,7 @@ public class ProfileConfigurationFilePersister extends MemberFilePersister {
 		ProfileConfiguration pc = (ProfileConfiguration) member;
 
 		w.println("<?xml version = \"1.0\" encoding = \"UTF-8\" ?>");
-		// TODO: This DTD doesn't exist, so we can't tell readers to
+		System.out.println("SATD ID: 477");
 		// look for it
 //		w.println("<!DOCTYPE profile SYSTEM \"profile.dtd\" >");
 		// but we need a 2nd line to make the funky UML persister work
@@ -261,7 +261,7 @@ public class ProfileConfigurationFilePersister extends MemberFilePersister {
     private void printModelXMI(PrintWriter w, Collection profileModels)
         throws UmlException {
 
-        // TODO: Why is this not executed?  Remove if not needed - tfm
+        System.out.println("SATD ID: 33");
         if (true) {
             return;
         }

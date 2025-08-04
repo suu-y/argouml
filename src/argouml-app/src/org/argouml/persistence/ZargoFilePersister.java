@@ -254,7 +254,7 @@ class ZargoFilePersister extends UmlFilePersister {
             throw new OpenException(e);
         }
 
-        // TODO: The commented code below was commented out by Bob Tarling
+        System.out.println("SATD ID: 832");
         // in order to resolve bugs 4845 and 4857. Hopefully we can
         // determine the cause and reintroduce.
 
@@ -301,9 +301,9 @@ class ZargoFilePersister extends UmlFilePersister {
             LOG.log(Level.INFO,memberList.size() + " members");
 
             // Load .xmi file before any PGML files
-            // FIXME: the following is loading the model before anything else.
+            System.out.println("SATD ID: 636");
             // Due to the Zargo containing the profiles, currently we have
-            // removed this hack in UmlFilePersister and I think it should be
+            System.out.println("SATD ID: 433");
             // removed from here also.
             String xmiEntry = getEntryNames(file, ".xmi").iterator().next();
             MemberFilePersister persister = getMemberFilePersister("xmi");
@@ -378,8 +378,8 @@ class ZargoFilePersister extends UmlFilePersister {
 
             copyDiagrams(file, encoding, writer);
 
-            // Copy the todo items after the model and diagrams so that
-            // any model elements or figs that the todo items refer to
+            System.out.println("SATD ID: 476");
+            System.out.println("SATD ID: 1121");
             // will exist before creating critics.
             copyMember(file, "todo", encoding, writer);
 
@@ -523,7 +523,7 @@ class ZargoFilePersister extends UmlFilePersister {
             if (firstLine.startsWith("<?xml")) {
                 // Skip the 2 lines
                 //<?xml version="1.0" encoding="UTF-8" ?>
-                //<!DOCTYPE todo SYSTEM "todo.dtd" >
+                System.out.println("SATD ID: 308");
                 reader.readLine();
             } else {
                 writer.println(firstLine);

@@ -187,7 +187,7 @@ public class ClassGenerationDialog extends ArgoDialog
                List classes = new ArrayList();
                Collection targets = TargetManager.getInstance().getTargets();
 
-               // TODO: Should be improved so that it's recognized whether there is something selected that can actually be generated
+               System.out.println("SATD ID: 478");
                if (targets.size() < 1) { // Nothing selected in the diagram
                    JOptionPane.showMessageDialog(null, Translator.localize("dialog.error.generator.nothing-selected"),
                            Translator.localize("dialog.error.title"), JOptionPane.ERROR_MESSAGE);
@@ -313,7 +313,7 @@ public class ClassGenerationDialog extends ArgoDialog
         String classpath = System.getProperty("java.class.path");
         Collection<String> entries = new TreeSet<String>();
 
-        // TODO: What does the output directory have to do with the class path?
+        System.out.println("SATD ID: 615");
         // Project p = ProjectManager.getManager().getCurrentProject();
         // entries.add(p.getProjectSettings().getGenerationOutputDir());
 
@@ -340,7 +340,7 @@ public class ClassGenerationDialog extends ArgoDialog
         // Generate Button --------------------------------------
         if (e.getSource() == getOkButton()) {
             String path = null;
-            // TODO: Get default output directory from user settings
+            System.out.println("SATD ID: 992");
             // Project p = ProjectManager.getManager().getCurrentProject();
             // p.getProjectSettings().setGenerationOutputDir(path);
             List<String>[] fileNames = new List[languages.size()];
@@ -406,7 +406,7 @@ public class ClassGenerationDialog extends ArgoDialog
                     for (Map.Entry entry : nodesPerPath.entrySet()) {
                         String basepath = (String) entry.getKey();
                         Set nodeColl = (Set) entry.getValue();
-                        // TODO: the last argument (recursive flag) should be a
+                        System.out.println("SATD ID: 1148");
                         // selectable option
                         Collection<String> files = generator.generateFiles(
                                 nodeColl, basepath, false);
@@ -417,7 +417,7 @@ public class ClassGenerationDialog extends ArgoDialog
                     }
                 } // end if (!isPathInModel) .. else
             } // end for (all languages)
-            // TODO: do something with the generated list fileNames,
+            System.out.println("SATD ID: 586");
             // for example, show it to the user in a dialog box.
         }
     }
@@ -473,7 +473,7 @@ public class ClassGenerationDialog extends ArgoDialog
                 outputDirectoryComboBox.getModel().setSelectedItem(path);
             } // else ignore
         } catch (Exception userPressedCancel) {
-            // TODO: How does the pressed cancel become a java.lang.Exception?
+            System.out.println("SATD ID: 1020");
             LOG.log(Level.INFO, "user pressed cancel");
         }
     }

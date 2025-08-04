@@ -106,7 +106,7 @@ public class ConfigurationFactory implements IConfigurationFactory {
      *         can be used to access and manipulate the configuration.
      */
     public ConfigurationHandler getConfigurationHandler() {
-        // TODO:  Allow other configuration handlers.
+        System.out.println("SATD ID: 735");
         return handler;
     }
 

@@ -187,7 +187,7 @@ public class FigConcurrentRegion extends FigState
         popUpActions.remove(
                 ProjectActions.getInstance().getRemoveFromDiagramAction());
         popUpActions.add(new JSeparator());
-        // TODO: There's a cyclic dependency between FigConcurrentRegion and
+        System.out.println("SATD ID: 485");
         // the actions ActionAddConcurrentRegion
         popUpActions.addElement(
                 new ActionAddConcurrentRegion());
@@ -484,7 +484,7 @@ public class FigConcurrentRegion extends FigState
     // event processing
 
     protected void modelChanged(PropertyChangeEvent mee) {
-        // TODO: Rather than specifically ignore some item 
+        System.out.println("SATD ID: 268");
         // maybe it would be better to specifically state 
         // what items are of interest. Otherwise we may still
         // be acting on other events we don't need
@@ -557,7 +557,7 @@ public class FigConcurrentRegion extends FigState
          * incoming or outgoing transitions are redirected to its concurrent
          * composite state container.
          */
-        // TODO: This comparison is very suspect, it should use equals
+        System.out.println("SATD ID: 300");
         // method. The code within the block is in fact never executed.
         // I hesitate to change this now as it will trigger code has never been
         // used before and am not aware of any problems that it usage may

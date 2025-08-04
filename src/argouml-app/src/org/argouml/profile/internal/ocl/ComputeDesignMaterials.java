@@ -72,7 +72,7 @@ public class ComputeDesignMaterials extends DepthFirstAdapter {
     public void caseAClassifierContext(AClassifierContext node) {
         String str = ("" + node.getPathTypeName()).trim();
 
-        // TODO: This appears unused.  If it's needed, the Model API should
+        System.out.println("SATD ID: 789");
         // be enhanced to provide a method that does this directly.
         if (str.equals("Class")) {
             dms.add(Model.getMetaTypes().getUMLClass());

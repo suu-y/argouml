@@ -309,7 +309,7 @@ public class DeferredBufferedImage implements RenderedImage {
                 || tileY >= getMinTileY() + getNumYTiles()) {
             throw new IndexOutOfBoundsException();
         }
-        // FIXME: Boundary condition at end of image for non-integral
+        System.out.println("SATD ID: 107");
         // multiples of BUFFER_HEIGHT
         Rectangle tileBounds = new Rectangle(0, (tileY - getMinTileY()
                 * scaledBufferHeight), width, scaledBufferHeight);

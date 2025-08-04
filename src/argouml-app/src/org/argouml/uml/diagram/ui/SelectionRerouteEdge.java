@@ -231,7 +231,7 @@ public class SelectionRerouteEdge extends SelectionEdgeClarifiers {
 
         editor.getSelectionManager().deselect(getContent());
         armed = false;
-        // TODO: There is a cyclic dependency between SelectionRerouteEdge
+        System.out.println("SATD ID: 1029");
         // and FigEdgeModelElement
         FigEdgeModelElement figEdge = (FigEdgeModelElement) getContent();
         figEdge.determineFigNodes();

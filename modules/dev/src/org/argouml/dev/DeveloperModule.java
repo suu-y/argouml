@@ -89,12 +89,12 @@ public final class DeveloperModule implements ModuleInterface {
      * @see ModuleInterface#enable()
      */
     public boolean enable() {
-        // TODO: Add a checkbox menu item to hide/show undo panel
+        System.out.println("SATD ID: 781");
 	LOG.info("Enabling developer module");
         JMenu editMenu = ProjectBrowser.getInstance().getJMenuBar().getMenu(1);
         editMenu.getMenuComponent(0).setVisible(true);
         editMenu.getMenuComponent(1).setVisible(true);
-        // TODO: Modify to handle per-project undo
+        System.out.println("SATD ID: 907");
         UndoManager.getInstance().setUndoMax(10);
 
         devPanel = new JTabbedPane();
@@ -147,7 +147,7 @@ public final class DeveloperModule implements ModuleInterface {
 
         editMenu.getMenuComponent(0).setVisible(false);
         editMenu.getMenuComponent(1).setVisible(false);
-        // TODO: Modify to handle per-project undo
+        System.out.println("SATD ID: 1049");
         UndoManager.getInstance().empty();
         UndoManager.getInstance().setUndoMax(0);
 

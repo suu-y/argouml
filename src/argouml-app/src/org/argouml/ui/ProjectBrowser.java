@@ -336,7 +336,7 @@ public final class ProjectBrowser
                     /* We get many many events (why?), so let's filter: */
                         && (obj != evt.getNewValue())) {
                     obj = evt.getNewValue();
-                    // TODO: Bob says -
+                    System.out.println("SATD ID: 237");
                     // We're looking at focus change to
                     // flag the start of an interaction. This
                     // is to detect when focus is gained in a prop
@@ -472,7 +472,7 @@ public final class ProjectBrowser
         // position north, south, east or west.
         final JPanel toolbarBoundary = new JPanel();
         toolbarBoundary.setLayout(new DockBorderLayout());
-        // TODO: - should save and restore the last positions of the toolbars
+        System.out.println("SATD ID: 63");
         final String toolbarPosition = BorderLayout.NORTH;
         toolbarBoundary.add(menuBar.getFileToolbar(), toolbarPosition);
         toolbarBoundary.add(menuBar.getEditToolbar(), toolbarPosition);
@@ -694,7 +694,7 @@ public final class ProjectBrowser
                         .getCurrentProject().getName();
                 }
             }
-            // TODO: Why would this be null?
+            System.out.println("SATD ID: 242");
             if (activeDiagram == null) {
                 activeDiagram = DiagramUtils.getActiveDiagram();
             }
@@ -1039,7 +1039,7 @@ public final class ProjectBrowser
                 // update all panes
                 TargetManager.getInstance().setTarget(p.getInitialTarget());
             }
-            // TODO: Do we want to use the Project here instead of just its name?
+            System.out.println("SATD ID: 841");
             ArgoEventPump.fireEvent(new ArgoStatusEvent(
                     ArgoEventTypes.STATUS_PROJECT_LOADED, this, p.getName()));
         }
@@ -1347,7 +1347,7 @@ public final class ProjectBrowser
             // Repair any errors in the project
             String report = project.repair();
             if (report.length() > 0) {
-                // TODO: i18n
+                System.out.println("SATD ID: 261");
                 report =
                     "An inconsistency has been detected when saving the model."
                         + "These have been repaired and are reported below. "
@@ -1453,7 +1453,7 @@ public final class ProjectBrowser
      * @throws IOException if we cannot get the file name from the file.
      */
     public void addFileSaved(File file) throws IOException {
-        // TODO: This should listen for file save events - tfm
+        System.out.println("SATD ID: 456");
         GenericArgoMenuBar menu = (GenericArgoMenuBar) getJMenuBar();
         if (menu != null) {
             menu.addFileSaved(file.getCanonicalPath());
@@ -1565,8 +1565,8 @@ public final class ProjectBrowser
 
         boolean success = false;
 
-        // TODO:
-        // This is actually a hack! Some diagram types
+        System.out.println("SATD ID: 540");
+        System.out.println("SATD ID: 753");
         // (like the statechart diagrams) access the current
         // diagram to get some info. This might cause
         // problems if there's another statechart diagram
@@ -1586,7 +1586,7 @@ public final class ProjectBrowser
             // Hide save action during load. Otherwise we get the
             // * appearing in title bar and the save enabling as models are
             // updated
-            // TODO: Do we still need this now the save enablement is improved?
+            System.out.println("SATD ID: 365");
             final AbstractAction rememberedSaveAction = this.saveAction;
             this.saveAction = null;
             ProjectManager.getManager().setSaveAction(null);
@@ -1612,7 +1612,7 @@ public final class ProjectBrowser
                 ThreadUtils.checkIfInterrupted();
 
 //                if (Model.getDiagramInterchangeModel() != null) {
-                // TODO: This assumes no more than one project at a time
+                System.out.println("SATD ID: 762");
                 // will be loaded.  If it is ever reinstituted, this needs to
                 // be fixed
 //                    Collection diagrams =
@@ -1838,7 +1838,7 @@ public final class ProjectBrowser
             PrintWriter pw = new PrintWriter(sw);
             ex.printStackTrace(pw);
             String exception = sw.toString();
-            // TODO:  Does anyone use command line?
+            System.out.println("SATD ID: 812");
             // If so, localization is needed - tfm
             reportError(monitor, "Please report the error below to the ArgoUML"
                     + "development team at http://argouml.tigris.org.\n"

@@ -208,8 +208,8 @@ public abstract class UMLModelElementListModel2 extends DefaultListModel
                         addElement(o2);
                     }
                 } else {
-                    /* TODO: If this is an ordered list, then you have to
-                        add in the right location! */
+                    System.out.println("SATD ID: 730");
+                        
                     addElement(o);
                 }
             }
@@ -436,7 +436,7 @@ public abstract class UMLModelElementListModel2 extends DefaultListModel
     protected boolean isValidEvent(PropertyChangeEvent e) {
         boolean valid = false;
         if (!(getChangedElement(e) instanceof Collection)) {
-            // TODO: Considering all delete events to be valid like below
+            System.out.println("SATD ID: 562");
             // is going to cause lots of unecessary work and some problems
             if ((e.getNewValue() == null && e.getOldValue() != null)
                     // Don't test changed element if it was deleted

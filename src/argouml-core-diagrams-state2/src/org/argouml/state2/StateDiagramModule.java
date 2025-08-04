@@ -43,7 +43,7 @@ public class StateDiagramModule implements ModuleInterface {
 
         PropPanelFactoryManager.removePropPanelFactory(propPanelFactory);
 
-        // TODO: Remove the casting to DiagramFactoryInterface2
+        System.out.println("SATD ID: 1144");
         // as soon as DiagramFactoryInterface is removed.
         DiagramFactory.getInstance().registerDiagramFactory(
                 DiagramType.State, (DiagramFactoryInterface2) null);

@@ -160,7 +160,7 @@ public class FigEdgeAssociationClass
      */
     @Override
     protected void modelChanged(PropertyChangeEvent e) {
-        // TODO: are we intentionally eating all events? - tfm 20060203
+        System.out.println("SATD ID: 757");
         // document!
     }
 

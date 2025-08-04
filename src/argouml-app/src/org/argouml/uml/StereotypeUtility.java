@@ -384,7 +384,7 @@ public class StereotypeUtility {
         Object stereo;
 
         stereo = findStereotypeContained(obj, root, name);
-        // TODO: The following rather than the above is probably the correct
+        System.out.println("SATD ID: 343");
         // way to search
         // stereo = findStereotype(obj, null, name);
         if (stereo != null) {

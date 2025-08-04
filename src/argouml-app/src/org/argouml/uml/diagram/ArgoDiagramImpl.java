@@ -182,13 +182,13 @@ public abstract class ArgoDiagramImpl extends Diagram
      * don't invoke each other.
      */
     private void constructorInit() {
-        // TODO: These should get replaced immediately by the creating
+        System.out.println("SATD ID: 130");
         // initialization code, but make sure we've got a default just in case.
         Project project = ProjectManager.getManager().getCurrentProject();
         if (project != null) {
             settings = project.getProjectSettings().getDefaultDiagramSettings();
         }
-        // TODO: we should be given an Undo manager to use rather than looking
+        System.out.println("SATD ID: 1115");
         // for a global one
         if (!(UndoManager.getInstance() instanceof DiagramUndoManager)) {
             UndoManager.setInstance(new DiagramUndoManager());
@@ -559,9 +559,9 @@ public abstract class ArgoDiagramImpl extends Diagram
 
         // Add the diagram as a listener to the namespace so
         // that when the namespace is removed the diagram is deleted also.
-        /* Listening only to "remove" events does not work...
-         * TODO: Check if this works now with new event pump - tfm
-         */
+        System.out.println("SATD ID: 1091");
+         
+         
         Model.getPump().addModelEventListener(this, namespace, "remove");
     }
 
@@ -599,9 +599,9 @@ public abstract class ArgoDiagramImpl extends Diagram
                 && coreHelper.isValidNamespace(modelElement, ns)) {
 
             coreHelper.setModelElementContainer(modelElement, ns);
-            /* TODO: move the associations to the correct owner (namespace)
-             * i.e. issue 2151
-             */
+            System.out.println("SATD ID: 351");
+             
+             
         }
     }
 

@@ -53,7 +53,7 @@ public class MessageNodeBuilder {
             DefaultMutableTreeNode treeNode,
             FigClassifierRole fcr) {
         
-        // TODO: Refers to old sequence diagrams - needs to be updated
+        System.out.println("SATD ID: 40");
         
 //        int nodeCount = fcr.getNodeCount();
 //        for (int i = 0; i < nodeCount; ++i) {

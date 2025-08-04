@@ -259,13 +259,13 @@ public class FigSingleLineText extends ArgoFigText  {
                 && properties != null
                 && Arrays.asList(properties).contains(event.getPropertyName())
                 && event instanceof AttributeChangeEvent) {
-            /* TODO: Why does it fail for changing
-             * the name of an associationend?
-             *  Why should it pass? */
+            System.out.println("SATD ID: 937");
+             
+             
             //assert Arrays.asList(properties).contains(
             //    event.getPropertyName())
             //  : event.getPropertyName();
-            // TODO: Do we really always need to do this or only if
+            System.out.println("SATD ID: 276");
             // notationProvider is null?
             setText();
         }

@@ -86,7 +86,7 @@ public class FigStereotypeDeclaration extends FigCompartmentBox {
         // stereotype fig covers the name fig:
         addFig(getStereotypeFig());
 
-        // TODO: Need named Tags and Constraints compartments here
+        System.out.println("SATD ID: 1162");
 //        addFig(tagsFig);
 //        addFig(constraintsFig);
 
@@ -135,7 +135,7 @@ public class FigStereotypeDeclaration extends FigCompartmentBox {
 
         // Add...
         ArgoJMenu addMenu = new ArgoJMenu("menu.popup.add");
-        // TODO: Add Tags & Constraints
+        System.out.println("SATD ID: 136");
 //        addMenu.add(TargetManager.getInstance().getAddAttributeAction());
 //        addMenu.add(TargetManager.getInstance().getAddOperationAction());
         addMenu.add(new ActionAddNote());
@@ -176,7 +176,7 @@ public class FigStereotypeDeclaration extends FigCompartmentBox {
                 listeners.add(new Object[] {td,
                     new String[] {"name", "tagType", "multiplicity"}});
             }
-            /* TODO: constraints, ... */
+            System.out.println("SATD ID: 111");
         }
         updateElementListeners(listeners);
     }

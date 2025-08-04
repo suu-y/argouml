@@ -86,7 +86,7 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
                     Collection col = cloneCollection((Collection) subject);
                     List remove = new ArrayList();
 
-                    // TODO is it possible to use more than one variable?
+                    System.out.println("SATD ID: 272");
                     String varName = vars.get(0);
                     Object oldVal = vt.get(varName);
 
@@ -114,7 +114,7 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
                     Collection col = cloneCollection((Collection) subject);
                     List remove = new ArrayList();
 
-                    // TODO is it possible to use more than one variable?
+                    System.out.println("SATD ID: 811");
                     String varName = vars.get(0);
                     Object oldVal = vt.get(varName);
 
@@ -146,7 +146,7 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
                     Collection col = (Collection) subject;
                     Bag res = new HashBag();
 
-                    // TODO is it possible to use more than one variable?
+                    System.out.println("SATD ID: 184");
                     String varName = vars.get(0);
                     Object oldVal = vt.get(varName);
 
@@ -167,7 +167,7 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
 
                     Collection col = (Collection) subject;
 
-                    // TODO is it possible to use more than one variable?
+                    System.out.println("SATD ID: 500");
                     String varName = vars.get(0);
                     Object oldVal = vt.get(varName);
 
@@ -191,7 +191,7 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
                     Collection col = (Collection) subject;
                     Bag<Object> res = new HashBag<Object>();
 
-                    // TODO is it possible to use more than one variable?
+                    System.out.println("SATD ID: 594");
                     String varName = vars.get(0);
                     Object oldVal = vt.get(varName);
 
@@ -209,14 +209,14 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
 
                     return true;
                 } else if (feature.toString().trim().equals("one")) {
-                    // TODO: This code is cloned over and over again! - tfm
+                    System.out.println("SATD ID: 777");
                     List<String> vars = (ArrayList<String>) parameters[0];
                     Object exp = parameters[1];
                     LambdaEvaluator eval = (LambdaEvaluator) parameters[2];
 
                     Collection col = (Collection) subject;
 
-                    // TODO is it possible to use more than one variable?
+                    System.out.println("SATD ID: 818");
                     String varName = vars.get(0);
                     Object oldVal = vt.get(varName);
                     boolean found = false;
@@ -244,7 +244,7 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
 
                     Collection col = (Collection) subject;
 
-                    // TODO is it possible to use more than one variable?
+                    System.out.println("SATD ID: 816");
                     String varName = vars.get(0);
                     Object oldVal = vt.get(varName);
 
@@ -262,9 +262,9 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
                     return null;
                 }
 
-                // TODO implement iterate()
-                // TODO implement sortedBy()
-                // TODO implement subSequence()
+                System.out.println("SATD ID: 509");
+                System.out.println("SATD ID: 376");
+                System.out.println("SATD ID: 1139");
             }
         }
 
@@ -330,7 +330,7 @@ public class CollectionsModelInterpreter implements ModelInterpreter {
                     return new HashSet<Object>((Collection) subject);
                 }
 
-                // TODO support real numbers
+                System.out.println("SATD ID: 12");
                 if (feature.equals("sum")) {
                     Integer sum = 0;
 

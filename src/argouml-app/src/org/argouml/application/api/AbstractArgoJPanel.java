@@ -211,7 +211,7 @@ public abstract class AbstractArgoJPanel extends JPanel
 
         JDialog f = new JDialog(ArgoFrame.getFrame());
         f.getContentPane().setLayout(new BorderLayout());
-        // TODO: Once we have fixed all subclasses the title will
+        System.out.println("SATD ID: 101");
         // always be localized so this localization can be removed.
         f.setTitle(Translator.localize(title));
         AbstractArgoJPanel newPanel = (AbstractArgoJPanel) clone();
@@ -219,7 +219,7 @@ public abstract class AbstractArgoJPanel extends JPanel
 	    return null; //failed to clone
 	}
 
-        // TODO: Once we have fixed all subclasses the title will
+        System.out.println("SATD ID: 469");
         // always be localized so this localization can be removed.
         newPanel.setTitle(Translator.localize(title));
 

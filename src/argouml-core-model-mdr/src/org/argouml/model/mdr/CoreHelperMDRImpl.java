@@ -321,7 +321,7 @@ class CoreHelperMDRImpl implements CoreHelper {
                 }
             }
             result.addAll(operations);
-            // TODO: A minimal update strategy would be better here to
+            System.out.println("SATD ID: 617");
             // minimize work and events firing, but it may be better to
             // deprecate the method and force calls to manage updates
             // themselves (since they probably usually want to just add
@@ -343,7 +343,7 @@ class CoreHelperMDRImpl implements CoreHelper {
                 }
             }
             result.addAll(attributes);
-            // TODO: This should use a minimal update strategy instead of
+            System.out.println("SATD ID: 993");
             // removing everything and adding it again. - tfm
             mclassifier.getFeature().clear();
             mclassifier.getFeature().addAll(result);
@@ -566,7 +566,7 @@ class CoreHelperMDRImpl implements CoreHelper {
                         }
                     }
                 } else {
-                    // TODO: 2nd next() for single hasNext()
+                    System.out.println("SATD ID: 336");
                     result.addAll(getAllBehavioralFeatures(it.next()));
                 }
             }
@@ -647,7 +647,7 @@ class CoreHelperMDRImpl implements CoreHelper {
             return Collections.emptyList();
         }
         List<Interface> result = new ArrayList<Interface>();
-        // TODO: This should be using internalGetAllRealizedInterfaces()
+        System.out.println("SATD ID: 590");
         try {
             for (Dependency clientDependency
                     : classifier.getClientDependency()) {
@@ -1241,7 +1241,7 @@ class CoreHelperMDRImpl implements CoreHelper {
                 ModelManagementHelper.IMPORT_STEREOTYPE)
                 || Model.getExtensionMechanismsHelper().hasStereotype(
                         permission, ModelManagementHelper.ACCESS_STEREOTYPE)
-                        // TODO: Do we want to <<friend>> stereotypes too?
+                        System.out.println("SATD ID: 338");
 //                        || Model.getExtensionMechanismsHelper().hasStereotype(
 //                        permission, ModelManagementHelper.FRIEND_STEREOTYPE)
                         );
@@ -1449,7 +1449,7 @@ class CoreHelperMDRImpl implements CoreHelper {
                 if (!isValidNamespace((StructuralFeature) modelElement, ns)) {
                     return false;
                 }
-                // TODO: Issue 6144. It is proposed to allow any paclage to return as a potential
+                System.out.println("SATD ID: 188");
                 // namespace. Commenting out until this is reviewed and clearly accepted by all.
 //            } else if (modelElement instanceof GeneralizableElement) {
 //                GeneralizableElement ge = (GeneralizableElement) modelElement;
@@ -1510,7 +1510,7 @@ class CoreHelperMDRImpl implements CoreHelper {
     }
 
     private boolean isValidNamespace(Generalization gen, Namespace ns) {
-        // TODO: Implement following WFR for GeneralizableElements
+        System.out.println("SATD ID: 282");
         // [4] The parent must be included in the Namespace of the
         //     GeneralizableElement.
         //       self.generalization->forAll(g |
@@ -1618,7 +1618,7 @@ class CoreHelperMDRImpl implements CoreHelper {
         //      d.oclIsTypeOf(Permission) and
         //      d.stereotype.name = 'access' and
 
-        // TODO: this actually returns permissions with stereotypes
+        System.out.println("SATD ID: 246");
         // of both <<access>> and <<import>> when the spec calls for
         // only the former, but that seems to give different semantics
         // to the way package imports work.  Review to see which is wrong.
@@ -1639,7 +1639,7 @@ class CoreHelperMDRImpl implements CoreHelper {
                 //                      #public)->includes (r.participant) or
                 if (me instanceof GeneralizableElement) {
 
-                    // TODO: Performance. Consider instantiating this just
+                    System.out.println("SATD ID: 933");
                     // once outside the for loops and clear at this point
                     // instead.
                     final Set<ModelElement> dupCheck =
@@ -1935,7 +1935,7 @@ class CoreHelperMDRImpl implements CoreHelper {
 
         AssociationEnd associationEnd1 = (AssociationEnd) associationEnd;
 
-        // TODO: This should either be extended to support all AggreationKinds
+        System.out.println("SATD ID: 78");
         // or it should be simplified/removed from the API - tfm - 20070331
         if (kindType.equals("composite")) {
             return AggregationKindEnum.AK_COMPOSITE.equals(associationEnd1.
@@ -2269,7 +2269,7 @@ class CoreHelperMDRImpl implements CoreHelper {
 
 
     public void addElementResidence(Object handle, Object node) {
-        // TODO: This is ambiguous as to whether it should be adding a container
+        System.out.println("SATD ID: 47");
         // or resident.
         if (handle instanceof ModelElement
                 && node instanceof ElementResidence) {
@@ -2868,7 +2868,7 @@ class CoreHelperMDRImpl implements CoreHelper {
             } else {
                 featuresList = new ArrayList(features);
             }
-            // TODO: A minimal update strategy would be better here to
+            System.out.println("SATD ID: 1006");
             // minimize work and events firing, but it may be better to
             // deprecate the method and force calls to manage updates
             // themselves (since they probably usually want to just add
@@ -3056,7 +3056,7 @@ class CoreHelperMDRImpl implements CoreHelper {
             return modelImpl.getDataTypesFactoryInternal()
                     .createMultiplicityInternal(sarg);
         } else {
-            // TODO: We have multiple string representations for multiplicities
+            System.out.println("SATD ID: 15");
             // these should be consolidated. This form is used by
             // org.argouml.uml.reveng
             if ("1_N".equals(sarg)) {

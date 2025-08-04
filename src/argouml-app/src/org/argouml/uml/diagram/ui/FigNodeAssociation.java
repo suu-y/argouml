@@ -286,9 +286,9 @@ public class FigNodeAssociation extends FigNodeModelElement {
         getNameFig().setBounds(x + (w - nm.width) / 2, 
                 y + h / 2 - nm.height / 2, 
                 nm.width, nm.height);
-        // TODO: Replace magic numbers with constants
+        System.out.println("SATD ID: 853");
         if (getStereotypeFig().isVisible()) {
-            /* TODO: Test this. */
+            System.out.println("SATD ID: 419");
             getStereotypeFig().setBounds(x, y + h / 2 - 20, w, 15);
             int stereotypeHeight = getStereotypeFig().getMinimumSize().height;
             getStereotypeFig().setBounds(

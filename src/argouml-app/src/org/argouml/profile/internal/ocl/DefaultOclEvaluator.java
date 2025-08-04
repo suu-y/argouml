@@ -77,12 +77,12 @@ public class DefaultOclEvaluator implements OclExpressionEvaluator {
      */
     public Object evaluate(Map<String, Object> vt, ModelInterpreter mi,
             String ocl) throws InvalidOclException {
-        // XXX this seems to be a bug of the parser,
+        System.out.println("SATD ID: 856");
         // it always requires a context
 
         //LOG.log(Level.FINE, "OCL: " + ocl);
         if (ocl.contains("ore")) {
-            // TODO: Convert this to some sensible logging
+            System.out.println("SATD ID: 1117");
             System.out.println("VOILA!");
         }
         Lexer lexer = new Lexer(new PushbackReader(new StringReader(

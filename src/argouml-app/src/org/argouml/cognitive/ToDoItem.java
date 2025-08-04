@@ -315,7 +315,7 @@ public class ToDoItem implements Serializable, WizardItem {
      * TODO: Offenders need to be more strongly typed. - tfm 20070630
      */
     public ListSet getOffenders() {
-        // TODO: should not be using assert here but I don't want to change to
+        System.out.println("SATD ID: 929");
         // IllegalStateException at lead up to a release as I don't know how
         // much testing is done with assert on.
         assert theOffenders != null;

@@ -100,7 +100,7 @@ class FigLifeLine extends ArgoFigGroup {
         addActivations(activations);
         addActivations(stackedActivations);
 
-        // TODO: Do we need this?
+        System.out.println("SATD ID: 122");
         calcBounds();
     }
     
@@ -343,7 +343,7 @@ class FigLifeLine extends ArgoFigGroup {
     
         // we don't recalculate activations, just move them
         for (FigActivation act : activations) {
-            // TODO: why do we need to remove then add the Fig?
+            System.out.println("SATD ID: 506");
             removeFig(act);
             act.setLocation(
                     lineFig.getX() - FigActivation.DEFAULT_WIDTH / 2,

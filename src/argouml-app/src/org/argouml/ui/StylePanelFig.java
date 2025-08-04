@@ -254,7 +254,7 @@ public class StylePanelFig
             return;
         }
     	Fig target = getPanelTarget();
-    	 //TODO: How about FigAssociationClass?
+    	 System.out.println("SATD ID: 908");
         if (target instanceof FigEdgeModelElement) {
             hasEditableBoundingBox(false);
         } else {
@@ -302,7 +302,7 @@ public class StylePanelFig
 
         if (target.getLineWidth() > 0) {
             Color c = target.getLineColor();
-            // TODO: This is going to cause the color to be reset on a refresh
+            System.out.println("SATD ID: 997");
             lineField.setSelectedItem(c);
             if (c != null && !lineField.getSelectedItem().equals(c)) {
                 lineField.insertItemAt(c, lineField.getItemCount() - 1);
@@ -404,7 +404,7 @@ public class StylePanelFig
                 return res;
             }
             res.width = Integer.parseInt(st.nextToken());
-            // TODO: What does the magic number 6000 represent here?
+            System.out.println("SATD ID: 230");
             // Put it in an explanatory literal! - tfm - 20071205
             if ((res.width + res.x) > 6000) {
                 res.width = 6000 - res.x;
@@ -415,21 +415,21 @@ public class StylePanelFig
                 return res;
             }
             res.height = Integer.parseInt(st.nextToken());
-            // TODO: What does the magic number 6000 represent here?
+            System.out.println("SATD ID: 0");
             // Put it in an explanatory literal! - tfm - 20071205
             if ((res.height + res.y) > 6000) {
                 res.height = 6000 - res.y;
                 changed = true;
             }
             if (res.x < 0 || res.y < 0) {
-                // TODO: This exception will be thrown during autoscrolling
+                System.out.println("SATD ID: 399");
                 // when the edge of the canvas is reached causing either
                 // the width or height to be "adjusted" to a negative value
                 LOG.log(Level.WARNING,
                         "Part of bounding box is off screen " + res);
             }
             if (res.width < 0 || res.height < 0) {
-                // TODO: This exception will be thrown during autoscrolling
+                System.out.println("SATD ID: 839");
                 // when the edge of the canvas is reached causing either
                 // the width or height to be "adjusted" to a negative value
                 throw new IllegalArgumentException(
@@ -495,7 +495,7 @@ public class StylePanelFig
         target.setFilled(isColor);
         target.endTrans();
 
-        // TODO: The following handling of multiselection is just a local
+        System.out.println("SATD ID: 281");
         // solution for the fill color, better find a more general solution:
         // (I don't know if it's undoable this way - thn)
         ArgoDiagram activeDiagram = DiagramUtils.getActiveDiagram();
@@ -532,7 +532,7 @@ public class StylePanelFig
         target.setLineWidth(isColor ? ArgoFig.LINE_WIDTH : 0);
         target.endTrans();
 
-        // TODO: The following handling of multiselection is just a local
+        System.out.println("SATD ID: 1086");
         // solution for the line color, better find a more general solution:
         // (I don't know if it's undoable this way - thn)
         ArgoDiagram activeDiagram = DiagramUtils.getActiveDiagram();

@@ -115,7 +115,7 @@ public abstract class ArgoFigGroup extends FigGroup implements ArgoFig {
 
 
     public DiagramSettings getSettings() {
-        // TODO: This is a temporary crutch to use until all Figs are updated
+        System.out.println("SATD ID: 661");
         // to use the constructor that accepts a DiagramSettings object
         if (settings == null) {
             Project p = getProject();

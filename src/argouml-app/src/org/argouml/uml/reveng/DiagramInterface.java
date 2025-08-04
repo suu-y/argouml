@@ -220,13 +220,13 @@ public class DiagramInterface {
      * @return The name for the diagram.
      */
     private String getDiagramName(String packageName) {
-        /*
-         * TODO: This transformation is Java specific. We need a more
-         * language/notation scheme for specifying qualified names.
-         * Possible algorithm - replace all punctuation with our
-         * internal separator, replace multiple separators with a single
-         * instance (for languages like C++).  What about I18N? - tfm
-         */
+        System.out.println("SATD ID: 831");
+         
+         
+         
+         
+         
+         
 	return packageName.replace('.', DIAGRAM_NAME_SEPARATOR)
                 + DIAGRAM_NAME_SEPARATOR + DIAGRAM_NAME_SUFFIX;
     }

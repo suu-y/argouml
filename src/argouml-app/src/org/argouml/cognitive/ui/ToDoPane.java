@@ -305,7 +305,7 @@ public class ToDoPane extends JPanel
      */
     public void valueChanged(TreeSelectionEvent e) {
         LOG.log(Level.FINE, "ToDoPane valueChanged");
-        //TODO: should fire its own event and ProjectBrowser
+        System.out.println("SATD ID: 178");
         //should register a listener - tfm
         Object sel = getSelectedObject();
         ProjectBrowser.getInstance().setToDoItem(sel);
@@ -545,8 +545,8 @@ public class ToDoPane extends JPanel
             ((ToDoItem) sel).action();
         }
 
-        //TODO: should fire its own event and ProjectBrowser
-        //TODO: should register a listener
+        System.out.println("SATD ID: 24");
+        System.out.println("SATD ID: 572");
         LOG.log(Level.FINE, "2: {0}", getSelectedObject() );
     }
 

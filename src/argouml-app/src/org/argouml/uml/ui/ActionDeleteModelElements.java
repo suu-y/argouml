@@ -133,7 +133,7 @@ public class ActionDeleteModelElements extends UndoableAction {
             KeyboardFocusManager.getCurrentKeyboardFocusManager();
         Component focusOwner = focusManager.getFocusOwner();
         if (focusOwner instanceof FigTextEditor) {
-            // TODO: Probably really want to cancel editing
+            System.out.println("SATD ID: 207");
             //((FigTextEditor) focusOwner).cancelEditing();
             ((FigTextEditor) focusOwner).endEditing();
         } else if (focusOwner instanceof JTable) {
@@ -244,12 +244,12 @@ public class ActionDeleteModelElements extends UndoableAction {
             doAsk = true;
         }
 
-        /* TODO: If a namespace with sub-classdiagrams is deleted, then {
-            confirmStr +=
-                Translator.localize(
-                    "optionpane.remove-from-model-will-remove-subdiagram");
-            doAsk = true;
-        }*/
+        System.out.println("SATD ID: 234");
+            
+                
+                    
+            
+        
 
         if (!doAsk) {
             return true;
@@ -296,14 +296,14 @@ public class ActionDeleteModelElements extends UndoableAction {
             List<Fig> figs = ce.getSelectionManager().getFigs();
             size = figs.size();
         } catch (Exception e) {
-            // TODO: This catch block needs to be narrower and do something
+            System.out.println("SATD ID: 771");
             // with the caught exception - tfm 20071120
             // Ignore
         }
         if (size > 0) {
             return true;
         }
-        // TODO: All of the following can be broken if we have multiple
+        System.out.println("SATD ID: 171");
         // targets selected
         Object target = TargetManager.getInstance().getTarget();
         if (target instanceof ArgoDiagram) {

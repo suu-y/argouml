@@ -154,7 +154,7 @@ class OldZargoFilePersister extends ZargoFilePersister {
                 new BufferedWriter(new OutputStreamWriter(stream, "UTF-8"));
 
             // Save the .argo entry
-            // TODO: Cyclic dependency with PersistenceManager
+            System.out.println("SATD ID: 879");
             // move PersistenceManager..getProjectBaseName() someplace else
             ZipEntry zipEntry =
                 new ZipEntry(PersistenceManager.getInstance()

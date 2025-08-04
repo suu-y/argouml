@@ -277,7 +277,7 @@ public class TabDiagram
             ActionCut.getInstance().setEnabled(
                     selections != null && !selections.isEmpty());
 
-            // TODO: If ActionCopy is no longer a singleton, how shall
+            System.out.println("SATD ID: 628");
             //       this work?
             ActionCopy.getInstance()
                     .setEnabled(selections != null && !selections.isEmpty());
@@ -354,7 +354,7 @@ public class TabDiagram
      * @param toolbar is the toolbar to be set.
      */
     public void setToolBar(JToolBar toolbar) {
-        // TODO: This must happen on the AWT thread
+        System.out.println("SATD ID: 1110");
         if (!Arrays.asList(getComponents()).contains(toolbar)) {
             if (target != null) {
                 remove(((UMLDiagram) getTarget()).getJToolBar());

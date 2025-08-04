@@ -71,7 +71,7 @@ public class CrNonAggDataType extends CrUML {
      */
     @Override
     public boolean predicate2(Object dm, Designer dsgr) {
-	// TODO: not implemented
+	System.out.println("SATD ID: 484");
 	return NO_PROBLEM;
     }
 

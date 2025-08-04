@@ -125,9 +125,9 @@ class UMLModelElementNamespaceComboBoxModel extends UMLComboBoxModel {
          * is not a valid one... Which of course should not happen,
          * but it does - see the project attached to issue 3772.
          */
-        /* TODO: Enhance the isValidNamespace function so
-         * that this never happens.
-         */
+        System.out.println("SATD ID: 461");
+         
+         
         Object namespace = Model.getFacade().getNamespace(target);
         if (namespace != null && !elements.contains(namespace)) {
             elements.add(namespace);

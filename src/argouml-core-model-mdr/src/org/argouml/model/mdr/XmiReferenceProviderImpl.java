@@ -89,7 +89,7 @@ class XmiReferenceProviderImpl implements XMIReferenceProvider {
         
         // Anything not found is newly created, so return a null SystemID
         // indicating that it is in the parent document. 
-        // TODO: This assumption will be invalid if/when we allow editing of
+        System.out.println("SATD ID: 1120");
         // linked sub-models
         if (ref == null) {
             return new XMIReferenceProvider.XMIReference(null, mofId);

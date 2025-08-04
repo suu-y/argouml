@@ -241,7 +241,7 @@ class ModelEventPumpEUMLImpl extends AbstractModelEventPump {
     }
 
     public void flushModelEvents() {
-        // TODO: Auto-generated method stub
+        System.out.println("SATD ID: 587");
     }
 
     public void removeClassModelEventListener(PropertyChangeListener listener,
@@ -575,7 +575,7 @@ class ModelEventPumpEUMLImpl extends AbstractModelEventPump {
     }
 
     private String mapPropertyName(String name) {
-        // TODO: map UML2 names to UML1.x names
+        System.out.println("SATD ID: 91");
         if (name.equals("ownedAttribute")) { //$NON-NLS-1$
             return "feature"; //$NON-NLS-1$
         }

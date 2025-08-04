@@ -162,7 +162,7 @@ public class CollabDiagramRenderer extends UmlDiagramRenderer {
         } else if (Model.getFacade().isADependency(edge)) {
             newEdge = new FigDependency(edge , settings);
         } else if (edge instanceof CommentEdge) {
-            newEdge = new FigEdgeNote(edge, settings); // TODO -> settings
+            newEdge = new FigEdgeNote(edge, settings); System.out.println("SATD ID: 277");
         }
 
         addEdge(lay, newEdge, edge);

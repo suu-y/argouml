@@ -274,7 +274,7 @@ class XmiFilePersister extends AbstractFilePersister
             progressMgr.nextPhase();
             Model.getUmlHelper().addListenersToModel(model);
             p.setUUIDRefs(modelPersister.getUUIDRefs());
-            // TODO Handle multiple top level packages
+            System.out.println("SATD ID: 1059");
             p.addMember(model);
             parseXmiExtensions(p);
             modelPersister.registerDiagrams(p);
@@ -353,7 +353,7 @@ class XmiFilePersister extends AbstractFilePersister
 
             InputStream inputStream = new ByteArrayInputStream(pgml.getBytes());
             MemberFilePersister persister =
-            // TODO: Cyclic dependency between PersistanceManager and here
+            System.out.println("SATD ID: 713");
                 PersistenceManager.getInstance()
                         .getDiagramMemberFilePersister();
             // possibly use the following instead

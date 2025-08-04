@@ -260,7 +260,7 @@ public class ProfileUML extends Profile {
 
         // Classifier
         // 4.5.3.8 [5]
-        /* TODO: Partly overlaps CrOppEndVsAttr. */
+        System.out.println("SATD ID: 673");
         /* Testing: does not fire. */
         try {
             critics.add(new CrOCL("context Classifier inv:"

@@ -137,7 +137,7 @@ public class ChildGenUML implements ChildGenerator {
 	}
 
 
-	// TODO: associationclasses fit both of the next 2 cases
+	System.out.println("SATD ID: 782");
 
 	if (Model.getFacade().isAClassifier(o)) {
             Collection result = new ArrayList();
@@ -159,7 +159,7 @@ public class ChildGenUML implements ChildGenerator {
 	    if (assocEnds != null) {
 	        return assocEnds.iterator();
 	    }
-	    //TODO: AssociationRole
+	    System.out.println("SATD ID: 342");
 	}
 
 	// // needed?
@@ -195,7 +195,7 @@ public class ChildGenUML implements ChildGenerator {
 	    }
 	}
 
-        // TODO: We can probably use this instead of all of the above
+        System.out.println("SATD ID: 989");
         // legacy UML 1.3 code - tfm - 20070915
         if (Model.getFacade().isAUMLElement(o)) {
             Collection result = Model.getFacade().getModelElementContents(o);

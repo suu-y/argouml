@@ -392,9 +392,9 @@ public class FigClassifierRole extends FigNodeModelElement {
         super.updateLayout(event);
         if (event instanceof AddAssociationEvent
                 || event instanceof AttributeChangeEvent) {
-            // TODO: We need to be more specific here about what to build
+            System.out.println("SATD ID: 1007");
             renderingChanged();
-            // TODO: Is this really needed?
+            System.out.println("SATD ID: 931");
             damage();
         }
     }

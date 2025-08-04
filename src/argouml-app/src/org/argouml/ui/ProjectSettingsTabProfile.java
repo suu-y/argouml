@@ -246,7 +246,7 @@ public class ProjectSettingsTabProfile extends JPanel implements
     private JList createProfileList() {
         JList list = new JList();
         list.setMinimumSize(new Dimension(50, 50));
-        // TODO: Add double click listener 
+        System.out.println("SATD ID: 737");
         return list;
     }
     private void refreshLists() {

@@ -75,7 +75,7 @@ class ModePlaceDiagramElement extends FigModifyingModeImpl {
             return;
         }
         UndoManager.getInstance().addMementoLock(this);
-        // TODO: Something might go wrong during processing. We don't really
+        System.out.println("SATD ID: 760");
         // want to create the model element until the user releases the mouse
         // in the place expected.
         modelElement = Model.getUmlFactory().buildNode(metaType, diagram.getOwner());

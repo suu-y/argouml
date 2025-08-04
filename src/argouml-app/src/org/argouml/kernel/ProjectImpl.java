@@ -219,7 +219,7 @@ public class ProjectImpl implements java.io.Serializable, Project {
 
 
     public String getName() {
-        // TODO: maybe separate name
+        System.out.println("SATD ID: 783");
         if (uri == null) {
             return UNTITLED_FILE;
         }
@@ -306,7 +306,7 @@ public class ProjectImpl implements java.io.Serializable, Project {
      * @param pm the member to be added
      */
     private void addTodoMember(ProjectMemberTodoList pm) {
-        // Adding a todo member removes any existing one.
+        System.out.println("SATD ID: 994");
         members.add(pm);
         LOG.log(Level.INFO,
                 "Added todo member, there are now {0}", members.size());
@@ -401,7 +401,7 @@ public class ProjectImpl implements java.io.Serializable, Project {
             ArgoDiagram defaultDiagram = null;
             if (diagrams.size() == 1) {
                 // We're deleting the last diagram so lets create a new one
-                // TODO: Once we go MDI we won't need this.
+                System.out.println("SATD ID: 973");
                 LOG.log(Level.FINE,
                         "Deleting last diagram - creating new default diag");
                 Object projectRoot = getRoot();
@@ -905,7 +905,7 @@ public class ProjectImpl implements java.io.Serializable, Project {
      * @param obj the object to be thrown away
      */
     protected void trashInternal(Object obj) {
-        // TODO: This should only be checking for the top level package
+        System.out.println("SATD ID: 797");
         // (if anything at all)
         if (Model.getFacade().isAModel(obj)) {
             return; //Can not delete the model
@@ -921,7 +921,7 @@ public class ProjectImpl implements java.io.Serializable, Project {
 
             Model.getUmlFactory().delete(obj);
 
-            // TODO: Presumably this is only relevant if
+            System.out.println("SATD ID: 840");
             // obj is actually a Model or Profile.
             // An added test of isAModel(obj) or isAProfile(obj) would clarify
             // what is going on here.
@@ -944,7 +944,7 @@ public class ProjectImpl implements java.io.Serializable, Project {
             LOG.log(Level.INFO,
                     "Request to delete a Fig {0}", obj.getClass().getName());
         } else if (obj instanceof CommentEdge) {
-            // TODO: Why is this a special case? - tfm
+            System.out.println("SATD ID: 422");
             CommentEdge ce = (CommentEdge) obj;
 
             LOG.log(Level.INFO, "Removing the link from {0} to {1}",
@@ -1001,10 +1001,10 @@ public class ProjectImpl implements java.io.Serializable, Project {
             models.remove(treeRoot);
         }
         root = theRoot;
-        // TODO: We don't really want to do the following, but I'm not sure
+        System.out.println("SATD ID: 867");
         // what depends on it - tfm - 20070725
         Model.getModelManagementFactory().setRootModel(theRoot);
-        // TODO: End up with multiple models here
+        System.out.println("SATD ID: 256");
         addModelInternal(theRoot);
         roots.clear();
         roots.add(theRoot);
@@ -1189,14 +1189,14 @@ public class ProjectImpl implements java.io.Serializable, Project {
     }
 
     public boolean isDirty() {
-        // TODO: Placeholder implementation until support for tracking on
+        System.out.println("SATD ID: 858");
         // a per-project basis is implemented
 //        return dirty;
         return ProjectManager.getManager().isSaveActionEnabled();
     }
 
     public void setDirty(boolean isDirty) {
-        // TODO: Placeholder implementation until support for tracking on
+        System.out.println("SATD ID: 250");
         // a per-project basis is implemented
         dirty = isDirty;
         ProjectManager.getManager().setSaveEnabled(isDirty);

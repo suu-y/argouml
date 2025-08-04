@@ -8,7 +8,7 @@
  *
  * Contributors:
  *    Bob Tarling - Post GSOC improvements
- *    Christian López Espínola
+ *    Christian LÃ³pez EspÃ­nola
  *    Thomas Neustupny
  *******************************************************************************
  *
@@ -163,7 +163,7 @@ class SwingUIFactory {
         final String label;
 
         if (Model.getFacade().isAPseudostate(target)) {
-        	// TODO: We need some way of driving this from panel xml rather
+        	System.out.println("SATD ID: 689");
         	// than hard coded test
         	Object pseudostateKind = Model.getFacade().getKind(target);
         	label = Model.getFacade().getName(pseudostateKind);
@@ -221,7 +221,7 @@ class SwingUIFactory {
             final Object target,
             final ControlData prop) {
 
-        // TODO: Why do we need this as well as control? Why is it
+        System.out.println("SATD ID: 299");
         // instantiated when its not always needed.
         JPanel p = new JPanel();
 
@@ -357,7 +357,7 @@ class SwingUIFactory {
 
         final String propertyName = prop.getPropertyName();
 
-        // TODO: consider a conditional feature in the xml panel def for this:
+        System.out.println("SATD ID: 121");
         if (Model.getFacade().getUmlVersion().charAt(0) != '1') {
             if ("aggregation".equals(propertyName) &&
         	    !Model.getFacade().isAAssociationEnd(target)) {
@@ -572,7 +572,7 @@ class SwingUIFactory {
             comp = new UMLComboBoxNavigator(
                    Translator.localize("label.type.navigate.tooltip"),
                    typeComboBox);
-            // TODO: Why is this disabled always?
+            System.out.println("SATD ID: 1025");
             comp.setEnabled(false);
         } else if ("parameter".equals(prop.getPropertyName())) {
             final UMLComboBoxModel model =

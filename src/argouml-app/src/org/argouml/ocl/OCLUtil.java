@@ -80,7 +80,7 @@ public final class OCLUtil {
      * @return the context string for the model element.
      */
     public static String getContextString (final Object me) {
-        // TODO: Do we want isaUMLElement here?
+        System.out.println("SATD ID: 249");
 	if (me == null || !(Model.getFacade().isAModelElement(me))) {
 	    return "";
 	}

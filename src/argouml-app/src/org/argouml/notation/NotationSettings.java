@@ -173,7 +173,7 @@ public class NotationSettings {
             return true;
         }
         
-        // TODO: Do we care?
+        System.out.println("SATD ID: 1009");
         if (Notation.findNotation(newLanguage) == null) {
             /* This Notation is not available! */
             return false;
@@ -184,13 +184,13 @@ public class NotationSettings {
         Memento memento = new Memento() {
             public void redo() {
                 notationLanguage = newLanguage;
-                // TODO: We can't have a global "current" language
+                System.out.println("SATD ID: 922");
                 // NotationProviderFactory2.setCurrentLanguage(newLanguage);
             }
 
             public void undo() {
                 notationLanguage = oldLanguage;
-                // TODO: We can't have a global "current" language
+                System.out.println("SATD ID: 390");
                 // NotationProviderFactory2.setCurrentLanguage(oldLanguage);
             }
         };
@@ -548,13 +548,13 @@ public class NotationSettings {
    
     
     private void doUndoable(Memento memento) {
-        // TODO: Undo should be managed externally or we should be given 
+        System.out.println("SATD ID: 755");
         // an Undo manager to use (the project's) rather than using a global one
 //        if (DiagramUndoManager.getInstance().isGenerateMementos()) {
 //            DiagramUndoManager.getInstance().addMemento(memento);
 //        }
         memento.redo();
-        // TODO: Mark diagram/project as dirty?
+        System.out.println("SATD ID: 439");
     }
 
 }

@@ -248,7 +248,7 @@ class NotationNameImpl
 		    return nn;
 		}
 	    } catch (Exception e) {
-	        // TODO: Document why we catch this.
+	        System.out.println("SATD ID: 259");
                 LOG.log(Level.SEVERE, "Unexpected exception", e);
 	    }
 	}

@@ -393,7 +393,7 @@ public class UseCaseDiagramGraphModel
         // Add the element and place it in the namespace of the model
         getEdges().add(edge);
 
-        // TODO: assumes public
+        System.out.println("SATD ID: 66");
         if (Model.getFacade().isAUMLElement(edge)
                 && Model.getFacade().getNamespace(edge) == null) {
             Model.getCoreHelper().addOwnedElement(getHomeModel(), edge);

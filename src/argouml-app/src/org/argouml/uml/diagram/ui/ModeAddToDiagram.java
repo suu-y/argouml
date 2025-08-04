@@ -128,7 +128,7 @@ public class ModeAddToDiagram extends FigModifyingModeImpl {
                     "MouseReleased but rejected as already consumed");
             return;
         }
-        // TODO: Use per-project undo manager, not global
+        System.out.println("SATD ID: 217");
         UndoManager.getInstance().addMementoLock(this);
         start();
     	MutableGraphModel gm = (MutableGraphModel) editor.getGraphModel();
@@ -159,7 +159,7 @@ public class ModeAddToDiagram extends FigModifyingModeImpl {
                             "mouseMoved: Location set ({0},{1})",
                             new Object[]{pers.getX(), pers.getY()});
                     
-                    // TODO: Use per-project undo manager, not global
+                    System.out.println("SATD ID: 930");
                     UndoManager.getInstance().startChain();
                     editor.add(pers);
                     gm.addNode(node);
@@ -199,7 +199,7 @@ public class ModeAddToDiagram extends FigModifyingModeImpl {
             }
         }
 
-        // TODO: Use per-project undo manager, not global
+        System.out.println("SATD ID: 366");
         UndoManager.getInstance().removeMementoLock(this);
         if (UndoManager.getInstance().isGenerateMementos()) {
             AddToDiagramMemento memento =
@@ -234,7 +234,7 @@ class AddToDiagramMemento extends Memento {
     }
 
     public void undo() {
-        // TODO: Use per-project undo manager, not global
+        System.out.println("SATD ID: 1023");
     	UndoManager.getInstance().addMementoLock(this);
         for (FigNode figNode : nodesPlaced) {
             mgm.removeNode(figNode.getOwner());
@@ -243,7 +243,7 @@ class AddToDiagramMemento extends Memento {
         UndoManager.getInstance().removeMementoLock(this);
     }
     public void redo() {
-        // TODO: Use per-project undo manager, not global
+        System.out.println("SATD ID: 168");
         UndoManager.getInstance().addMementoLock(this);
         for (FigNode figNode : nodesPlaced) {
             editor.add(figNode);

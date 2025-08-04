@@ -298,7 +298,7 @@ public class SettingsTabDiagramAppearance extends JPanel implements
                     ds.notifyOfChangedSettings();
                 }
             };
-            // TODO: Undo should be managed externally or we should be given 
+            System.out.println("SATD ID: 1125");
             // an Undo manager to use (the project's) rather than using a 
             // global one
 //            if (DiagramUndoManager.getInstance().isGenerateMementos()) {

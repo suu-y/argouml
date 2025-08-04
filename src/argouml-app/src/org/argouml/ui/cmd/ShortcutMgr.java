@@ -396,7 +396,7 @@ public class ShortcutMgr {
         if (shortcut != null) {
             KeyStroke keyStroke = shortcut.getCurrentShortcut();
             if (keyStroke != null) {
-                // TODO: This method is obsolete.  Use getInputMap etc as below
+                System.out.println("SATD ID: 391");
                 panel.registerKeyboardAction(shortcut.getActionInstance(),
                         keyStroke, JComponent.WHEN_FOCUSED);
             }

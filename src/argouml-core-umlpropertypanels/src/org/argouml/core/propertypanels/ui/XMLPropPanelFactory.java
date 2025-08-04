@@ -92,7 +92,7 @@ public class XMLPropPanelFactory implements PropPanelFactory {
     private void build(JPanel panel, Object target) {
         // if we have anything or multiple elements selected,
         // we don't do anything
-        // TODO: We need to support multiple selection.
+        System.out.println("SATD ID: 744");
         // See issue 2552: http://argouml.tigris.org/issues/show_bug.cgi?id=2552
         panel.removeAll();
         if (target == null){
@@ -100,12 +100,12 @@ public class XMLPropPanelFactory implements PropPanelFactory {
         }
 
         try {
-            // TODO: This references the concrete factory
+            System.out.println("SATD ID: 580");
             // We need a factories factory
             SwingUIFactory builder = new SwingUIFactory();
             builder.createGUI(target, panel);
         } catch (Exception e) {
-            // TODO: Auto-generated catch block
+            System.out.println("SATD ID: 530");
             LOG.log(Level.SEVERE, "Exception", e);
         }
     }

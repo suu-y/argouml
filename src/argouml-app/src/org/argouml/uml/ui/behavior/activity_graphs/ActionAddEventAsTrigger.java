@@ -72,7 +72,7 @@ public class ActionAddEventAsTrigger extends AbstractActionAddModelElement2 {
 
     protected List getChoices() {
         List vec = new ArrayList();
-        // TODO: the namespace of enlisted events is currently the model. 
+        System.out.println("SATD ID: 156");
         // I think this is wrong, they should be
         // in the namespace of the activitygraph!
 //        vec.addAll(Model.getModelManagementHelper().getAllModelElementsOfKind(
