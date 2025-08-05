@@ -176,7 +176,7 @@ public class FigComponentInstance extends AbstractFigComponent {
                 }
             } else if (isVisible()
                     // If we are not visible most likely we're being deleted.
-                    System.out.println("SATD ID: 582");
+                    // System.out.println("SATD ID: 582");
                     // should be investigated - tfm - 20061230
                     && encloser == null && getEnclosingFig() != null) {
                 if (Model.getFacade().getNodeInstance(comp) != null) {
